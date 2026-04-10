@@ -44,42 +44,26 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
 
                     {/* Cinematic Product Asset Stage */}
                     <div className="relative w-full h-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-1000 ease-out">
+                        {/* THE REAL ASSET */}
+                        <div className="relative z-20 w-full h-full flex items-center justify-center">
+                            <img 
+                                src={product.imagePath} 
+                                alt={product.name}
+                                className="max-w-[70%] max-h-[85%] object-contain filter drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)]"
+                            />
+                        </div>
+
                         {/* 
-                          Asset Fallback Layer 
-                          If a real .png exists, it would sit here. 
-                          For demo-readiness, we represent the SKU as a cinematic "Form Factor Block".
+                          Cinematic Backdrop Reflection
+                          We keep a version of the block as a "pedestal" or reflection spot for the real image.
                         */}
                         <div 
-                            className="relative w-3/4 h-5/6 bg-[#0c0c0b] border border-white/10 rounded-2xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] flex flex-col items-center justify-center overflow-hidden"
+                            className="absolute z-10 w-3/4 h-5/6 bg-[#0c0c0b] border border-white/5 rounded-2xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] opacity-40"
                             style={{ 
-                                boxShadow: `0 40px 80px -20px ${product.themeColor}33, 0 0 0 1px rgba(255,255,255,0.05)` 
+                                boxShadow: `0 40px 80px -20px ${product.themeColor}33, 0 0 0 1px rgba(255,255,255,0.03)` 
                             }}
                         >
-                            {/* Inner Glow */}
                             <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
-                            
-                            {/* SKU Identity Text */}
-                            <div className="flex flex-col items-center text-center p-8 space-y-4">
-                                <span 
-                                    className="text-[10px] uppercase tracking-[0.6em] font-bold opacity-40 blur-[0.5px]"
-                                    style={{ color: product.accentColor }}
-                                >
-                                    SKU Prototype
-                                </span>
-                                <div className="h-px w-8 bg-foreground/10" />
-                                <span className="text-xl md:text-2xl font-serif text-foreground/80 tracking-tight leading-none group-hover:text-white transition-colors">
-                                    {product.name}
-                                </span>
-                                <span className="text-[10px] text-foreground/20 font-mono tracking-widest uppercase">
-                                    Ref: {product.slug}.v1.os
-                                </span>
-                            </div>
-
-                            {/* Status Indicator */}
-                            <div className="absolute bottom-6 flex items-center space-x-2">
-                                <div className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-                                <span className="text-[8px] uppercase tracking-[0.4em] font-bold text-foreground/30">System Active</span>
-                            </div>
                         </div>
                     </div>
                 </div>

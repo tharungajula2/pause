@@ -46,35 +46,23 @@ export const ProductHeroStage: React.FC<ProductHeroStageProps> = ({ product }) =
                         style={{ background: `linear-gradient(to bottom right, transparent, ${product.themeColor})` }}
                     />
                     
-                    {/* Cinematic SKU Presentation Block (Demo Logic Fallback) */}
+                    {/* THE REAL ASSET */}
+                    <div className="relative z-20 w-full h-full flex items-center justify-center transition-all duration-1000 ease-out group-hover:scale-105 group-hover:rotate-1">
+                        <img 
+                            src={product.imagePath} 
+                            alt={product.name}
+                            className="max-h-[85%] object-contain filter drop-shadow-[0_40px_100px_rgba(0,0,0,0.9)]"
+                        />
+                    </div>
+                    
+                    {/* Cinematic SKU Presentation Pedestal */}
                     <div 
-                        className="relative z-10 w-48 md:w-64 aspect-[3/4] bg-background border border-foreground/10 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)] flex items-center justify-center transition-all duration-1000 ease-out group-hover:scale-105 group-hover:rotate-1 overflow-hidden"
-                        style={{ boxShadow: `0 40px 120px -20px ${product.themeColor}55, 0 0 0 1px rgba(255,255,255,0.05)` }}
+                        className="absolute z-10 w-48 md:w-64 aspect-[3/4] bg-background border border-foreground/10 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)] opacity-40"
+                        style={{ 
+                            boxShadow: `0 40px 120px -20px ${product.themeColor}55, 0 0 0 1px rgba(255,255,255,0.05)` 
+                        }}
                     >
                         <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
-                        
-                        <div className="flex flex-col items-center text-center p-6 space-y-4">
-                            <div 
-                                className="w-10 h-[1px] opacity-20"
-                                style={{ backgroundColor: product.accentColor }}
-                            />
-                            <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-foreground/40 italic">
-                                SKU Intelligence
-                            </span>
-                            <span className="text-2xl font-serif text-foreground/80 tracking-tight leading-none group-hover:text-gold transition-colors duration-500">
-                                {product.name}
-                            </span>
-                            <div className="pt-4 flex flex-col items-center space-y-1">
-                                <span className="text-[8px] text-foreground/20 font-mono tracking-widest uppercase">
-                                    Format: {product.format}
-                                </span>
-                                <span className="text-[8px] text-foreground/20 font-mono tracking-widest uppercase">
-                                    OS_REF: 0x{product.id.slice(0, 2).toUpperCase()}
-                                </span>
-                            </div>
-                        </div>
-
-                        {/* Scanline Effect Overlay */}
                         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] pointer-events-none" />
                     </div>
 

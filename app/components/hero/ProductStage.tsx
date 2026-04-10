@@ -6,11 +6,15 @@ export const ProductStage: React.FC = () => {
     <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
       {/* Central Product Spotlight - Beat 2 focus */}
       <div id="product-hero-spotlight" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-[500px] flex items-center justify-center opacity-[0.05] scale-90 blur-md">
-        <div className="w-full h-full bg-gradient-to-br from-graphite to-background rounded-2xl border border-foreground/10 shadow-[0_50px_100px_rgba(0,0,0,0.8)] relative group">
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-accent-choco/10 blur-3xl opacity-50" />
-          <div className="absolute inset-0 flex items-center justify-center text-gold/20 font-serif italic text-4xl">
-            Focus SKU
-          </div>
+        <div className="relative w-full h-full flex items-center justify-center">
+            {/* The primary hero product (e.g. Choco Loco) */}
+            <img 
+                src="/images/products/choco-loco.png" 
+                alt="Hero SKU" 
+                className="w-full h-full object-contain filter drop-shadow-[0_30px_60px_rgba(0,0,0,0.8)]"
+            />
+            {/* Stage Light backdrop */}
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-accent-choco/10 blur-3xl opacity-50 -z-10" />
         </div>
       </div>
 
@@ -24,23 +28,25 @@ export const ProductStage: React.FC = () => {
             'bottom-[10%] left-[15%] rotate-3',
             'top-[30%] right-[5%] -rotate-3',
             'bottom-[20%] right-[20%] rotate-12',
-            'top-[10%] right-[30%] -rotate-6', // Added an extra for variety
+            'top-[10%] right-[30%] -rotate-6', 
           ];
           
           return (
             <div 
               key={product.id}
               id={`hero-product-${idx}`}
-              className={`absolute cinematic-product-proxy w-48 h-72 rounded-xl opacity-0 blur-lg scale-75 overflow-hidden border border-white/5 bg-graphite/40 transition-all duration-700 ${positions[idx] || ''}`}
+              className={`absolute cinematic-product-proxy w-48 h-72 opacity-0 blur-lg scale-75 flex items-center justify-center transition-all duration-700 ${positions[idx] || ''}`}
             >
+               <img 
+                 src={product.imagePath} 
+                 alt={product.name}
+                 className="w-full h-full object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]"
+               />
+               {/* Faint color wash behind each cluster image */}
                <div 
-                 className="absolute inset-0 opacity-20"
+                 className="absolute inset-0 opacity-10 blur-2xl -z-10"
                  style={{ backgroundColor: product.accentColor }}
                />
-               <div className="absolute bottom-6 left-6 right-6">
-                 <div className="h-px w-8 bg-gold/40 mb-3" />
-                 <span className="text-[8px] uppercase tracking-widest text-foreground/40 font-bold">{product.name}</span>
-               </div>
             </div>
           );
         })}

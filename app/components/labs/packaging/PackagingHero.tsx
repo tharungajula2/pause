@@ -9,10 +9,13 @@ export const PackagingHero: React.FC = () => {
                 <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-gold/[0.04] blur-[150px] rounded-full mix-blend-screen" />
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.04] mix-blend-overlay border-b border-foreground/5 pointer-events-none" />
                 
-                {/* Minimalist Packaging Silhouette Hints */}
-                <div className="absolute opacity-5 pointer-events-none right-10 top-1/2 -translate-y-1/2 w-64 h-96 border border-foreground/50 rounded-lg flex flex-col justify-end p-8">
-                     <div className="w-1/2 h-2 bg-foreground/50 mb-2 rounded" />
-                     <div className="w-full h-8 bg-foreground/50 rounded" />
+                {/* Cinematic Product Silhouette Backdrop */}
+                <div className="absolute opacity-10 blur-xl pointer-events-none right-10 top-1/2 -translate-y-1/2 w-64 h-96 group-hover:blur-3xl transition-all duration-1000">
+                     <img 
+                        src="/images/products/kesar-pista.png" 
+                        alt="Product Silhouette" 
+                        className="w-full h-full object-contain"
+                    />
                 </div>
             </div>
 

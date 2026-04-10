@@ -8,6 +8,14 @@ export const FlavorLabHero: React.FC = () => {
                 <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#4A2311]/[0.1] blur-[150px] rounded-full mix-blend-screen" />
                 <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#F3E5AB]/[0.05] blur-[150px] rounded-full mix-blend-screen" />
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.04] mix-blend-overlay border-b border-foreground/5 pointer-events-none" />
+                {/* Sensory Product Backdrop */}
+                <div className="absolute opacity-[0.07] blur-2xl pointer-events-none left-10 top-1/2 -translate-y-1/2 w-80 h-[500px] hover:blur-3xl transition-all duration-1000 rotate-12">
+                     <img 
+                        src="/images/products/choco-loco.png" 
+                        alt="Sensory Asset" 
+                        className="w-full h-full object-contain"
+                    />
+                </div>
             </div>
 
             <div className="relative z-10 max-w-6xl mx-auto text-center space-y-8 flex flex-col items-center">
