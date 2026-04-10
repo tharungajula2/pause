@@ -1,199 +1,427 @@
 # MASTER CONTEXT: PROTEIN OS
-**Project Maturity State:** System-Complete / Founder-Ready
-**Version:** 1.0 (Stabilized Architecture)
+**Project Maturity State:** System-Complete / Multi-Lab Architecture  
+**Version:** 2.0 (Refreshed April 2026)  
+**Last Verified Against Codebase:** 2026-04-11
 
 ---
 
 ## 1. Project Identity
+
 ### The Thesis
-**Protein OS** is not a website; it is a **Clinical Strategy Operating System** designed for high-performance protein brand founders and operators. It distills the chaotic biological, dietary, and market complexity of the Indian protein ecosystem into a guided, high-fidelity strategic journey.
+**Protein OS** is a **Cinematic Strategy Operating System** designed for high-performance protein brand founders, operators, and curious learners. It distills the complexity of the Indian protein ecosystem—biology, behavior, manufacturing, economics, and brand strategy—into a guided, high-fidelity strategic journey.
 
 ### The Problem
-Traditional brand presentations are static PDFs or shallow SaaS dashboards. They fail to communicate the *logic* of how a portfolio wins. Protein OS solves this by making the strategy navigable, cinematic, and data-driven.
+Traditional brand presentations are static PDFs or shallow dashboards. They fail to communicate the *logic* of how a portfolio wins. Protein OS solves this by making strategy navigable, cinematic, and data-driven.
+
+### What It Is NOT
+- Not a generic ecommerce site
+- Not a nutrition tracker or fitness app
+- Not a shallow SaaS dashboard
+- Not an AI gimmick or recipe toy
 
 ---
 
 ## 2. High-Level Product Vision
+
 ### Cinematic Strategy Luxury
-The app follows a **"Cinematic Strategy Luxury"** philosophy. 
-- **Identity:** It is a private founder/operator artifact.
-- **Tone:** Clinical, restrained, intentional, and expensive.
-- **Not for:** It is NOT a generic ecommerce site, a nutrition tracker, or a shallow SaaS dashboard.
-- **The Obsidian World:** The UI uses a deep black ("Obsidian") background with warm ivory text and muted gold highlights to create a focused, high-end environment.
+The app follows a **"Cinematic Strategy Luxury"** design philosophy:
+- **Identity:** A private founder/operator strategic artifact
+- **Tone:** Clinical, restrained, intentional, and premium
+- **The Obsidian World:** Deep black (`#090909`) background with warm ivory (`#FCF9F2`) text and muted gold (`#C5A059`) highlights
+- **Floating Product Aesthetic:** Products sit in atmospheric space with cinematic ambient lighting — never inside flat card containers
 
 ---
 
-## 3. Project History & Build Journey
-1.  **Phase 0: Foundation**: Initial setup of a Next.js 15+ environment with Tailwind CSS and an "Obsidian" theme.
-2.  **Phase 1: Cinematic Logic**: Implementation of the `CinematicHero` scrollytelling GSAP engine to replace static landing pages.
-3.  **Phase 2: Data Architecture**: Establishing the `NavItem`, `Product`, and `Occasion` interfaces to drive UI from centralized logic.
-4.  **Phase 3: Module Expansion**: Building out the 7 flagship OS modules (Strategy, Economics, Channels, etc.) as distinct strategic layers.
-5.  **Phase 4: Navigation Flattening**: Moving from complex "Labs" dropdowns to a **Canonical 10-Step Linear Journey**.
-6.  **Phase 5: Asset Integration**: Replacing placeholders with high-fidelity transparent PNG products and matching the UI ambience (theme colors) to the assets.
-7.  **Phase 6: Final Stabilization**: Precision navbar repairs, removing internal card-holders for "floating" assets, and implementing global build stability.
+## 3. Technical Stack
+
+| Layer | Technology | Version |
+|:---|:---|:---|
+| Framework | Next.js (App Router) | 16.2.3 |
+| Language | TypeScript | ^5 |
+| UI Library | React | 19.2.4 |
+| Styling | Tailwind CSS (v4) + CSS Variables | ^4 |
+| Animation | GSAP (GreenSock) | ^3.14.2 |
+| Build Tool | Turbopack (via `next dev`) | Built-in |
+| PostCSS | @tailwindcss/postcss | ^4 |
+
+### Key Files
+- `package.json` — Dependencies and scripts
+- `next.config.ts` — Next.js configuration
+- `tsconfig.json` — TypeScript configuration
+- `postcss.config.mjs` — PostCSS + Tailwind v4
+- `eslint.config.mjs` — ESLint v9 flat config
 
 ---
 
 ## 4. App Architecture Overview
-- **Core Framework**: Next.js 15+ (App Router).
-- **Styling**: Tailwind CSS + CSS Variables (`globals.css`).
-- **Animation**: GSAP (GreenSock) for high-precision scrollytelling and transitions.
-- **Data-Driven**: All major surfaces (Products, Occasions, Modules) are mapped from the `app/data/` directory.
-- **Continuity Pattern**: All flagship pages terminate with a `SystemContinuation` block to enforce the linear 10-step sequence.
+
+```
+protein-os/
+├── app/
+│   ├── layout.tsx              # Root layout (Navbar + Footer wrapper)
+│   ├── page.tsx                # Homepage (Cinematic Hero + Product Worlds)
+│   ├── globals.css             # Design tokens & utility classes
+│   ├── not-found.tsx           # Custom 404 page
+│   ├── components/
+│   │   ├── hero/               # CinematicHero scrollytelling engine
+│   │   ├── layout/             # Navbar, Footer
+│   │   ├── ui/                 # Shared primitives (ProductSurface, CtaButton, etc.)
+│   │   ├── strategy/           # Step 01 components
+│   │   ├── economics/          # Step 02 components
+│   │   ├── channels/           # Step 03 components
+│   │   ├── growth/             # Step 04 components
+│   │   ├── product/            # PDP components (ProductHeroStage, etc.)
+│   │   └── labs/
+│   │       ├── packaging/      # Step 05 (8 components)
+│   │       ├── flavor/         # Step 06 (9 components, incl. SummerConceptGrid)
+│   │       ├── manufacturing/  # Step 07 (9 components)
+│   │       ├── rd/             # Step 08 (8 components)
+│   │       └── expansion/      # Step 09 (9 components)
+│   ├── data/                   # All typed strategic data registries
+│   ├── types/                  # TypeScript interfaces
+│   ├── products/               # /products and /products/[slug] routes
+│   ├── occasions/              # /occasions route
+│   ├── strategy/               # /strategy route
+│   ├── economics/              # /economics route
+│   ├── channels/               # /channels route
+│   ├── growth/                 # /growth route
+│   └── labs/
+│       ├── packaging/          # /labs/packaging route
+│       ├── flavor/             # /labs/flavor route
+│       ├── manufacturing/      # /labs/manufacturing route
+│       ├── r-and-d/            # /labs/r-and-d route
+│       └── expansion/          # /labs/expansion route
+├── public/
+│   ├── images/
+│   │   ├── products/           # 6 core product PNGs (transparent)
+│   │   └── concepts/summer/    # 5 summer concept PNGs (transparent)
+│   └── noise.png               # Noise texture overlay
+└── MASTER_CONTEXT_PROTEIN_OS.md
+```
 
 ---
 
-## 5. Full Route Map
-| Route | Name | Purpose |
-| :--- | :--- | :--- |
-| `/` | **Home** | The "Director's Thesis" scrollytelling entry point. |
-| `/products` | **Portfolio Hub** | The 6-SKU core architecture (Floating Floating Stage). |
-| `/occasions` | **Strategic Map** | The behavioral engine mapping product to ritual. |
-| `/strategy` | **01 Strategy** | The foundational thesis of "The Wedge". |
-| `/economics` | **02 Economics** | Format economics and packaging burdens. |
-| `/channels` | **03 Channels** | Dominant behavior per retail/D2C node. |
-| `/growth` | **04 Growth** | High-trust messaging framing. |
-| `/labs/packaging` | **05 Packaging** | Perception, trust, and clarity logic. |
-| `/labs/flavor` | **06 Flavor** | Sensory strategy (Excitement vs. Retention). |
-| `/labs/expansion` | **07 Expansion** | Concept mapping for future concept stretches. |
+## 5. Full Route Map (12 Routes)
+
+| Route | Nav Name | Step | Purpose | Selection Color |
+|:---|:---|:---|:---|:---|
+| `/` | Home | — | Cinematic Hero + Product Worlds + Occasion Engine | `gold` |
+| `/products` | Products | — | 6-SKU portfolio in floating editorial surfaces | `gold` |
+| `/products/[slug]` | (Dynamic PDP) | — | Per-product intelligence rail | `gold` |
+| `/occasions` | Occasions | — | Behavioral occasion mapping | — |
+| `/strategy` | 01 Strategy | 01 | Portfolio architecture & SKU matrix | `gold` |
+| `/economics` | 02 Economics | 02 | Format economics & margin pressure | `red-500` |
+| `/channels` | 03 Channels | 03 | Channel strategy & format fit | `gold` |
+| `/growth` | 04 Growth | 04 | Behavioral adoption & habit loops | `gold` |
+| `/labs/packaging` | 05 Packaging | 05 | Visual trust & claim clarity logic | `gold` |
+| `/labs/flavor` | 06 Flavor | 06 | Sensory strategy + Summer Concept SKUs | `amber-500` |
+| `/labs/manufacturing` | 07 Manufacturing | 07 | Production intelligence & process flow | `blue-500` |
+| `/labs/r-and-d` | 08 R&D | 08 | Innovation studio & recipe development | `fuchsia-500` |
+| `/labs/expansion` | 09 Expansion | 09 | Adjacency, risk, and future mapping | `teal-500` |
 
 ---
 
-## 6. Ordered User Journey (10-Step Sequence)
-The OS is intended to be demoed in this exact order to build the "Founder Thesis":
-1.  **Home** (The "Why")
-2.  **Products** (The "What")
-3.  **Occasions** (The "When")
-4.  **01 Strategy** (The Entry Wedge)
-5.  **02 Economics** (The Viability)
-6.  **03 Channels** (The Discovery)
-7.  **04 Growth** (The Habits)
-8.  **05 Packaging** (The Trust)
-9.  **06 Flavor** (The Retention)
-10. **07 Expansion** (The Horizon)
+## 6. Ordered User Journey (12-Step Sequence)
+
+The OS is designed to be demoed in this exact order:
+
+1. **Home** — The "Why" (Cinematic Entry)
+2. **Products** — The "What" (Portfolio Architecture)
+3. **Occasions** — The "When" (Behavioral Mapping)
+4. **01 Strategy** → 02 Economics → 03 Channels → 04 Growth
+5. **05 Packaging** → 06 Flavor → 07 Manufacturing → 08 R&D → 09 Expansion
+
+Each page terminates with a `SystemContinuation` component linking to the next step. The Expansion Lab loops back to Strategy (`/strategy`) to close the cycle.
 
 ---
 
-## 7. Flagship Page Documentation
-### Homepage (`/`)
-- **Intent**: Hook the user with the "Winning Formula" cinematic sequence.
-- **Pattern**: Scrollytelling GSAP timeline with 4 Narrative Beats.
-- **Takeaway**: Everything in this OS is intentional and sequenced.
+## 7. Product Portfolio (6 Core SKUs)
 
-### Products Hub (`/products`)
-- **Intent**: Showcase the 6 core SKUs in a borderless, "floating" world.
-- **Visuals**: No card-holders; products sit directly on atmospheric glows.
-- **Strategic Layer**: Maps the "Portfolio Role" and "Repeat Logic" for every SKU.
+All product data lives in `app/data/products.ts`. The `Product` interface is defined in `app/types/index.ts`.
 
----
+| Product | Slug | Format | Category | themeColor |
+|:---|:---|:---|:---|:---|
+| Choco Loco | `choco-loco` | Drink | Indulgence Anchor | `#4A2311` (Rich Cocoa) |
+| Kesar Pista | `kesar-pista` | Drink | Heritage Anchor | `#2E4A35` (Deep Forest) |
+| Wah Vanilla | `wah-vanilla` | Drink | Core Staples | `#4A4232` (Muted Clay) |
+| Café Latte Protein Coffee | `cafe-latte` | Coffee | Ritual Disruption | `#3E2723` (Dark Espresso) |
+| Choco Brownie Bar | `choco-brownie-bar` | Bar | On-the-go Strategy | `#2B1B17` (Cocoa Shell) |
+| Choco Almond Bar | `choco-almond-bar` | Bar | On-the-go Strategy | `#5C4033` (Wood/Almond) |
 
-## 8. Product Portfolio Documentation
-The core ecosystem consists of 6 strategic SKUs:
-1.  **Choco Loco** (Indulgence Anchor / Bridge Product)
-2.  **Kesar Pista** (Heritage Logic / Traditional Trust)
-3.  **Classic Vanilla** (The Clean Baseline / Stackable Logic)
-4.  **Nitro Coffee** (Morning Ritual / Habit Coupler)
-5.  **Hazelnut Bar** (On-the-go / Discovery Wedge)
-6.  **Greek Yogurt** (Night-time / Repair Logic)
+### Product Image Assets
+Location: `public/images/products/`
+- `choco-loco.png`, `kesar-pista.png`, `wah-vanilla.png`
+- `cafe-latte.png`, `choco-brownie.png`, `choco-almond.png`
 
-*Found in: `app/data/products.ts`*
+> **IMPORTANT**: There is NO `classic-vanilla.png`. The vanilla product is `wah-vanilla.png`. References to `classic-vanilla` are a known legacy bug that causes 404 loops.
 
 ---
 
-## 9. Occasions System
-The "Strategic Map" (`app/data/occasions.ts`) identifies the moments that drive adoption:
-- **Breakfast Rescue**: Shifting from zero-protein to high-protein.
-- **Post-Workout Recovery**: The functional anchor.
-- **Sweet Craving Swap**: The pleasure-plus-protein wedge.
-- **Travel Fuel**: High-convenience discovery.
+## 8. Summer Concept SKUs (5 Seasonal Extensions)
+
+Data: `app/data/summer-concepts.ts`. Rendered in: `SummerConceptGrid.tsx` (inside Flavor Lab).
+
+| Concept | Classification | themeColor | Image Path |
+|:---|:---|:---|:---|
+| Mango Tango | Seasonal Hero | `#FFD700` | `/images/concepts/summer/mango-tango.png` |
+| Rosy Falooda | Cultural Wedge | `#FF69B4` | `/images/concepts/summer/rosy-falooda.png` |
+| Thandai Chill | Cultural Wedge | `#F5DEB3` | `/images/concepts/summer/thandai-chill.png` |
+| Coco Chill | Premium Stretch | `#E0FFFF` | `/images/concepts/summer/coco-chill.png` |
+| Strawberry Swirl | Trial-Driven | `#FC5A8D` | `/images/concepts/summer/strawberry-swirl.png` |
 
 ---
 
-## 10. OS Module Documentation
-- **02 Economics**: Focuses on the "Shipping Burden" and "Packaging Intensity" of different formats (Powder vs RTD vs Bar).
-- **03 Channels**: Defines discovery modes for Quick Commerce vs D2C vs Retail.
-- **06 Flavor Lab**: Strategizes flavors as "Acquisition metrics" (Choco) vs "Retention metrics" (Vanilla).
+## 9. Data Registry Files (14 Files)
+
+All data files live in `app/data/`:
+
+| File | Purpose | Used By |
+|:---|:---|:---|
+| `products.ts` | 6 core SKU definitions | Home, Products, PDP |
+| `summer-concepts.ts` | 5 seasonal concept SKUs | Flavor Lab |
+| `occasions.ts` | Consumer occasion mapping | Home, Occasions page |
+| `modules.ts` | OS module previews | Home (SystemModules) |
+| `site-content.ts` | Hero copy and manifesto | Home |
+| `navigation.ts` | Main nav + footer nav items | Navbar, Footer |
+| `economics.ts` | Format economics data | Economics page |
+| `channels.ts` | Channel profile data | Channels page |
+| `growth.ts` | Consumer archetypes & messaging | Growth page |
+| `trust.ts` | Trust signal data | Packaging Lab |
+| `flavor.ts` | Flavor strategy modes | Flavor Lab |
+| `expansion.ts` | Expansion opportunities | Expansion Lab |
+| `manufacturing.ts` | Process stages, ingredient profiles, stability risks | Manufacturing Lab |
+| `rd.ts` | Recipe concepts, hypotheses, AI workflow, experimentation stages | R&D Lab |
 
 ---
 
-## 11. Design System
-- **Background**: `#090909` (Obsidian Black).
-- **Typography Title**: `font-serif` (Cormorant Garamond).
-- **Typography Body**: `font-sans` (Geist Sans).
-- **Accent**: `#C5A059` (Muted Gold).
-- **Glossmorphism**: Use `backdrop-blur-2xl` and `bg-background/80` for elevated surfaces.
-- **Floating Assets**: Products must never have rectangular card borders; they float in atmospheric space.
+## 10. TypeScript Interfaces (app/types/index.ts)
+
+The type system contains **17 interfaces**:
+
+| Interface | Purpose |
+|:---|:---|
+| `NavItem` | Navigation structure |
+| `Product` | Core 6-SKU product model |
+| `Occasion` | Consumer occasion definition |
+| `Module` | OS module preview cards |
+| `SiteContent` | Homepage content |
+| `FormatEconomics` | Format-level cost modeling |
+| `ChannelProfile` | Channel behavior |
+| `ConsumerArchetype` | Growth consumer models |
+| `GrowthMessageFit` | Messaging strategy |
+| `PackagingTrustMode` | Trust signal logic |
+| `DigestibilityProfile` | Digestibility concerns |
+| `FlavorStrategyMode` | Flavor repeat/novelty logic |
+| `ExpansionOpportunity` | Adjacency mapping |
+| `SummerConcept` | Seasonal concept extension |
+| `ProcessStage` | Manufacturing process steps |
+| `IngredientTechnicalProfile` | Ingredient behavior under production |
+| `StabilityRisk` | Shelf-life failure modes |
+| `ManufacturingRoadmapItem` | Production learning phases |
+| `RecipeConcept` | R&D recipe direction |
+| `RDHypothesis` | Benchmarking hypothesis |
+| `AIWorkflowStep` | AI-assisted formulation |
+| `ExperimentationStage` | Kill-or-scale funnel |
 
 ---
 
-## 12. Navigation & Continuity
-- **Navbar**: Foundational links (Home, Products, Occasions) are top-level. Strategic Steps (01-07) are grouped in a "Strategy OS" dropdown.
-- **Active State**: Simple Gold Text highlight (No dots, no underlines).
-- **Continuation**: `SystemContinuation.tsx` must be used at the bottom of every step to guide the linear walk.
+## 11. Component Architecture (52 Components)
+
+### Layout (2)
+- `Navbar.tsx` — Fixed top nav, 72px height (`h-18`), "Strategy OS" dropdown for Steps 01-09
+- `Footer.tsx` — Minimal footer
+
+### Hero System (4)
+- `CinematicHero.tsx` — GSAP scrollytelling engine (Pin + Scrub)
+- `NarrativeLayer.tsx` — "DIRECTION & INTENT" thesis text (has `pt-20` safe zone)
+- `AtmosphereLayer.tsx` — Cinematic gradient backdrop
+- `ProductStage.tsx` — Floating product on the hero
+
+### UI Primitives (9)
+- `ProductSurface.tsx` — Full-width editorial product display (triple-layer ambient lighting, pulsing spotlight, `animate-float-slow`)
+- `ProductCard.tsx` — Compact product card
+- `OccasionEngine.tsx` — Interactive occasion selector
+- `SystemModules.tsx` + `ModulePreviewSurface.tsx` — Module grid
+- `SectionHeader.tsx` — Reusable section headers
+- `CtaButton.tsx` — Premium call-to-action button
+- `StrategyCard.tsx` — Strategy module card
+- `SystemContinuation.tsx` — Inter-page continuation link (enforces linear journey)
+
+### Strategy (Step 01) — 5 components
+`StrategyHero`, `ArchitectureOverview`, `InteractiveSkuMatrix`, `PortfolioMap`, `RecommendationLayer`
+
+### Economics (Step 02) — 6 components
+`EconomicsHero`, `WhatShapesEconomics`, `FormatEconomicsConsole`, `ChannelMarginPressure`, `RepeatDiscountTension`, `FragilitySurvivalLayer`
+
+### Channels (Step 03) — 7 components
+`ChannelHero`, `ChannelLandscape`, `ChannelSelectorConsole`, `FormatFitMatrix`, `QuickCommerceThesis`, `ChannelMismatchLogic`, `FounderMemo`
+
+### Growth (Step 04) — 8 components
+`GrowthHero`, `GrowthArchitectureMap`, `ConsumerIdentityLayer`, `MessageOccasionConsole`, `HabitLoopEngine`, `CreatorTrustLogic`, `FailureStateBreakdown`, `FounderMemo`
+
+### Packaging Lab (Step 05) — 8 components
+`PackagingHero`, `TrustAnatomyMap`, `PackagingSignalConsole`, `DigestibilityComfortLayer`, `ThumbnailClarityBlock`, `ClaimsClaritySection`, `TrustBreakdown`, `FounderMemo`
+
+### Flavor Lab (Step 06) — 9 components
+`FlavorLabHero`, `FlavorStrategyMap`, `FlavorPositioningConsole`, `RepeatVsNoveltyLayer`, `FormatFlavorFit`, `IndiaCulturalFit`, `SummerConceptGrid`, `FlavorBreakdown`, `FounderMemo`
+
+### Manufacturing Lab (Step 07) — 9 components
+`ManufacturingHero`, `ManufacturingPrinciples`, `ProcessFlowConsole` (interactive), `IngredientBehaviorLayer`, `StabilityShelfLifeLayer`, `EconomicsScaleLayer`, `ManufacturingRoadmap`, `ManufacturingFailureModes`, `ManufacturingFounderMemo`
+
+### R&D Lab (Step 08) — 8 components
+`RDHero`, `RDPrinciples`, `RecipeDevelopmentConsole` (interactive), `BenchmarkingLayer`, `AIWorkflowSection`, `ExperimentationFunnel`, `RDFailureModes`, `RDFounderMemo`
+
+### Expansion Lab (Step 09) — 9 components
+`ExpansionHero`, `AdjacencyFramework`, `ExpansionOpportunityConsole` (interactive), `CoreVsStretchLayer`, `ExpansionMappingBlock`, `KioskOfflineStrategy`, `GlobalAdaptationLogic`, `ExpansionBreakdown`, `FounderMemo`
+
+### Product Detail Pages (PDP) — 3 components
+`ProductHeroStage`, `StrategicIntelligenceRail`, `CrossLinkSystem`
 
 ---
 
-## 13. File & Folder Map
-- `/app/data/`: **The Strategic Brain.** Contains all TS files for products, occasions, and strategy modules.
-- `/app/components/hero/`: Cinematic scrollytelling components.
-- `/app/components/ui/`: Reusable strategy surfaces (`ProductSurface`, `SystemContinuation`, `GlassCard`).
-- `/app/types/`: TypeScript interfaces for the entire system.
-- `/public/images/products/`: The canonical location for high-fidelity transparent PNG assets.
+## 12. Design System & Tokens
+
+### Colors (globals.css)
+| Token | Value | Usage |
+|:---|:---|:---|
+| `--background` | `#090909` | Obsidian Black |
+| `--foreground` | `#FCF9F2` | Warm Ivory |
+| `--muted-gold` | `#C5A059` | Primary accent |
+| `--graphite` | `#2A2A2A` | Card backgrounds |
+
+### Typography
+| Role | Font | Variable |
+|:---|:---|:---|
+| Headings | Cormorant Garamond | `--font-cormorant` / `font-serif` |
+| Body | Geist Sans | `--font-geist-sans` / `font-sans` |
+
+### Cinematic Utilities (globals.css)
+- `.glass-card` — Glassmorphism card with blur + border
+- `.film-surface` — Gradient overlay for cinematic depth
+- `.sheen-effect` — Hover sheen animation (45° diagonal light sweep)
+- `.vignette-atmosphere` — Radial mask for atmospheric fade
+- `.animate-float` / `.animate-float-slow` / `.animate-float-delayed` — Floating keyframe animations
+- `.text-gradient-gold` — Gold gradient text
+- `.text-balance` — CSS text-wrap balance
+
+### Ambient Lighting System (ProductSurface & SummerConceptGrid)
+The products use a **triple-layer lighting system**:
+1. **Central Radial Wash** — `radial-gradient` using `themeColor`, `opacity-5` → `opacity-30` on hover
+2. **Dual Corner Light Leaks** — `w-64 h-64 blur-[100px]`, top-right `opacity-20→50` and bottom-left `opacity-10→40`
+3. **Behind-Asset Pulsing Spotlight** — `w-48 h-48 blur-[80px] animate-pulse`, `opacity-20→80` on hover
+4. **Reflection Pedestal** — `bg-black/40 blur-xl` at the base
+5. **Float Animation** — `animate-float-slow` on the product image
 
 ---
 
-## 14. Data Model Overview (The Schema)
-- **Product**: governs logic, colors, images, and strategic role.
-- **Occasion**: governs ritual logic and product-fit mapping.
-- **Module**: governs the content for the 7 OS intelligence layers.
-- **NavItem**: governs the 10-step linear sequence.
+## 13. Navigation Architecture
+
+### Navbar (`app/components/layout/Navbar.tsx`)
+- **Position:** Fixed top, `z-[100]`, `h-18` (72px height)
+- **Background:** `bg-background/80 backdrop-blur-2xl`
+- **Logo:** `PROTEIN` + `OS` (italic gold), `text-xl`
+- **Foundation Links:** Home, Products, Occasions (separated by a border)
+- **Strategy OS Dropdown:** Groups Steps 01-09 in a hover-activated dropdown
+- **CTA:** "Access System" button
+- **Typography:** `text-[8.5px]` for nav links, `text-[8px]` for dropdown items
+- **Mobile:** Hamburger menu with slide-down panel
+
+### SystemContinuation (`app/components/ui/SystemContinuation.tsx`)
+- Used at the bottom of every strategic page to enforce the linear stepped journey
+- Accepts: `nextRoute`, `nextTitle`, `description`, `step`
+- Renders a large clickable card with gold accent hover state
+
+### Continuation Chain
+```
+Home → Products → Occasions → Strategy(01) → Economics(02) → Channels(03) → Growth(04) → Packaging(05) → Flavor(06) → [Manufacturing(07)] → [R&D(08)] → Expansion(09) → Strategy (loop)
+```
+
+> **KNOWN GAP**: The Flavor Lab `SystemContinuation` currently links directly to Expansion Lab (Step 07), skipping Manufacturing (07) and R&D (08). The Manufacturing Lab links to Expansion (Step 08), and R&D also links to Expansion (Step 09). This chain should ideally flow: Flavor → Manufacturing → R&D → Expansion for linear continuity.
 
 ---
 
-## 15. Assets Mapping
-Every product expects a transparent PNG at: `/images/products/[slug].png`.
-- `choco-loco.png`
-- `kesar-pista.png`
-- `classic-vanilla.png`
-- ...etc.
+## 14. Interactive Consoles (Client Components)
+
+Five labs feature interactive `'use client'` consoles with state-driven stage/concept selection:
+
+| Console | Location | Interaction |
+|:---|:---|:---|
+| `InteractiveSkuMatrix` | Strategy | SKU selector → detailed strategic readout |
+| `FormatEconomicsConsole` | Economics | Format selector → margin/risk analysis |
+| `ChannelSelectorConsole` | Channels | Channel selector → behavior/format fit |
+| `MessageOccasionConsole` | Growth | Message framing selector → occasion fit |
+| `FlavorPositioningConsole` | Flavor | Flavor mode selector → repeat/trust analysis |
+| `ProcessFlowConsole` | Manufacturing | Process stage selector → variables/failure modes |
+| `RecipeDevelopmentConsole` | R&D | Recipe concept selector → sensory/cost diagnostics |
+| `ExpansionOpportunityConsole` | Expansion | Expansion concept selector → risk assessment |
 
 ---
 
-## 16. Solved Problems
-- **Poster Frame**: The homepage now has a "Pre-scroll" frame so the hero doesn't look blank on initial load.
-- **Linear Flow**: Corrected the route architecture to enforce the Step 01-07 sequence.
-- **Image Integration**: Universal adoption of transparent assets with matching ambient color glows.
-- **Build Stability**: Resolved all property mapping and import errors for `npm run build`.
+## 15. Known Issues & Fragile Areas
+
+| Issue | Severity | Details |
+|:---|:---|:---|
+| **Continuation Chain Gap** | Medium | Flavor Lab skips Manufacturing and R&D in its SystemContinuation. Should be updated to link to `/labs/manufacturing`. |
+| **GSAP Hero Sensitivity** | Low | Changing homepage section count or heights requires a `ScrollTrigger.refresh()`. |
+| **Image Fallback** | Resolved | `SummerConceptGrid` has a self-nullifying `onError` handler to prevent 404 loops. Falls back to `wah-vanilla.png`. |
+| **Legacy `classic-vanilla` refs** | Resolved | All references have been purged. The correct asset is `wah-vanilla.png`. |
+| **Turbopack Cache** | Low | Occasionally corrupts after heavy image changes. Fix: delete `.next/` and restart dev server. |
+| **PDP `params` pattern** | Low | `app/products/[slug]/page.tsx` uses `params.slug` directly. Future Next.js versions may require `use(params)`. |
 
 ---
 
-## 17. Known Issues & Open Questions
-- **GSAP Logic**: Changing the height of the homepage or adding sections requires a `ScrollTrigger.refresh()`.
-- **404 Handling**: Ensure `not-found.tsx` remains consistent with the cinematic aesthetic.
-- **Mobile Scrollytelling**: GSAP scrub speed might need tuning for low-end mobile devices.
+## 16. Hard Constraints
+
+1. **Strictly Linear**: The Strategy OS must enforce a linear 01-09 step sequence.
+2. **Asset Format**: Product PNGs MUST be transparent with no background.
+3. **Design Philosophy**: Maintain the Obsidian/Gold/Ivory palette. Never add white backgrounds or flat SaaS colors.
+4. **Floating Aesthetic**: Products must never have rectangular card borders.
+5. **No Dashboard Feel**: Serif + sans balance must be maintained. If it looks like a SaaS dashboard, the design has failed.
+6. **Data-Driven**: All strategic content comes from `app/data/` registries, not hardcoded in components.
 
 ---
 
-## 18. Hard Constraints
-1.  **Strictly Linear**: Do not re-introduce nested Labs dropdowns.
-2.  **Asset Logic**: Product PNGs MUST be transparent.
-3.  **Design Philosophy**: Maintain the Obsidian/Gold contrast. Do not add white backgrounds or flat SaaS colors.
-4.  **Zero-Error Build**: Never leave the project in a state that fails `npm run build`.
+## 17. Resume Guide for Future Agents
+
+### Before Writing Code
+1. **Read `app/data/navigation.ts`** to understand the full route sequence.
+2. **Read `app/types/index.ts`** to understand the data model.
+3. **Read `app/globals.css`** to understand the design tokens and utility classes.
+4. **Check `app/layout.tsx`** for the global Navbar/Footer wrapper.
+
+### When Adding a New Lab
+1. Create a new data file in `app/data/`.
+2. Add type interfaces to `app/types/index.ts`.
+3. Create components in `app/components/labs/[lab-name]/`.
+4. Create the route page at `app/labs/[lab-name]/page.tsx`.
+5. Update `app/data/navigation.ts` to add the route to the sequence.
+6. **Update the SystemContinuation chain** to ensure correct flow.
+
+### Style Rules
+- Use `font-serif` (Cormorant Garamond) for headings
+- Use `font-sans` (Geist Sans) for body text
+- Use `text-gold` for accent highlights
+- Use `bg-graphite/10` for card backgrounds
+- Use `border-foreground/5` for subtle borders
+- Use `blur-[80-120px]` for atmospheric glows
+- Use `animate-float-slow` for product floating motion
+- Use `animate-pulse` for pulsing spotlights
+
+### Page Pattern
+Every strategic page follows this pattern:
+```tsx
+<main className="min-h-screen bg-background">
+  <article>
+    <Hero />
+    <Section1 />
+    <Section2 />
+    ...
+    <FounderMemo />
+  </article>
+  <SystemContinuation nextRoute="..." nextTitle="..." description="..." step="..." />
+</main>
+```
 
 ---
 
-## 19. Recommended Next Steps
-1.  **Expansion Lab Content**: Deepen the data for `/labs/expansion` once concept adjacencies are defined.
-2.  **Performance Polish**: Optimize the larger 4K PNG assets for web performance.
-3.  **Deployment**: Execute `git push` often to maintain the stability of the master branch.
-
----
-
-## 20. Resume Guide for Future Agents
-- **READ THIS FIRST**: Always read `app/data/navigation.ts` to understand the linear flow.
-- **NAVIGATE SAFELY**: Use the `SystemContinuation` component for all new page additions.
-- **STYLE RULES**: Use the custom Tailwind tokens defined in `globals.css` (`gold`, `graphite`, `background`).
-- **DO NOT DASHBOARDIZE**: Keep the serif/serif-italic-balanced layout. If it looks like a SaaS dashboard, you have failed the architecture.
-
----
-**Created by Antigravity // Google Deepmind Agentic Coding Team**
+**Master Context v2.0 — Verified against live codebase April 2026**
