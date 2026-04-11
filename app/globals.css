@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #090909; /* Obsidian Black */
-  --foreground: #FCF9F2; /* Warm Ivory */
-  --muted-gold: #C5A059;
-  --graphite: #2A2A2A;
+  --background: #F5ECD7; /* Vanilla Cream — from Café Latte bottle */
+  --foreground: #2C1810; /* Deep Espresso — from bottle cap/text */
+  --muted-gold: #B8860B; /* Burnished Gold — tuned for cream */
+  --graphite: #E8DCC8; /* Warm Sand — card surfaces */
   
   /* Product Accents */
   --accent-choco: #8B4513;
@@ -12,6 +12,10 @@
   --accent-vanilla: #F3E5AB;
   --accent-coffee: #6F4E37;
   --accent-bar: #4A2B29;
+
+  /* Extended Palette */
+  --accent-sky: #5B8FA8;
+  --nuvie-green: #4A7C59;
 }
 
 @theme inline {
@@ -40,26 +44,28 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
-/* Cinematic UI Utilities */
+/* ═══════════════════════════════════════════
+   Cinematic UI Utilities — Cream Light Theme
+   ═══════════════════════════════════════════ */
 
 .glass-card {
-  background: rgba(42, 42, 42, 0.4);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(252, 249, 242, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(44, 24, 16, 0.08);
+  box-shadow: 0 8px 32px rgba(44, 24, 16, 0.06);
 }
 
 .glass-card:hover {
-  border: 1px solid rgba(197, 160, 89, 0.3);
-  background: rgba(42, 42, 42, 0.6);
+  border: 1px solid rgba(184, 134, 11, 0.25);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .film-surface {
-  background: linear-gradient(180deg, rgba(9, 9, 9, 0) 0%, rgba(9, 9, 9, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(245, 236, 215, 0) 0%, rgba(245, 236, 215, 0.9) 100%);
 }
 
 .gold-dim-glow {
-  box-shadow: 0 0 20px rgba(197, 160, 89, 0.1);
+  box-shadow: 0 0 24px rgba(184, 134, 11, 0.12);
 }
 
 .section-divider {
@@ -68,12 +74,12 @@ h1, h2, h3, h4 {
 }
 
 .text-gradient-gold {
-  background: linear-gradient(135deg, #C5A059 0%, #F3E5AB 50%, #C5A059 100%);
+  background: linear-gradient(135deg, #B8860B 0%, #D4A843 50%, #B8860B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Advanced Cinematic Utilities */
+/* Advanced Cinematic Utilities — Cream */
 
 .vignette-atmosphere {
   mask-image: radial-gradient(circle at center, black 0%, transparent 80%);
@@ -81,14 +87,14 @@ h1, h2, h3, h4 {
 }
 
 .haze-overlay {
-  background: radial-gradient(circle at 50% 50%, rgba(197, 160, 89, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(184, 134, 11, 0.06) 0%, transparent 70%);
   filter: blur(60px);
 }
 
 .product-glow {
   filter: blur(80px);
-  opacity: 0.15;
-  mix-blend-mode: screen;
+  opacity: 0.12;
+  mix-blend-mode: multiply;
 }
 
 @keyframes float {
@@ -125,9 +131,9 @@ h1, h2, h3, h4 {
   background: linear-gradient(
     45deg,
     transparent 0%,
-    rgba(252, 249, 242, 0.05) 45%,
-    rgba(252, 249, 242, 0.1) 50%,
-    rgba(252, 249, 242, 0.05) 55%,
+    rgba(184, 134, 11, 0.06) 45%,
+    rgba(184, 134, 11, 0.12) 50%,
+    rgba(184, 134, 11, 0.06) 55%,
     transparent 100%
   );
   transform: rotate(45deg);

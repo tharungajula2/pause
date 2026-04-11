@@ -17,15 +17,15 @@ export const RDFailureModes: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {failures.map((f, idx) => (
-                    <div key={idx} className="group p-8 bg-[#0a0808] border border-foreground/5 rounded-2xl hover:border-fuchsia-500/20 transition-all duration-500">
+                    <div key={idx} className="group p-8 bg-white/45 backdrop-blur-sm border border-foreground/10 rounded-2xl hover:border-fuchsia-500/20 transition-all duration-500 shadow-sm">
                         <div className="flex justify-between items-center mb-6">
-                            <span className="text-[10px] font-bold text-foreground/20 italic">Fault Vector // 0{idx + 1}</span>
-                            <span className={`text-[8px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-sm border ${f.status === 'Breaks' || f.status === 'Kills Repeat' ? 'border-red-500/30 text-red-500 bg-red-400/5' : 'border-amber-500/30 text-amber-500 bg-amber-400/5'}`}>
+                            <span className="text-[10px] font-bold text-foreground/40 italic">Fault Vector // 0{idx + 1}</span>
+                            <span className={`text-[10px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-sm border ${f.status === 'Breaks' || f.status === 'Kills Repeat' ? 'border-red-600/30 text-red-600 bg-red-400/5' : 'border-amber-600/30 text-amber-600 bg-amber-400/5'}`}>
                                 {f.status}
                             </span>
                         </div>
-                        <h4 className="text-xl font-serif mb-4 group-hover:text-fuchsia-400 transition-colors uppercase tracking-tight">{f.item}</h4>
-                        <p className="text-xs text-foreground/40 font-light leading-relaxed">
+                        <h4 className="text-xl font-serif mb-4 group-hover:text-fuchsia-600 transition-colors uppercase tracking-tight text-foreground/90">{f.item}</h4>
+                        <p className="text-sm text-foreground/70 font-light leading-relaxed">
                             {f.impact}
                         </p>
                     </div>

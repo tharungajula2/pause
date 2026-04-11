@@ -15,14 +15,14 @@ export const Footer: React.FC = () => {
                             <Link 
                                 key={item.name} 
                                 href={item.href} 
-                                className="text-[9px] uppercase tracking-widest font-bold text-foreground/30 hover:text-gold transition-colors"
+                                className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 hover:text-gold transition-colors"
                             >
                                 {item.name}
                             </Link>
                         ))}
                     </div>
                 </div>
-                <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-foreground/20">
+                <div className="text-[10px] uppercase tracking-[0.5em] font-bold text-foreground/30">
                     2026 Tharun Gajula
                 </div>
             </div>

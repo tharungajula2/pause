@@ -26,7 +26,7 @@ export const FlavorStrategyMap: React.FC = () => {
 
                  <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
                      {pillars.map((pillar, i) => (
-                         <div key={i} className="group p-8 bg-[#0a0806] border border-foreground/5 hover:border-orange-500/20 rounded-2xl transition-all duration-300 relative overflow-hidden">
+                         <div key={i} className="group p-8 bg-white/50 backdrop-blur-sm border border-foreground/5 hover:border-orange-500/20 rounded-2xl transition-all duration-300 relative overflow-hidden">
                              <div className="text-[10px] uppercase tracking-widest text-orange-500/30 font-bold mb-6 italic">
                                  Lever 0{i + 1}
                              </div>

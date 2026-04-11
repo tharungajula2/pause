@@ -44,7 +44,7 @@ export const ProcessFlowConsole: React.FC = () => {
                 </div>
 
                 {/* Right: Detail Console */}
-                <div className="lg:w-2/3 bg-[#0a0806] border border-foreground/10 rounded-3xl p-8 md:p-12 relative overflow-hidden transition-all duration-500">
+                <div className="lg:w-2/3 bg-white/50 backdrop-blur-sm border border-foreground/10 rounded-3xl p-8 md:p-12 relative overflow-hidden transition-all duration-500">
                     {/* Atmospheric mode glow */}
                     <div className="absolute inset-0 bg-blue-500/5 blur-[120px] pointer-events-none -z-0" />
 

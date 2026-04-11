@@ -5,8 +5,8 @@ export const PackagingHero: React.FC = () => {
         <section className="relative min-h-[75vh] flex flex-col justify-center py-32 px-6 overflow-hidden bg-background">
             <div className="absolute inset-0 z-0 flex items-center justify-center">
                 {/* Clarity & Safety Glows */}
-                <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-amber-100/[0.02] blur-[150px] rounded-full mix-blend-screen" />
-                <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-gold/[0.04] blur-[150px] rounded-full mix-blend-screen" />
+                <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-amber-100/[0.02] blur-[150px] rounded-full" />
+                <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-gold/[0.04] blur-[150px] rounded-full" />
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.04] mix-blend-overlay border-b border-foreground/5 pointer-events-none" />
                 
                 {/* Cinematic Product Silhouette Backdrop */}

@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function ManufacturingLabPage() {
   return (
-    <main className="min-h-screen selection:bg-blue-500/30 selection:text-white bg-background">
+    <main className="min-h-screen selection:bg-blue-500/30 selection:text-foreground bg-background">
 
       <article>
           <ManufacturingHero />

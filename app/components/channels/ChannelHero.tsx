@@ -5,8 +5,8 @@ export const ChannelHero: React.FC = () => {
         <section className="relative min-h-[70vh] flex flex-col justify-center py-32 px-6 overflow-hidden bg-background">
             <div className="absolute inset-0 z-0 flex items-center justify-center">
                 {/* Channel Route / Architecture Glows */}
-                <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-gold/[0.04] blur-[100px] rounded-full mix-blend-screen" />
-                <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-blue-500/[0.03] blur-[100px] rounded-full mix-blend-screen" />
+                <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-gold/[0.04] blur-[100px] rounded-full" />
+                <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-blue-500/[0.03] blur-[100px] rounded-full" />
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay border-b border-foreground/5 pointer-events-none" />
             </div>
 

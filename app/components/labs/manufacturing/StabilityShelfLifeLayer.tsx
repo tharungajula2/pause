@@ -16,7 +16,7 @@ export const StabilityShelfLifeLayer: React.FC = () => {
 
                     <div className="space-y-6">
                         {stabilityRisks.map(risk => (
-                            <div key={risk.id} className="p-8 bg-[#0a0805] border border-foreground/5 rounded-2xl group hover:border-red-500/20 transition-all duration-300">
+                            <div key={risk.id} className="p-8 bg-white/45 backdrop-blur-sm border border-foreground/5 rounded-2xl group hover:border-red-500/20 transition-all duration-300">
                                 <div className="flex justify-between items-start mb-4">
                                     <h4 className="text-xl font-serif text-foreground group-hover:text-red-400 transition-colors">{risk.issue}</h4>
                                     <span className="text-[8px] uppercase tracking-widest font-bold text-red-500/40 border border-red-500/10 px-2 py-0.5 rounded">Risk Factor</span>

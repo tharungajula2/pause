@@ -29,9 +29,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${cormorant.variable} h-full antialiased dark scroll-smooth`}
+      className={`${geistSans.variable} ${cormorant.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-gold/30 selection:text-white">
+      <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-gold/30 selection:text-foreground">
         <Navbar />
         {children}
         <Footer />

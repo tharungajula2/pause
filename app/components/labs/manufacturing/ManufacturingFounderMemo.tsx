@@ -3,7 +3,7 @@ import React from 'react';
 export const ManufacturingFounderMemo: React.FC = () => {
     return (
         <section className="py-32 px-6">
-            <div className="max-w-4xl mx-auto bg-graphite/10 border border-white/5 rounded-[40px] p-12 md:p-20 relative overflow-hidden backdrop-blur-3xl transition-all duration-700 hover:border-gold/30">
+            <div className="max-w-4xl mx-auto bg-graphite/10 border border-foreground/8 rounded-[40px] p-12 md:p-20 relative overflow-hidden backdrop-blur-3xl transition-all duration-700 hover:border-gold/30">
                 {/* Tactical Atmospheric Glow */}
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gold/[0.03] blur-[120px] rounded-full -mr-20 -mt-20" />
                 
@@ -37,7 +37,7 @@ export const ManufacturingFounderMemo: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="pt-12 border-t border-white/5 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div className="pt-12 border-t border-foreground/8 grid grid-cols-2 md:grid-cols-4 gap-8">
                         <div>
                              <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Validated</span>
                              <span className="text-xs uppercase tracking-widest font-bold text-gold/60">Formula Tech</span>

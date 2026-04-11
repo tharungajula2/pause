@@ -3,7 +3,7 @@ import React from 'react';
 export const HabitLoopEngine: React.FC = () => {
     return (
         <section className="py-32 px-6 max-w-5xl mx-auto">
-            <div className="relative border border-foreground/10 bg-[#060606] rounded-[2.5rem] p-10 md:p-20 overflow-hidden text-center group">
+            <div className="relative border border-foreground/10 bg-white/45 backdrop-blur-sm rounded-[2.5rem] p-10 md:p-20 overflow-hidden text-center group">
                 {/* Tension Glows - Returning to severe OS styling */}
                 <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gold/[0.03] blur-[120px] group-hover:bg-gold/[0.05] transition-colors duration-1000 pointer-events-none" />
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/[0.02] blur-[120px] group-hover:bg-blue-500/[0.04] transition-colors duration-1000 pointer-events-none" />

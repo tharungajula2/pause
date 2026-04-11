@@ -5,8 +5,8 @@ export const FlavorLabHero: React.FC = () => {
         <section className="relative min-h-[75vh] flex flex-col justify-center py-32 px-6 overflow-hidden bg-background">
             <div className="absolute inset-0 z-0 flex items-center justify-center">
                 {/* Sensory Glows */}
-                <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#4A2311]/[0.1] blur-[150px] rounded-full mix-blend-screen" />
-                <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#F3E5AB]/[0.05] blur-[150px] rounded-full mix-blend-screen" />
+                <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-amber-700/[0.06] blur-[150px] rounded-full" />
+                <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-300/[0.06] blur-[150px] rounded-full" />
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.04] mix-blend-overlay border-b border-foreground/5 pointer-events-none" />
                 {/* Sensory Product Backdrop */}
                 <div className="absolute opacity-[0.07] blur-2xl pointer-events-none left-10 top-1/2 -translate-y-1/2 w-80 h-[500px] hover:blur-3xl transition-all duration-1000 rotate-12">

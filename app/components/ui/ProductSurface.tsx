@@ -60,18 +60,18 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                             <img 
                                 src={product.imagePath} 
                                 alt={product.name}
-                                className="max-w-[70%] max-h-[85%] object-contain filter drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)]"
+                                className="max-w-[70%] max-h-[85%] object-contain filter drop-shadow-[0_20px_50px_rgba(44,24,16,0.25)]"
                             />
                         </div>
                     </div>
 
                     {/* Reflection Pedestal — matched to Summer Concepts */}
-                    <div className="absolute bottom-4 w-32 h-6 bg-black/40 blur-xl rounded-full opacity-60 group-hover:scale-150 transition-transform duration-1000" />
+                    <div className="absolute bottom-4 w-32 h-6 bg-foreground/15 blur-xl rounded-full opacity-60 group-hover:scale-150 transition-transform duration-1000" />
                 </div>
                 
                 {/* Format Badge Overlay */}
                 <div className="absolute top-8 left-8">
-                    <span className="px-4 py-1.5 bg-black/40 backdrop-blur-md rounded-full text-[9px] uppercase tracking-[0.4em] font-bold text-gold border border-gold/20">
+                    <span className="px-4 py-1.5 bg-white/60 backdrop-blur-md rounded-full text-[9px] uppercase tracking-[0.4em] font-bold text-gold border border-gold/20">
                         {product.format} Format
                     </span>
                 </div>

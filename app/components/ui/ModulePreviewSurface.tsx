@@ -26,18 +26,18 @@ export const ModulePreviewSurface: React.FC<ModulePreviewSurfaceProps> = ({ modu
                     </p>
                 </div>
                 
-                <div className="bg-background/50 p-6 rounded-xl border border-foreground/5 backdrop-blur-sm">
-                    <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/30 block mb-2">Founder Query</span>
-                    <p className="text-xl font-serif italic text-gold/90">{module.founderQuestion}</p>
+                <div className="bg-background/80 p-6 rounded-xl border border-foreground/10 backdrop-blur-sm">
+                    <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 block mb-2">Founder Query</span>
+                    <p className="text-xl font-serif italic text-gold">{module.founderQuestion}</p>
                 </div>
             </div>
 
             <div className="w-full md:w-1/3 flex flex-col gap-4">
-                <span className="text-[9px] uppercase tracking-[0.3em] font-bold text-foreground/40 mb-2">Primary Signals</span>
+                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/50 mb-2">Primary Signals</span>
                 {module.coreSignals.map((signal, idx) => (
-                    <div key={idx} className="flex flex-col p-4 bg-background/30 rounded-lg border border-foreground/5">
-                        <span className="text-[9px] uppercase tracking-wider font-bold text-foreground/30 mb-1">{signal.label}</span>
-                        <span className="text-sm font-medium text-foreground/90">{signal.value}</span>
+                    <div key={idx} className="flex flex-col p-4 bg-background/50 rounded-lg border border-foreground/8 transition-colors group-hover:border-foreground/15">
+                        <span className="text-[10px] uppercase tracking-wider font-bold text-foreground/40 mb-1">{signal.label}</span>
+                        <span className="text-sm font-medium text-foreground">{signal.value}</span>
                     </div>
                 ))}
             </div>
@@ -58,26 +58,26 @@ export const ModulePreviewSurface: React.FC<ModulePreviewSurfaceProps> = ({ modu
         <div>
             <div className="flex justify-between items-start mb-6">
                 <h4 className="text-xl font-serif text-foreground group-hover:text-gold transition-colors">{module.title}</h4>
-                <span className="text-[8px] uppercase tracking-widest font-bold text-foreground/20 border border-foreground/10 px-2 py-1 rounded-sm">
+                <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/30 border border-foreground/10 px-2 py-1 rounded-sm">
                     {module.badge}
                 </span>
             </div>
             
-            <p className="text-sm text-foreground/50 leading-relaxed font-light mb-6">
+            <p className="text-sm text-foreground/60 leading-relaxed font-light mb-6">
                 {module.description}
             </p>
             
-            <div className="border-l-2 border-gold/30 pl-4 py-1 mb-8">
-                <span className="text-[8px] uppercase tracking-widest font-bold text-foreground/30 block mb-1">Founder Query</span>
-                <p className="text-sm font-serif italic text-foreground/80">{module.founderQuestion}</p>
+            <div className="border-l-2 border-gold/40 pl-4 py-1 mb-8">
+                <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 block mb-1">Founder Query</span>
+                <p className="text-sm font-serif italic text-foreground/90">{module.founderQuestion}</p>
             </div>
         </div>
 
         <div className="grid grid-cols-2 gap-2 mt-auto pt-4 border-t border-foreground/5">
             {module.coreSignals.map((signal, idx) => (
                 <div key={idx} className="flex flex-col">
-                    <span className="text-[8px] uppercase tracking-wider font-bold text-foreground/20 mb-1">{signal.label}</span>
-                    <span className="text-xs text-foreground/70">{signal.value}</span>
+                    <span className="text-[10px] uppercase tracking-wider font-bold text-foreground/30 mb-1">{signal.label}</span>
+                    <span className="text-sm text-foreground/70">{signal.value}</span>
                 </div>
             ))}
         </div>

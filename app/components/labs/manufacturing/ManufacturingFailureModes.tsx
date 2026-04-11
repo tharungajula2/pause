@@ -17,7 +17,7 @@ export const ManufacturingFailureModes: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {failures.map((f, idx) => (
-                    <div key={idx} className="group p-8 bg-[#0a0808] border border-foreground/5 rounded-2xl hover:border-red-500/20 transition-all duration-500">
+                    <div key={idx} className="group p-8 bg-white/45 backdrop-blur-sm border border-foreground/5 rounded-2xl hover:border-red-500/20 transition-all duration-500">
                         <div className="flex justify-between items-center mb-6">
                             <span className="text-[10px] font-bold text-foreground/20 italic">Fault Vector // 0{idx + 1}</span>
                             <span className={`text-[8px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-sm border ${f.status === 'Breaks' ? 'border-red-500/30 text-red-500 bg-red-400/5' : 'border-amber-500/30 text-amber-500 bg-amber-400/5'}`}>

@@ -31,10 +31,10 @@ export const PortfolioMap: React.FC = () => {
                 </div>
 
                 {/* Axes Labels */}
-                <div className="absolute top-4 left-1/2 -translate-x-1/2 text-[9px] uppercase tracking-[0.4em] text-foreground/30 font-bold bg-background px-4">Strong Habit (Repeat)</div>
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-[9px] uppercase tracking-[0.4em] text-foreground/30 font-bold bg-background px-4">Pure Impulse (Discovery)</div>
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 text-[9px] uppercase tracking-[0.4em] text-foreground/30 font-bold bg-background px-4 origin-left translate-x-4">High Indulgence</div>
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 rotate-90 text-[9px] uppercase tracking-[0.4em] text-foreground/30 font-bold bg-background px-4 origin-right -translate-x-4">High Familiarity</div>
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-foreground/40 font-bold bg-background px-4">Strong Habit (Repeat)</div>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-foreground/40 font-bold bg-background px-4">Pure Impulse (Discovery)</div>
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 text-[10px] uppercase tracking-[0.4em] text-foreground/40 font-bold bg-background px-4 origin-left translate-x-4">High Indulgence</div>
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 rotate-90 text-[10px] uppercase tracking-[0.4em] text-foreground/40 font-bold bg-background px-4 origin-right -translate-x-4">High Familiarity</div>
 
                 {/* Plotting points */}
                 <div className="relative w-full h-full">

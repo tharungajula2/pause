@@ -20,7 +20,7 @@ export const CoreVsStretchLayer: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {riskLevels.map((level, i) => (
-                    <div key={i} className={`bg-[#0a0a0A] border ${level.border} p-8 rounded-3xl relative overflow-hidden flex flex-col h-full`}>
+                    <div key={i} className={`bg-white/50 backdrop-blur-sm border ${level.border} p-8 rounded-3xl relative overflow-hidden flex flex-col h-full`}>
                         <div className="mb-8">
                             <span className={`text-[10px] uppercase tracking-widest font-bold ${level.color} block mb-2`}>{level.title}</span>
                             <span className="text-xs uppercase tracking-widest text-foreground/40 font-bold border border-foreground/10 bg-foreground/5 px-2 py-1 inline-block rounded">{level.status}</span>

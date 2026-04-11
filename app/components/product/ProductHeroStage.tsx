@@ -51,7 +51,7 @@ export const ProductHeroStage: React.FC<ProductHeroStageProps> = ({ product }) =
                         <img 
                             src={product.imagePath} 
                             alt={product.name}
-                            className="max-h-[85%] object-contain filter drop-shadow-[0_40px_100px_rgba(0,0,0,0.9)]"
+                            className="max-h-[85%] object-contain filter drop-shadow-[0_40px_100px_rgba(44, 24, 16, 0.25)]"
                         />
                     </div>
                     
@@ -66,19 +66,19 @@ export const ProductHeroStage: React.FC<ProductHeroStageProps> = ({ product }) =
                 {/* Core Lenses Bar */}
                 <div className="w-full max-w-4xl mx-auto mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6 p-6 md:p-8 bg-graphite/40 rounded-2xl border border-foreground/5 backdrop-blur-md">
                     <div className="flex flex-col space-y-1 border-l-2 pl-4" style={{ borderColor: product.accentColor }}>
-                        <span className="text-[8px] uppercase tracking-[0.2em] text-foreground/40 font-bold">Strategic Role</span>
+                        <span className="text-[10px] uppercase tracking-[0.2em] text-foreground/50 font-bold">Strategic Role</span>
                         <span className="text-sm font-medium text-foreground">{product.strategicRole}</span>
                     </div>
                     <div className="flex flex-col space-y-1">
-                        <span className="text-[8px] uppercase tracking-[0.2em] text-foreground/40 font-bold">Category</span>
+                        <span className="text-[10px] uppercase tracking-[0.2em] text-foreground/50 font-bold">Category</span>
                         <span className="text-sm font-medium text-foreground">{product.category}</span>
                     </div>
                     <div className="flex flex-col space-y-1">
-                        <span className="text-[8px] uppercase tracking-[0.2em] text-foreground/40 font-bold">Primary Fit</span>
+                        <span className="text-[10px] uppercase tracking-[0.2em] text-foreground/50 font-bold">Primary Fit</span>
                         <span className="text-sm font-medium text-foreground">{product.primaryOccasion}</span>
                     </div>
                     <div className="flex flex-col space-y-1">
-                        <span className="text-[8px] uppercase tracking-[0.2em] text-foreground/40 font-bold">Format Role</span>
+                        <span className="text-[10px] uppercase tracking-[0.2em] text-foreground/50 font-bold">Format Role</span>
                         <span className="text-sm font-medium text-foreground">{product.format}</span>
                     </div>
                 </div>

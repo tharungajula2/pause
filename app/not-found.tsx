@@ -5,10 +5,10 @@ export default function NotFound() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-background px-6">
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-red-900/5 blur-[150px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-red-400/8 blur-[150px] pointer-events-none" />
 
         <div className="relative z-10 text-center space-y-8 max-w-xl">
-            <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-red-500/50 inline-block px-4 py-1 border border-red-900/30 rounded-full bg-red-900/10">
+            <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-red-600/60 inline-block px-4 py-1 border border-red-600/20 rounded-full bg-red-600/5">
                 Error 404
             </span>
 

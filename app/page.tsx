@@ -19,7 +19,7 @@ import { SystemContinuation } from './components/ui/SystemContinuation';
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen selection:bg-gold selection:text-background">
+    <main className="min-h-screen selection:bg-gold selection:text-white">
 
 
       {/* 1. Chapter-Based Cinematic Hero */}
@@ -142,7 +142,7 @@ export default function HomePage() {
       </section>
 
       {/* 2.5 System Mapping: The Demo Guide */}
-      <section className="py-32 px-6 bg-[#0a0a09] border-y border-foreground/5 overflow-hidden">
+      <section className="py-32 px-6 bg-graphite/40 border-y border-foreground/5 overflow-hidden">
         <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className="space-y-8">
@@ -162,7 +162,7 @@ export default function HomePage() {
                         { title: 'Growth Engine', desc: 'Behavioral loops & repeat logic.', route: '/growth' },
                         { title: 'Labs Hub', desc: 'Flavor, Trust, & Future Adjacency.', route: '/labs/packaging' }
                     ].map((item, idx) => (
-                        <Link key={item.title} href={item.route} className="group p-8 bg-background border border-foreground/5 rounded-2xl hover:border-gold/30 transition-all duration-500">
+                        <Link key={item.title} href={item.route} className="group p-8 bg-white/50 backdrop-blur-sm border border-foreground/8 rounded-2xl hover:border-gold/30 transition-all duration-500 shadow-sm">
                             <span className="text-[10px] font-bold text-foreground/20 group-hover:text-gold block mb-4">0{idx + 1}</span>
                             <h4 className="text-lg font-serif mb-2 group-hover:translate-x-1 transition-transform">{item.title}</h4>
                             <p className="text-[11px] text-foreground/40 leading-relaxed">{item.desc}</p>

@@ -5,7 +5,7 @@ import { summerConcepts } from '../../../data/summer-concepts';
 
 export const SummerConceptGrid: React.FC = () => {
     return (
-        <section className="py-32 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <section className="py-32 px-6 max-w-7xl mx-auto border-t border-foreground/8">
             <div className="mb-20 text-center">
                 <span className="text-gold/60 text-[10px] uppercase tracking-[0.5em] font-bold block mb-4">
                     Horizon Strategy
@@ -21,7 +21,7 @@ export const SummerConceptGrid: React.FC = () => {
                 {summerConcepts.map((concept) => (
                     <div 
                         key={concept.id} 
-                        className="group relative flex flex-col items-center text-center p-8 bg-graphite/10 rounded-3xl border border-white/5 hover:border-gold/30 transition-all duration-700 overflow-hidden"
+                        className="group relative flex flex-col items-center text-center p-8 bg-graphite/10 rounded-3xl border border-foreground/8 hover:border-gold/30 transition-all duration-700 overflow-hidden"
                     >
                         {/* THE INTENSIFIED AMBIENT LIGHTING SYSTEM */}
                         <div 
@@ -55,7 +55,7 @@ export const SummerConceptGrid: React.FC = () => {
                                 <img 
                                     src={concept.imagePath} 
                                     alt={concept.name}
-                                    className="max-h-[85%] object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]"
+                                    className="max-h-[85%] object-contain filter drop-shadow-[0_20px_40px_rgba(44, 24, 16, 0.15)]"
                                     onError={(e) => {
                                         // Fallback for missing assets - Fixed typo and prevented infinite loops
                                         const img = e.target as HTMLImageElement;
@@ -69,7 +69,7 @@ export const SummerConceptGrid: React.FC = () => {
                             </div>
                             
                             {/* Reflection Pedestal (Simplified for Concept) */}
-                            <div className="absolute bottom-4 w-32 h-6 bg-black/40 blur-xl rounded-full opacity-60 group-hover:scale-150 transition-transform duration-1000" />
+                            <div className="absolute bottom-4 w-32 h-6 bg-foreground/10 blur-xl rounded-full opacity-60 group-hover:scale-150 transition-transform duration-1000" />
                         </div>
 
                         <div className="relative z-10 space-y-4">
@@ -86,7 +86,7 @@ export const SummerConceptGrid: React.FC = () => {
                                 "{concept.descriptor}"
                             </p>
 
-                            <div className="pt-6 border-t border-white/5 space-y-4 text-left">
+                            <div className="pt-6 border-t border-foreground/8 space-y-4 text-left">
                                 <div>
                                     <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/20 block mb-1">Strategic Role</span>
                                     <span className="text-[11px] text-foreground/70 leading-tight block">{concept.strategicRole}</span>

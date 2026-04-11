@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function ChannelsPage() {
   return (
-    <main className="min-h-screen selection:bg-gold/30 selection:text-white bg-background">
+    <main className="min-h-screen selection:bg-gold/30 selection:text-foreground bg-background">
 
 
       <article>

@@ -18,9 +18,9 @@ export const CtaButton: React.FC<CtaButtonProps> = ({
   const baseStyles = "inline-flex items-center justify-center font-medium transition-all duration-300 rounded-full tracking-wide";
   
   const variants = {
-    primary: "bg-gold text-background hover:bg-gold/90 gold-dim-glow shadow-lg",
+    primary: "bg-gold text-white hover:bg-gold/90 gold-dim-glow shadow-lg",
     secondary: "bg-foreground text-background hover:bg-foreground/90",
-    outline: "border border-foreground/20 text-foreground hover:border-gold hover:text-gold bg-transparent",
+    outline: "border border-foreground/15 text-foreground hover:border-gold hover:text-gold bg-transparent",
   };
 
   const sizes = {

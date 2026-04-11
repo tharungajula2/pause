@@ -25,7 +25,7 @@ export default function ProductPage({ params }: ProductPageProps) {
   }
 
   return (
-    <main className="min-h-screen selection:bg-gold selection:text-background bg-background">
+    <main className="min-h-screen selection:bg-gold selection:text-white bg-background">
 
 
       {/* Page Architecture */}

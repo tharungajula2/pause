@@ -32,7 +32,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
             }}
           >
             {/* Eyebrow */}
-            <span className="text-gold/40 text-[9px] uppercase tracking-[0.6em] font-bold mb-8 block">
+            <span className="text-gold/60 text-[9px] uppercase tracking-[0.6em] font-bold mb-8 block">
               {chapter.eyebrow}
             </span>
 
@@ -58,7 +58,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
 
             {/* Occasion tags */}
             {chapter.occasionTags && (
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mt-8 opacity-40">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mt-8 opacity-50">
                 {chapter.occasionTags.map((tag) => (
                   <span key={tag} className="text-[10px] tracking-widest uppercase font-bold">
                     {tag}
@@ -97,7 +97,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
               <div className="mt-16">
                 <Link
                   href={chapter.cta.href}
-                  className="inline-block px-10 py-5 bg-gold text-background rounded-full uppercase tracking-widest font-bold text-sm hover:scale-105 transition-transform pointer-events-auto"
+                  className="inline-block px-10 py-5 bg-gold text-white rounded-full uppercase tracking-widest font-bold text-sm hover:scale-105 transition-transform pointer-events-auto shadow-lg"
                 >
                   {chapter.cta.label}
                 </Link>

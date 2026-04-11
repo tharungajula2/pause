@@ -36,7 +36,7 @@ export const ExpansionOpportunityConsole: React.FC = () => {
                             <button
                                 key={exp.id}
                                 onClick={() => setActiveExp(exp)}
-                                className={`w-full text-left p-6 rounded-xl border transition-all duration-300 ${isActive ? 'bg-[#0f1115] border-foreground/30' : 'bg-background border-foreground/5 hover:bg-graphite/10'}`}
+                                className={`w-full text-left p-6 rounded-xl border transition-all duration-300 ${isActive ? 'bg-white/60 border-foreground/30' : 'bg-background border-foreground/5 hover:bg-graphite/10'}`}
                             >
                                 <span className={`text-[9px] uppercase tracking-[0.2em] font-bold block mb-2 transition-colors duration-300 ${isActive ? 'text-teal-500/80' : 'text-foreground/30'}`}>
                                     {isActive ? 'Active Target' : 'Inspect Class'}
@@ -50,7 +50,7 @@ export const ExpansionOpportunityConsole: React.FC = () => {
                 </div>
 
                 {/* Right: Intel Form */}
-                <div className="lg:w-2/3 bg-[#0a0a0c] border border-foreground/10 rounded-3xl p-8 md:p-12 relative overflow-hidden transition-all duration-500">
+                <div className="lg:w-2/3 bg-white/50 backdrop-blur-sm border border-foreground/10 rounded-3xl p-8 md:p-12 relative overflow-hidden transition-all duration-500">
                     
                     {/* Atmospheric horizon glow */}
                     <div 

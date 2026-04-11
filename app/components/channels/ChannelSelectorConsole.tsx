@@ -47,7 +47,7 @@ export const ChannelSelectorConsole: React.FC = () => {
                 </div>
 
                 {/* Right Pane: Intel Output */}
-                <div className="lg:w-2/3 bg-[#0a0a0a] border border-foreground/10 rounded-3xl overflow-hidden flex flex-col transition-all duration-500 relative min-h-[600px]">
+                <div className="lg:w-2/3 bg-white/50 backdrop-blur-sm border border-foreground/10 rounded-3xl overflow-hidden flex flex-col transition-all duration-500 relative min-h-[600px]">
                     {/* Active Glow */}
                     <div 
                         className="absolute inset-0 blur-[150px] opacity-10 pointer-events-none transition-colors duration-1000 -z-0"

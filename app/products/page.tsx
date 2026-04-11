@@ -9,7 +9,7 @@ export default function ProductsPage() {
     return (
         <main className="min-h-screen bg-background">
             {/* Header / Intro */}
-            <section className="relative py-32 px-6 overflow-hidden border-b border-white/5">
+            <section className="relative py-32 px-6 overflow-hidden border-b border-foreground/8">
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none" />
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <span className="text-gold/60 text-[10px] uppercase tracking-[0.5em] font-bold block mb-8">

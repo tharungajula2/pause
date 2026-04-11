@@ -33,8 +33,8 @@ export const ChapterIndicator: React.FC<ChapterIndicatorProps> = ({ chapters, ac
             style={{
               width: idx === activeIndex ? 10 : 5,
               height: idx === activeIndex ? 10 : 5,
-              backgroundColor: idx === activeIndex ? 'var(--muted-gold)' : 'rgba(252, 249, 242, 0.15)',
-              boxShadow: idx === activeIndex ? '0 0 12px rgba(197, 160, 89, 0.4)' : 'none',
+              backgroundColor: idx === activeIndex ? 'var(--muted-gold)' : 'rgba(44, 24, 16, 0.12)',
+              boxShadow: idx === activeIndex ? '0 0 12px rgba(184, 134, 11, 0.4)' : 'none',
             }}
           />
         </div>

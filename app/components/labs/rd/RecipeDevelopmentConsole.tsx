@@ -41,7 +41,7 @@ export const RecipeDevelopmentConsole: React.FC = () => {
                 </div>
 
                 {/* Right: Intel Form */}
-                <div className="lg:w-2/3 bg-[#0a0806] border border-foreground/10 rounded-3xl p-8 md:p-12 relative overflow-hidden transition-all duration-500">
+                <div className="lg:w-2/3 bg-white/50 backdrop-blur-sm border border-foreground/10 rounded-3xl p-8 md:p-12 relative overflow-hidden transition-all duration-500">
                     {/* Atmospheric mode glow */}
                     <div 
                         className="absolute inset-0 blur-[130px] opacity-[0.1] pointer-events-none transition-colors duration-1000 -z-0"

@@ -5,8 +5,8 @@ export const ExpansionHero: React.FC = () => {
         <section className="relative min-h-[75vh] flex flex-col justify-center py-32 px-6 overflow-hidden bg-background">
             <div className="absolute inset-0 z-0 flex items-center justify-center">
                 {/* Vast Horizon Glows */}
-                <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-[#1a2332]/[0.15] blur-[150px] rounded-full mix-blend-screen" />
-                <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-[#2a1b38]/[0.1] blur-[150px] rounded-full mix-blend-screen" />
+                <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-teal-400/[0.06] blur-[150px] rounded-full" />
+                <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-gold/[0.06] blur-[150px] rounded-full" />
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.04] mix-blend-overlay border-b border-foreground/5 pointer-events-none" />
             </div>
 

@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function ExpansionLabPage() {
   return (
-    <main className="min-h-screen selection:bg-teal-500/30 selection:text-white bg-background">
+    <main className="min-h-screen selection:bg-teal-500/30 selection:text-foreground bg-background">
 
       <article>
           <ExpansionHero />

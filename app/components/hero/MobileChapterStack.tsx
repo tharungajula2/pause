@@ -12,13 +12,13 @@ export const MobileChapterStack: React.FC<MobileChapterStackProps> = ({ chapters
   return (
     <div className="lg:hidden relative z-20">
       {chapters.map((chapter, idx) => {
-        // Per-chapter atmospheric color
+        // Per-chapter atmospheric warm glows for cream
         const glowColors = [
-          'rgba(197, 160, 89, 0.06)',
+          'rgba(184, 134, 11, 0.06)',
           'rgba(139, 69, 19, 0.08)',
           'rgba(111, 78, 55, 0.06)',
-          'rgba(197, 160, 89, 0.08)',
-          'rgba(197, 160, 89, 0.1)',
+          'rgba(184, 134, 11, 0.08)',
+          'rgba(184, 134, 11, 0.1)',
         ];
 
         return (
@@ -35,13 +35,13 @@ export const MobileChapterStack: React.FC<MobileChapterStackProps> = ({ chapters
                 style={{ backgroundColor: glowColors[idx] }}
               />
               {idx < chapters.length - 1 && (
-                <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-foreground/5 to-transparent" />
+                <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-foreground/8 to-transparent" />
               )}
             </div>
 
             <div className="relative z-10 px-6 max-w-2xl mx-auto text-center">
               {/* Eyebrow */}
-              <span className="text-gold/40 text-[9px] uppercase tracking-[0.5em] font-bold mb-6 block">
+              <span className="text-gold/60 text-[9px] uppercase tracking-[0.5em] font-bold mb-6 block">
                 {chapter.eyebrow}
               </span>
 
@@ -67,7 +67,7 @@ export const MobileChapterStack: React.FC<MobileChapterStackProps> = ({ chapters
 
               {/* Occasion tags */}
               {chapter.occasionTags && (
-                <div className="flex flex-wrap justify-center gap-4 mt-4 opacity-40">
+                <div className="flex flex-wrap justify-center gap-4 mt-4 opacity-50">
                   {chapter.occasionTags.map((tag) => (
                     <span key={tag} className="text-[9px] tracking-widest uppercase font-bold">
                       {tag}
@@ -106,7 +106,7 @@ export const MobileChapterStack: React.FC<MobileChapterStackProps> = ({ chapters
                 <div className="mt-10">
                   <Link
                     href={chapter.cta.href}
-                    className="inline-block px-8 py-4 bg-gold text-background rounded-full uppercase tracking-widest font-bold text-xs hover:scale-105 transition-transform"
+                    className="inline-block px-8 py-4 bg-gold text-white rounded-full uppercase tracking-widest font-bold text-xs hover:scale-105 transition-transform shadow-lg"
                   >
                     {chapter.cta.label}
                   </Link>

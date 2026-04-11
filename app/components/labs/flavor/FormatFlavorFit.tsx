@@ -17,7 +17,7 @@ export const FormatFlavorFit: React.FC = () => {
                  </p>
             </div>
 
-            <div className="overflow-x-auto border border-foreground/10 rounded-2xl bg-[#0a0a0a] pb-4">
+            <div className="overflow-x-auto border border-foreground/10 rounded-2xl bg-white/50 backdrop-blur-sm pb-4">
                 <table className="w-full text-left border-collapse min-w-[800px]">
                     <thead>
                         <tr className="border-b border-foreground/10">

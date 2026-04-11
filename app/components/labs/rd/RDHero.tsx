@@ -5,8 +5,8 @@ export const RDHero: React.FC = () => {
         <section className="relative min-h-[75vh] flex flex-col justify-center py-32 px-6 overflow-hidden bg-background">
             <div className="absolute inset-0 z-0 flex items-center justify-center">
                 {/* R&D themed Glows */}
-                <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-sky-900/[0.05] blur-[150px] rounded-full mix-blend-screen" />
-                <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-fuchsia-900/[0.08] blur-[150px] rounded-full mix-blend-screen" />
+                <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-sky-900/[0.05] blur-[150px] rounded-full" />
+                <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-fuchsia-900/[0.08] blur-[150px] rounded-full" />
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.04] mix-blend-overlay border-b border-foreground/5 pointer-events-none" />
             </div>
 

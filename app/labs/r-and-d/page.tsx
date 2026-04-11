@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function RDLabPage() {
   return (
-    <main className="min-h-screen selection:bg-fuchsia-500/30 selection:text-white bg-background">
+    <main className="min-h-screen selection:bg-fuchsia-500/30 selection:text-foreground bg-background">
 
       <article>
           <RDHero />

@@ -14,7 +14,7 @@ export const AIWorkflowSection: React.FC = () => {
 
             <div className="space-y-4">
                 {aiWorkflowSteps.map((step, idx) => (
-                    <div key={idx} className="group grid grid-cols-1 md:grid-cols-12 gap-6 p-8 bg-[#0a0805] border border-foreground/5 rounded-2xl hover:border-gold/30 transition-all duration-500">
+                    <div key={idx} className="group grid grid-cols-1 md:grid-cols-12 gap-6 p-8 bg-white/45 backdrop-blur-sm border border-foreground/5 rounded-2xl hover:border-gold/30 transition-all duration-500">
                         <div className="md:col-span-1 border-r border-foreground/5 py-2">
                              <span className="text-xl font-mono text-foreground/20 group-hover:text-gold transition-colors duration-500">0{idx + 1}</span>
                         </div>

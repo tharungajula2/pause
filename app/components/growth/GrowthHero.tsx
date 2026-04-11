@@ -5,8 +5,8 @@ export const GrowthHero: React.FC = () => {
         <section className="relative min-h-[70vh] flex flex-col justify-center py-32 px-6 overflow-hidden bg-background">
             <div className="absolute inset-0 z-0 flex items-center justify-center">
                 {/* Behavioral Flow Glows */}
-                <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-red-900/[0.03] blur-[120px] rounded-full mix-blend-screen" />
-                <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-gold/[0.03] blur-[120px] rounded-full mix-blend-screen" />
+                <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-red-900/[0.03] blur-[120px] rounded-full" />
+                <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-gold/[0.03] blur-[120px] rounded-full" />
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay border-b border-foreground/5 pointer-events-none" />
             </div>
 

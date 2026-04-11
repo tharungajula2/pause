@@ -3,7 +3,7 @@ import React from 'react';
 export const RepeatVsNoveltyLayer: React.FC = () => {
     return (
         <section className="py-32 px-6 max-w-5xl mx-auto">
-            <div className="relative border border-foreground/10 bg-[#050505] rounded-[2.5rem] p-10 md:p-20 overflow-hidden text-center group">
+            <div className="relative border border-foreground/10 bg-white/45 backdrop-blur-sm rounded-[2.5rem] p-10 md:p-20 overflow-hidden text-center group">
                 <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-red-900/[0.03] blur-[120px] group-hover:bg-red-900/[0.1] transition-colors duration-1000 pointer-events-none" />
                 
                 <div className="relative z-10 flex flex-col items-center">

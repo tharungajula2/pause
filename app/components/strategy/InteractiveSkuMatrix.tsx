@@ -77,35 +77,35 @@ export const InteractiveSkuMatrix: React.FC = () => {
                         {/* Data Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-8 mb-12">
                             <div>
-                                <span className="block text-[9px] uppercase tracking-widest text-foreground/30 font-bold mb-2">Primary Occasion</span>
-                                <span className="text-sm font-medium text-foreground/90">{activeSku.primaryOccasion}</span>
+                                <span className="block text-[10px] uppercase tracking-widest text-foreground/50 font-bold mb-2">Primary Occasion</span>
+                                <span className="text-sm font-medium text-foreground">{activeSku.primaryOccasion}</span>
                             </div>
                             <div>
-                                <span className="block text-[9px] uppercase tracking-widest text-foreground/30 font-bold mb-2">Channel Edge</span>
-                                <span className="text-sm font-medium text-foreground/90">{activeSku.channelFit[0]}</span>
+                                <span className="block text-[10px] uppercase tracking-widest text-foreground/50 font-bold mb-2">Channel Edge</span>
+                                <span className="text-sm font-medium text-foreground">{activeSku.channelFit[0]}</span>
                             </div>
                             <div>
-                                <span className="block text-[9px] uppercase tracking-widest text-foreground/30 font-bold mb-2">Repeat Mechanism</span>
-                                <span className="text-sm font-medium text-foreground/90">{activeSku.repeatLogic}</span>
+                                <span className="block text-[10px] uppercase tracking-widest text-foreground/50 font-bold mb-2">Repeat Mechanism</span>
+                                <span className="text-sm font-medium text-foreground">{activeSku.repeatLogic}</span>
                             </div>
                             <div>
-                                <span className="block text-[9px] uppercase tracking-widest text-foreground/30 font-bold mb-2">Risk Level</span>
-                                <span className={`text-sm font-medium text-foreground/90 flex items-center gap-2`}>
-                                    <span className={`w-2 h-2 rounded-full ${activeSku.riskLevel === 'High' ? 'bg-red-500' : activeSku.riskLevel === 'Moderate' ? 'bg-yellow-500' : 'bg-green-500'}`} />
+                                <span className="block text-[10px] uppercase tracking-widest text-foreground/50 font-bold mb-2">Risk Level</span>
+                                <span className={`text-sm font-medium text-foreground flex items-center gap-2`}>
+                                    <span className={`w-2 h-2 rounded-full ${activeSku.riskLevel === 'High' ? 'bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.4)]' : activeSku.riskLevel === 'Moderate' ? 'bg-yellow-500 shadow-[0_0_8px_rgba(245,158,11,0.4)]' : 'bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.4)]'}`} />
                                     {activeSku.riskLevel}
                                 </span>
                             </div>
                         </div>
 
                         {/* Caution Frame */}
-                        <div className="mt-auto bg-background/50 border border-foreground/5 p-6 rounded-xl flex flex-col gap-4">
+                        <div className="mt-auto bg-background/80 border border-foreground/10 p-6 rounded-xl flex flex-col gap-4 backdrop-blur-sm">
                              <div>
-                                <span className="block text-[9px] uppercase tracking-widest text-gold/60 font-bold mb-1">Cannibalization Risk</span>
-                                <span className="text-sm text-foreground/70">{activeSku.cannibalizationRisk}</span>
+                                <span className="block text-[10px] uppercase tracking-widest text-gold font-bold mb-1">Cannibalization Risk</span>
+                                <span className="text-sm text-foreground/80">{activeSku.cannibalizationRisk}</span>
                             </div>
                              <div>
-                                <span className="block text-[9px] uppercase tracking-widest text-gold/60 font-bold mb-1">Expansion Caution</span>
-                                <span className="text-sm text-foreground/70">{activeSku.expansionCaution}</span>
+                                <span className="block text-[10px] uppercase tracking-widest text-gold font-bold mb-1">Expansion Caution</span>
+                                <span className="text-sm text-foreground/80">{activeSku.expansionCaution}</span>
                             </div>
                         </div>
 

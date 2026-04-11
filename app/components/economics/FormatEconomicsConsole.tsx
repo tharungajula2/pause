@@ -42,7 +42,7 @@ export const FormatEconomicsConsole: React.FC = () => {
                 </div>
 
                 {/* Right Pane: Intel Output */}
-                <div className="lg:w-2/3 bg-[#0a0a0a] border border-foreground/10 rounded-3xl p-8 md:p-12 relative overflow-hidden flex flex-col transition-all duration-500">
+                <div className="lg:w-2/3 bg-white/50 backdrop-blur-sm border border-foreground/10 rounded-3xl p-8 md:p-12 relative overflow-hidden flex flex-col transition-all duration-500">
                     {/* Active Glow */}
                     <div 
                         className="absolute top-0 right-0 w-[400px] h-[400px] blur-[150px] opacity-10 pointer-events-none transition-colors duration-1000"

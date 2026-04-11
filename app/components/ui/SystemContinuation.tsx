@@ -11,7 +11,7 @@ interface SystemContinuationProps {
 export const SystemContinuation: React.FC<SystemContinuationProps> = ({ nextRoute, nextTitle, description, step }) => {
     return (
         <section className="py-32 px-6 max-w-4xl mx-auto border-t border-foreground/5 relative z-10">
-            <Link href={nextRoute} className="group block p-12 md:p-16 bg-[#0a0a09] border border-foreground/5 rounded-[2rem] hover:border-gold/30 hover:bg-[#0c0c0b] transition-all duration-700 relative overflow-hidden">
+            <Link href={nextRoute} className="group block p-12 md:p-16 bg-white/50 backdrop-blur-md border border-foreground/8 rounded-[2rem] hover:border-gold/30 hover:bg-white/70 transition-all duration-700 relative overflow-hidden shadow-sm">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/[0.02] blur-[150px] group-hover:bg-gold/[0.06] transition-colors duration-1000 origin-center pointer-events-none" />
                 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
@@ -22,14 +22,14 @@ export const SystemContinuation: React.FC<SystemContinuationProps> = ({ nextRout
                                     Step {step}
                                 </span>
                             )}
-                            <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-foreground/40 group-hover:text-gold/60 transition-colors">
+                            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-foreground/50 group-hover:text-gold transition-colors">
                                 Next System Layer
                             </span>
                         </div>
                         <h4 className="text-3xl md:text-5xl font-serif text-foreground group-hover:text-gold transition-colors mb-4">
                             {nextTitle}
                         </h4>
-                        <p className="text-foreground/50 font-light max-w-md leading-relaxed text-sm">
+                        <p className="text-foreground/60 font-light max-w-md leading-relaxed text-sm">
                             {description}
                         </p>
                     </div>

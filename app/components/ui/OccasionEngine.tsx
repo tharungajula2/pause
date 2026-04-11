@@ -110,16 +110,16 @@ export const OccasionEngine: React.FC = () => {
                                         const product = products.find(p => p.id === id);
                                         if (!product) return null;
                                         return (
-                                            <div key={id} className="flex items-center space-x-4 bg-background/40 pr-6 pl-2 py-2 rounded-full border border-foreground/5 group/sku cursor-pointer hover:border-gold/30 transition-all duration-300">
+                                            <div key={id} className="flex items-center space-x-4 bg-background/60 pr-6 pl-2 py-2 rounded-full border border-foreground/10 group/sku cursor-pointer hover:border-gold/30 transition-all duration-300">
                                                 <div 
-                                                    className="w-8 h-10 rounded-lg flex items-center justify-center text-[8px] font-serif border border-foreground/10"
+                                                    className="w-10 h-12 rounded-lg flex items-center justify-center text-[10px] font-serif border border-foreground/10"
                                                     style={{ backgroundColor: product.themeColor + '20' }}
                                                 >
                                                     SKU
                                                 </div>
                                                 <div className="flex flex-col">
-                                                    <span className="text-[10px] font-bold uppercase tracking-widest text-foreground/80 group-hover/sku:text-gold transition-colors">{product.name}</span>
-                                                    <span className="text-[8px] uppercase tracking-tighter text-foreground/30">{product.strategicRole}</span>
+                                                    <span className="text-[11px] font-bold uppercase tracking-widest text-foreground group-hover/sku:text-gold transition-colors">{product.name}</span>
+                                                    <span className="text-[10px] uppercase tracking-tighter text-foreground/40">{product.strategicRole}</span>
                                                 </div>
                                             </div>
                                         );

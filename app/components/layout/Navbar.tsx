@@ -40,8 +40,8 @@ export const Navbar: React.FC = () => {
 
     return (
         <>
-            {/* ─── Top Navigation Bar ─── */}
-            <nav className="fixed top-0 w-full z-[100] border-b border-white/5 bg-background/80 backdrop-blur-2xl">
+            {/* ─── Top Navigation Bar — Cream Frosted Glass ─── */}
+            <nav className="fixed top-0 w-full z-[100] border-b border-foreground/8" style={{ backgroundColor: 'rgba(245, 236, 215, 0.85)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)' }}>
                 <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between relative">
                     {/* LOGO */}
                     <Link href="/" className="flex-shrink-0 text-lg md:text-xl font-serif tracking-tighter font-semibold hover:text-gold transition-all duration-500 mr-8 lg:mr-12">
@@ -51,14 +51,14 @@ export const Navbar: React.FC = () => {
                     {/* Desktop Nav */}
                     <div className="hidden lg:flex items-center space-x-8">
                         {/* FOUNDATION GROUP */}
-                        <div className="flex items-center space-x-6 pr-6 border-r border-white/5">
+                        <div className="flex items-center space-x-6 pr-6 border-r border-foreground/10">
                             {foundationItems.map((item) => {
                                 const isActive = pathname === item.href;
                                 return (
                                     <Link 
                                         key={item.name} 
                                         href={item.href} 
-                                        className={`text-[8.5px] uppercase tracking-[0.3em] font-bold transition-all duration-300 ${isActive ? 'text-gold' : 'text-foreground/30 hover:text-gold'}`}
+                                        className={`text-xs uppercase tracking-[0.2em] font-bold transition-all duration-300 ${isActive ? 'text-gold' : 'text-foreground/50 hover:text-gold'}`}
                                     >
                                         {item.name}
                                     </Link>
@@ -72,16 +72,16 @@ export const Navbar: React.FC = () => {
                             onMouseEnter={() => setStrategyOpenDesktop(true)}
                             onMouseLeave={() => setStrategyOpenDesktop(false)}
                         >
-                            <button className={`flex items-center space-x-2 text-[8.5px] uppercase tracking-[0.3em] font-bold transition-all duration-300 ${stepItems.some(i => pathname === i.href) ? 'text-gold' : 'text-foreground/30 hover:text-gold'}`}>
+                            <button className={`flex items-center space-x-2 text-xs uppercase tracking-[0.2em] font-bold transition-all duration-300 ${stepItems.some(i => pathname === i.href) ? 'text-gold' : 'text-foreground/50 hover:text-gold'}`}>
                                 <span>Strategy OS</span>
                                 <svg className={`w-3 h-3 transition-transform duration-300 ${strategyOpenDesktop ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
 
-                            {/* Dropdown Menu */}
+                            {/* Dropdown Menu — Cream Glass */}
                             <div className={`absolute top-full -left-4 w-64 pt-4 transition-all duration-300 ${strategyOpenDesktop ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
-                                <div className="bg-[#0c0c0b] border border-white/10 rounded-xl p-4 shadow-2xl backdrop-blur-3xl">
+                                <div className="border border-foreground/8 rounded-xl p-4 shadow-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)', backdropFilter: 'blur(20px)' }}>
                                     <div className="space-y-1">
                                         {stepItems.map((item) => {
                                             const isActive = pathname === item.href;
@@ -89,7 +89,7 @@ export const Navbar: React.FC = () => {
                                                 <Link 
                                                     key={item.name} 
                                                     href={item.href} 
-                                                    className={`block px-4 py-3 text-[8px] uppercase tracking-[0.2em] font-bold rounded-lg transition-all ${isActive ? 'bg-gold/10 text-gold' : 'text-foreground/40 hover:bg-white/5 hover:text-gold'}`}
+                                                    className={`block px-4 py-3 text-[10px] uppercase tracking-[0.2em] font-bold rounded-lg transition-all ${isActive ? 'bg-gold/10 text-gold' : 'text-foreground/50 hover:bg-foreground/5 hover:text-gold'}`}
                                                 >
                                                     {item.name}
                                                 </Link>
@@ -104,7 +104,7 @@ export const Navbar: React.FC = () => {
                     {/* Right CTA */}
                     <div className="hidden lg:block ml-auto">
                         <Link href="/strategy">
-                            <CtaButton size="md" variant="outline" className="text-[8.5px] tracking-[0.25em] uppercase px-6 py-2.5 border-white/10 hover:border-gold/50">
+                            <CtaButton size="md" variant="outline" className="text-[10px] tracking-[0.25em] uppercase px-6 py-2.5 border-foreground/15 hover:border-gold/50">
                                 Access System
                             </CtaButton>
                         </Link>
@@ -129,17 +129,17 @@ export const Navbar: React.FC = () => {
                 </div>
             </nav>
 
-            {/* ─── Mobile Nav: Backdrop (OUTSIDE nav to avoid backdrop-filter stacking context) ─── */}
+            {/* ─── Mobile Nav: Backdrop ─── */}
             <div
                 className={`lg:hidden fixed inset-0 z-[150] transition-opacity duration-400 ${
                     mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                 }`}
-                style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
+                style={{ backgroundColor: 'rgba(44, 24, 16, 0.25)' }}
                 onClick={closeMobileMenu}
                 aria-hidden="true"
             />
 
-            {/* ─── Mobile Nav: Panel (OUTSIDE nav to avoid backdrop-filter stacking context) ─── */}
+            {/* ─── Mobile Nav: Panel — Cream Opaque ─── */}
             <div
                 id="mobile-nav-panel"
                 role="dialog"
@@ -150,14 +150,14 @@ export const Navbar: React.FC = () => {
                         ? 'opacity-100 translate-y-0 pointer-events-auto'
                         : 'opacity-0 -translate-y-4 pointer-events-none'
                 }`}
-                style={{ backgroundColor: 'rgba(9, 9, 9, 0.98)', paddingBottom: 'env(safe-area-inset-bottom, 20px)' }}
+                style={{ backgroundColor: 'rgba(245, 236, 215, 0.98)', paddingBottom: 'env(safe-area-inset-bottom, 20px)' }}
             >
                 {/* Scrollable content container */}
                 <div className="flex flex-col h-full overflow-y-auto overscroll-contain">
                     <div className="flex-1 px-8 pt-10 pb-6">
                         {/* Foundation Items */}
-                        <div className="mb-8 pb-8 border-b border-white/5">
-                            <span className="text-[10px] uppercase tracking-widest text-foreground/20 font-bold block mb-6">
+                        <div className="mb-8 pb-8 border-b border-foreground/8">
+                            <span className="text-[10px] uppercase tracking-widest text-foreground/30 font-bold block mb-6">
                                 Foundation
                             </span>
                             <div className="space-y-5">
@@ -183,11 +183,11 @@ export const Navbar: React.FC = () => {
                                 onClick={() => setStrategyOpenMobile(!strategyOpenMobile)}
                                 aria-expanded={strategyOpenMobile}
                             >
-                                <span className="text-[10px] uppercase tracking-widest text-foreground/20 font-bold">
+                                <span className="text-[10px] uppercase tracking-widest text-foreground/30 font-bold">
                                     Strategy OS
                                 </span>
                                 <svg
-                                    className={`w-4 h-4 text-foreground/20 transition-transform duration-300 ${
+                                    className={`w-4 h-4 text-foreground/30 transition-transform duration-300 ${
                                         strategyOpenMobile ? 'rotate-180' : ''
                                     }`}
                                     fill="none"
@@ -205,7 +205,7 @@ export const Navbar: React.FC = () => {
                                     opacity: strategyOpenMobile ? 1 : 0,
                                 }}
                             >
-                                <div className="space-y-4 pl-2 border-l border-gold/10">
+                                <div className="space-y-4 pl-2 border-l border-gold/20">
                                     {stepItems.map((item) => (
                                         <Link 
                                             key={item.name} 
@@ -226,7 +226,7 @@ export const Navbar: React.FC = () => {
                     </div>
 
                     {/* Bottom CTA */}
-                    <div className="px-8 py-6 border-t border-white/5">
+                    <div className="px-8 py-6 border-t border-foreground/8">
                         <Link href="/strategy" onClick={closeMobileMenu}>
                             <CtaButton size="lg" className="w-full text-[10px] tracking-[0.3em] uppercase py-5">
                                 Access Strategy Core

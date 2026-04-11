@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function StrategyPage() {
   return (
-    <main className="min-h-screen selection:bg-gold selection:text-background bg-background">
+    <main className="min-h-screen selection:bg-gold selection:text-white bg-background">
 
 
       <article>

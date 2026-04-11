@@ -19,7 +19,7 @@ export const FlavorBreakdown: React.FC = () => {
 
             <div className="space-y-6 max-w-4xl mx-auto">
                 {failures.map((issue, i) => (
-                    <div key={i} className="flex flex-col md:flex-row gap-6 p-6 md:p-8 bg-graphite/5 border border-red-500/10 rounded-2xl relative group hover:bg-[#0a0505] transition-colors">
+                    <div key={i} className="flex flex-col md:flex-row gap-6 p-6 md:p-8 bg-graphite/5 border border-red-500/10 rounded-2xl relative group hover:bg-white/40 transition-colors">
                         <div className="w-1.5 h-full absolute left-0 top-0 bg-red-900/30 rounded-l-2xl group-hover:bg-red-500/80 transition-colors" />
                         
                         <div className="md:w-1/3">

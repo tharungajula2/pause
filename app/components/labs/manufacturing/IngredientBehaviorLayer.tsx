@@ -5,9 +5,9 @@ export const IngredientBehaviorLayer: React.FC = () => {
     return (
         <section className="py-24 px-6 max-w-7xl mx-auto border-t border-foreground/5">
             <div className="mb-16">
-                <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-foreground/30 inline-block mb-4">Technical Formulations</span>
+                <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-foreground/50 inline-block mb-4">Technical Formulations</span>
                 <h3 className="text-3xl md:text-5xl font-serif mb-4">Ingredient Behavioral Matrix</h3>
-                <p className="text-foreground/50 max-w-2xl text-lg font-light leading-relaxed">
+                <p className="text-foreground/70 max-w-2xl text-lg font-light leading-relaxed">
                     How ingredients react under extreme heat, high shear, and pressure determines the ultimate sensory experience of the product.
                 </p>
             </div>
@@ -22,21 +22,21 @@ export const IngredientBehaviorLayer: React.FC = () => {
                         />
                         
                         <div className="relative z-10 space-y-6">
-                            <span className="text-[9px] uppercase tracking-widest font-bold text-gold/60">{profile.category}</span>
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-gold">{profile.category}</span>
                             
                             <div>
-                                <h4 className="text-sm uppercase tracking-wider font-bold text-foreground/40 mb-3">Reaction Under Process</h4>
-                                <p className="text-sm font-medium text-foreground/90 leading-relaxed">{profile.behavior}</p>
+                                <h4 className="text-sm uppercase tracking-wider font-bold text-foreground/60 mb-3">Reaction Under Process</h4>
+                                <p className="text-sm font-medium text-foreground leading-relaxed">{profile.behavior}</p>
                             </div>
 
-                            <div className="pt-4 border-t border-foreground/5">
-                                <h4 className="text-[10px] uppercase tracking-widest font-bold text-red-500/40 mb-2">Production Risk</h4>
-                                <p className="text-xs font-light text-foreground/50 leading-relaxed italic">"{profile.manufacturingRisk}"</p>
+                            <div className="pt-4 border-t border-foreground/10">
+                                <h4 className="text-[10px] uppercase tracking-widest font-bold text-red-600/80 mb-2">Production Risk</h4>
+                                <p className="text-xs font-light text-foreground/70 leading-relaxed italic">"{profile.manufacturingRisk}"</p>
                             </div>
 
-                            <div className="pt-4 border-t border-foreground/5">
-                                <h4 className="text-[10px] uppercase tracking-widest font-bold text-blue-400/40 mb-2">Stability Logic</h4>
-                                <p className="text-xs font-light text-foreground/50 leading-relaxed">{profile.stabilityLogic}</p>
+                            <div className="pt-4 border-t border-foreground/10">
+                                <h4 className="text-[10px] uppercase tracking-widest font-bold text-blue-700/80 mb-2">Stability Logic</h4>
+                                <p className="text-xs font-light text-foreground/70 leading-relaxed">{profile.stabilityLogic}</p>
                             </div>
                         </div>
                     </div>

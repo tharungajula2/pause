@@ -18,7 +18,7 @@ export const ExpansionMappingBlock: React.FC = () => {
                  </p>
             </div>
 
-            <div className="bg-[#050505] border border-foreground/10 rounded-2xl overflow-hidden pb-4">
+            <div className="bg-white/45 backdrop-blur-sm border border-foreground/10 rounded-2xl overflow-hidden pb-4">
                 <div className="overflow-x-auto">
                     <table className="w-full text-left border-collapse min-w-[800px]">
                         <thead>

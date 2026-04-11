@@ -11,9 +11,9 @@ export const IndiaCulturalFit: React.FC = () => {
         <section className="py-24 px-6 max-w-7xl mx-auto border-t border-foreground/5 relative">
              <div className="flex flex-col md:flex-row gap-16 items-start">
                  <div className="md:w-1/3">
-                     <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-orange-400/60 inline-block mb-4">India Market Dynamics</span>
+                     <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-orange-600/60 inline-block mb-4">India Market Dynamics</span>
                      <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-6">Regional Familiarity</h2>
-                     <p className="text-foreground/50 text-lg font-light leading-relaxed">
+                     <p className="text-foreground/70 text-lg font-light leading-relaxed">
                          Cultural flavor mapping is the fastest way to move a product from the "bodybuilding" mental bucket into the "daily wellness" mental bucket.
                      </p>
                  </div>
@@ -23,12 +23,12 @@ export const IndiaCulturalFit: React.FC = () => {
                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#E4A010]/[0.05] blur-[150px] pointer-events-none" />
 
                      {culturalLevers.map((lever, i) => (
-                         <div key={i} className="flex flex-col md:flex-row bg-[#080705] border border-orange-500/10 rounded-xl overflow-hidden group z-10">
+                         <div key={i} className="flex flex-col md:flex-row bg-white/45 backdrop-blur-sm border border-orange-500/10 rounded-xl overflow-hidden group z-10 shadow-sm">
                              <div className="md:w-1/3 bg-background/50 border-r border-orange-500/5 p-6 flex items-center">
-                                 <span className="font-serif text-xl tracking-tight text-orange-200 group-hover:text-orange-400 transition-colors">{lever.title}</span>
+                                 <span className="font-serif text-xl tracking-tight text-orange-950/70 group-hover:text-orange-600 transition-colors">{lever.title}</span>
                              </div>
                              <div className="md:w-2/3 p-6">
-                                 <p className="text-sm font-light text-foreground/70 leading-relaxed">{lever.logic}</p>
+                                 <p className="text-sm font-light text-foreground/80 leading-relaxed">{lever.logic}</p>
                              </div>
                          </div>
                      ))}

@@ -3,7 +3,7 @@ import React from 'react';
 export const FounderMemo: React.FC = () => {
     return (
         <section className="py-24 px-6 max-w-5xl mx-auto mb-20">
-            <div className="bg-[#030508] border border-blue-900/20 rounded-3xl p-10 md:p-16 relative overflow-hidden">
+            <div className="bg-white/45 backdrop-blur-sm border border-blue-900/20 rounded-3xl p-10 md:p-16 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-8 opacity-[0.03]">
                     <svg width="200" height="200" viewBox="0 0 24 24" fill="#60A5FA">
                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
