@@ -54,7 +54,7 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                     </span>
 
                     {/* Cinematic Product Asset Stage with Float — animate-float-slow added */}
-                    <div className="relative w-full h-full flex items-center justify-center transform group-hover:scale-110 group-hover:-translate-y-4 transition-all duration-1000 ease-out animate-float-slow">
+                    <div className="relative w-full h-full flex items-center justify-center transform group-hover:scale-110 group-hover:-translate-y-12 transition-all duration-1000 ease-out animate-float-slow">
                         {/* THE REAL ASSET */}
                         <div className="relative z-20 w-full h-full flex items-center justify-center">
                             <img 
