@@ -1,4 +1,9 @@
-'use client';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Home — Nuvie Thesis",
+  description: "A founder-facing study of Nuvie’s product, occasions, repeat logic, and where I may be useful.",
+};
 
 import React from 'react';
 import Link from 'next/link';

@@ -1,4 +1,9 @@
-'use client';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Product Lab — Nuvie Thesis",
+  description: "A product-first reading of Nuvie’s portfolio, core SKUs, and future flavor directions.",
+};
 
 import React from 'react';
 import { products } from '../data/products';

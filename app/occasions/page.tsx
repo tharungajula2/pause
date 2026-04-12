@@ -1,4 +1,9 @@
-'use client';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Occasions — Nuvie Thesis",
+  description: "A behavior-first reading of the moments, habits, and repeat triggers that shape Nuvie’s growth.",
+};
 
 import React from 'react';
 import Link from 'next/link';

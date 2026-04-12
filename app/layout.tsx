@@ -16,9 +16,45 @@ const cormorant = Cormorant_Garamond({
   style: ["normal", "italic"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 
+                (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+
 export const metadata: Metadata = {
-  title: "Nuvie Thesis | Strategic Exploration",
-  description: "A strategic study of modern protein brand strategy, formulation, and behavioral growth.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Nuvie Thesis — A founder-facing product and growth study",
+    template: "%s — Nuvie Thesis",
+  },
+  description: "A founder-facing proof-of-work exploring Nuvie’s product portfolio, consumer occasions, repeat behavior, and where I may be useful.",
+  keywords: ["Nuvie", "protein brand", "product strategy", "consumer behavior", "D2C", "quick commerce", "founder outreach", "proof of work", "Bengaluru startup", "protein RTD"],
+  authors: [{ name: "Tharun Gajula" }],
+  creator: "Tharun Gajula",
+  publisher: "Tharun Gajula",
+  applicationName: "Nuvie Thesis",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: siteUrl,
+    title: "Nuvie Thesis",
+    description: "A founder-facing proof-of-work on Nuvie’s product, moments, repeat logic, and execution clarity.",
+    siteName: "Nuvie Thesis",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nuvie Thesis",
+    description: "A founder-facing proof-of-work on Nuvie’s product, moments, repeat logic, and execution clarity.",
+  },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
