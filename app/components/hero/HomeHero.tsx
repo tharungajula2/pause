@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const HomeHero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-20 px-6 overflow-hidden bg-background">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-32 px-6 overflow-hidden bg-background">
       {/* 
         CINEMATIC VIDEO BASE 
         Edge-to-edge positioning with low opacity for atmospheric depth.
@@ -32,16 +32,23 @@ export const HomeHero: React.FC = () => {
 
       {/* Hero Content */}
       <div className="max-w-5xl mx-auto text-center relative z-10">
-        <span className="inline-block text-accent text-[10px] uppercase tracking-[0.5em] font-bold mb-12 animate-fade-in opacity-80">
-          The Outreach Study
+        <span className="block text-foreground text-[15px] font-serif italic mb-2 animate-fade-in drop-shadow-sm">
+          To Nuvie, from Tharun.
+        </span>
+        <span className="inline-block text-accent text-[10px] uppercase tracking-[0.6em] font-bold mb-12 animate-fade-in opacity-100">
+          A Concept Outreach
         </span>
         
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.05] mb-12 text-balance text-foreground">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.05] mb-12 text-balance text-foreground whitespace-pre-line">
           {siteContent.hero.title}
         </h1>
         
-        <p className="text-xl md:text-2xl text-foreground/80 font-light max-w-2xl mx-auto leading-relaxed text-balance mb-16">
+        <p className="text-xl md:text-2xl text-foreground/80 font-light max-w-2xl mx-auto leading-relaxed text-balance mb-8">
           {siteContent.hero.body}
+        </p>
+
+        <p className="text-[12px] text-foreground/80 italic font-light max-w-xl mx-auto leading-relaxed mb-12 animate-fade-in">
+          The packaging visuals, product imagery, and background video are original concept work created by me for this outreach. Not Nuvie&apos;s actual assets.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -59,7 +66,7 @@ export const HomeHero: React.FC = () => {
       </div>
 
       {/* Static Scroll Indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-30">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-30">
         <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-accent">Scroll to Enter</span>
         <div className="w-px h-12 bg-gradient-to-b from-accent to-transparent" />
       </div>

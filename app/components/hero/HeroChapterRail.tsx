@@ -38,7 +38,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
 
             {/* Title */}
             <h2
-              className={`font-medium leading-[1.05] mb-8 text-balance ${
+              className={`font-medium leading-[1.05] mb-4 sm:mb-8 text-balance ${
                 idx === 0
                   ? 'text-4xl sm:text-6xl md:text-7xl lg:text-8xl'
                   : idx === 3
@@ -51,14 +51,14 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
 
             {/* Body text */}
             {chapter.body && (
-              <p className="text-lg md:text-2xl text-foreground/40 font-light max-w-3xl mx-auto leading-relaxed text-balance mb-8">
+              <p className="text-lg md:text-2xl text-foreground/40 font-light max-w-3xl mx-auto leading-relaxed text-balance mb-4 sm:mb-8">
                 {chapter.body}
               </p>
             )}
 
             {/* Occasion tags */}
             {chapter.occasionTags && (
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mt-8 opacity-50">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 mt-4 sm:mt-8 opacity-50">
                 {chapter.occasionTags.map((tag) => (
                   <span key={tag} className="text-[10px] tracking-widest uppercase font-bold">
                     {tag}
@@ -94,7 +94,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
             )}
 
             {chapter.cta && chapter.cta.type === 'primary' && chapter.cta.href && (
-              <div className="mt-16">
+              <div className="mt-8 sm:mt-16">
                 <Link
                   href={chapter.cta.href}
                   className="inline-block px-10 py-5 bg-accent text-background rounded-full uppercase tracking-widest font-bold text-sm hover:scale-105 transition-transform pointer-events-auto shadow-lg"

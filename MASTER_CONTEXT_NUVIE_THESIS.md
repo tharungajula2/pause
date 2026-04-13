@@ -1,118 +1,85 @@
 # MASTER CONTEXT: NUVIE THESIS
-**Project Maturity State:** Post-Revamp Stable / Founder-Facing Portfolio  
-**Version:** 2.0 (Post-Revamp Final)  
-**Last Verified Against Codebase:** 2026-04-12
+**Project Maturity State:** Deep Mastery Integrated / High-Fidelity Study Layer  
+**Version:** 2.1 (Deep Research & Cinematic Polish)  
+**Last Verified Against Codebase:** 2026-04-13
 
 ---
 
 ## 1. Project Identity
 
 ### The Perspective
-**Nuvie Thesis** is a **Founder-Facing Portfolio Thesis** designed to demonstrate a deep, strategic understanding of the modern protein brand ecosystem. It distalizes complex domains—flavor strategy, behavioral occasions, and execution logic—into a polished, high-fidelity digital study.
+**Nuvie Thesis** is a **Founder-Facing Portfolio Thesis** designed to demonstrate an absolute, tactical mastery of the modern protein brand ecosystem. It distills complex strategic domains into a polished, high-fidelity digital study.
 
 ### The Objective
 To pivot from "Consultant Deck" jargon to "Builder-Minded Usefulness." The site is a surgically focused proof-of-work that helps founders see their product reality through a sharp, analytical, and execution-first lens.
 
 ### What It Is NOT
-- **Not "Protein OS":** The legacy "Operating System" naming has been fully purged.
+- **Not "Protein OS":** The legacy "Operating System" naming has been fully purged to avoid prescriptive tones.
+- **Not a Simple Portfolio:** It is a data-backed research engine with 5 distinct universes.
 - **Not a Dashboard:** It is a performance-editorial study, not a monitoring tool.
-- **Not Generic:** It is specifically tailored to Nuvie's reality, not a general framework.
 
 ---
 
-## 2. Product Vision: The 4-Page Architecture
+## 2. Updated Project Architecture (5 Core Universes)
 
-In the 2026 revamp, the project was consolidated from a complex 12-route system into 4 high-leverage pages:
-
-1. **Home (`/`)**: **The Why.** Establishes the intent, what was understood during the study, and why the profile (systems-building) is useful to a founder.
-2. **Product Lab (`/products`)**: **The Portfolio.** A cinematic dive into the 6 core SKUs and future summer concepts. It balances trial-friction logic with ritual-anchoring utility.
-3. **Occasions (`/occasions`)**: **The Behavior.** Mapping where Nuvie enters life (The 4 PM Slump, The Coffee Ritual) and how messaging fits those moments.
-4. **How I Can Help (`/how-i-can-help`)**: **The Execution.** A practical usefulness memo. It identifies 4 focus areas (Product Fit, Repeat, Channels, Artifacts) and a concrete 30-day first-pass plan.
+1.  **Home (`/`)**: **The Atmospheric Entry.** Establishes intent and profile usefulness. Features an edge-to-edge cinematic background video loop (`hero-teaser.mp4`).
+2.  **Product Lab (`/products`)**: **The Portfolio.** A cinematic dive into the 6 core SKUs and future summer concepts. Balances trial-friction logic with ritual-anchoring utility.
+3.  **Occasions (`/occasions`)**: **The Behavior.** Contextual mapping of the "4 PM Slump" and "Coffee Ritual" habit loops.
+4.  **How I Can Help (`/how-i-can-help`)**: **The Execution.** A practical usefulness memo identifying 4 focus areas (Product Fit, Repeat, Channels, Artifacts) and a concrete 30-day first-pass plan.
+5.  **Research WIP (`/research-wip`)**: [NEW] **The Mastery Layer.** A password-gated (`nuvie26`) workbook containing deep strategic questions, hypotheses, and validation prompts. Includes persistent note-taking functionality.
 
 ---
 
-## 3. Technical Stack
+## 3. Technical Stack & Master Assets
 
 | Layer | Technology | Details |
-|:---|:---|:---|
-| Framework | **Next.js (App Router)** | v15+ |
-| Language | **TypeScript** | Strict-typed system |
-| UI Library | **React** | Component-first architecture |
-| Styling | **Tailwind CSS** | Design-token-driven |
-| Motion | **Framer Motion** | Smooth, high-fidelity state transitions |
-| Icons/SVG | **Lucide React** | (Selective usage) |
+| :--- | :--- | :--- |
+| **Framework** | Next.js (App Router) | v16+ (Turbopack) |
+| **Language** | TypeScript | Total-type safety across data layers |
+| **Styling** | Tailwind CSS 4 | Custom design-token-driven system |
+| **Video** | Native HTML5 | Cinematic edge-to-edge background loops |
+| **Persistence** | LocalStorage | Browser-side note persistence for the Research WIP |
+
+**Asset Path Information:**
+- **Videos**: `/public/videos/hero-teaser.mp4` (Main atmospheric background)
+- **Data**: `/app/data/` (Centralized source of truth for all content)
+- **Research Archive**: `PROTEIN_OS_COMPLETE_CONTENT.md` has been fully absorbed into `/research-wip` data.
 
 ---
 
 ## 4. Design System: Performance-Editorial
 
-The visual language shifted from "Dark Obsidian/Gold" to a **"Warm/Grounded"** palette.
+The visual identity is anchored in a **"Warm/Grounded"** palette, optimized for maximum readability.
 
 ### Color Tokens
 - **Nuvie Cream (`#F5ECD7`)**: The foundational background. Warm, approachable, premium.
-- **Espresso (`#2C1810`)**: The primary anchoring color. Used for headings, structural text, and selective grounding buttons.
-- **Pistachio/Green (`#7CB18A`)**: The "Energy" color. Reserved for primary Actions (CTAs), highlights, and active states.
-- **Graphite/Muted**: Used for subtle section overlays and background grouping.
+- **Espresso Ink (`#2B1A15`)**: Darkened for v2.1 to provide an authoritative, high-contrast anchor for all body text.
+- **Pistachio Green (`#4B633C`)**: Darkened from v2.0 to ensure strong accessibility and readability for headings and primary CTAs.
+- **Graphite/Muted**: Used for section overlays and structural depth.
 
-### Visual Constraints
-- **Floating Products**: Products should sit in atmospheric space with ambient glows, not in flat rectangular containers.
-- **Grounded Contrast**: Accessibility and readability are priority. Green must be used intentionally for visibility.
-- **Typography**:
-    - **Headings**: `font-serif` (Cormorant Garamond) for an editorial feel.
-    - **Body**: `font-sans` (Geist Sans) for modern, analytical clarity.
+### Standards
+- **Intensity Rules**: All body content must maintain an opacity of `text-foreground/80` or `text-foreground/90`. Faint text (`/45`) is restricted only to non-critical metadata labels.
+- **Cinematic Depth**: Edge-to-edge background videos use a `video-vignette` radial mask and a `backdrop-blur` to ensure text remains sharp and legible.
+- **Levitation Physics**: Products use a passive `30px` float and a dramatic `-48px` hover-lift to create a tactile, "wow" interaction.
 
 ---
 
-## 5. Route Map (4 Active Routes)
+## 5. Security & Persistence (Research Layer)
 
-| Route | Name | Intent |
-|:---|:---|:---|
-| `/` | Home | Diagnostic Output & Usefulness Profile |
-| `/products` | Product Lab | 6-SKU Showcase + Seasonal Concepts |
-| `/occasions` | Occasions | Contextual Mapping & Habit Loop Logic |
-| `/how-i-can-help` | Help / Outreach | Practical Diagnostic & First 30 Days |
+- **Access Key**: `nuvie26` (Fixed password for the Research WIP layer).
+- **Study Notes**: Users can take notes directly within workbook blocks. These notes are saved locally to the browser and persist across sessions.
+- **Privacy**: The Research WIP route is excluded from standard search indexing to maintain its status as a private builder-layer.
 
 ---
 
-## 6. Shared UI & Primitives
+## 6. Development Discipline (Rules for Future Agents)
 
-- **`SystemContinuation`**: Used at the bottom of pages to guide the user to the next logical step of the thesis. Supports both arrow-led and button-led (ctaLabel) modes.
-- **`HomeHero`**: A fixed, static hero for the homepage focused on the "Performance-Editorial" identity.
-- **`ChapterHero`**: A cinematic, multi-chapter scrollytelling component (used on Product Lab).
-- **`ProductSurface`**: The primary "floating product" display component.
-- **`CtaButton`**: Global button component supporting `primary`, `outline`, and `ghost` variants.
-
----
-
-## 7. Data & Content Sources (`app/data/`)
-
-Strategic data is fully decoupled from the components:
-- `site-content.ts`: Core messaging and home sections.
-- `products.ts`: Definitions for the 6 core SKUs.
-- `occasions.ts`: Behavioral moment mapping and "winning" formats.
-- `outreach.ts`: Data for the Help page (How I Think, Initiatives).
-- `growth.ts`: Message framing fits and habit loop anchors.
-- `summer-concepts.ts`: Seasonal SKU logic.
+1.  **Zero-Gap Content**: All research from the retired archive must be represented in `app/data/research-wip-data.ts`.
+2.  **No "OS" Language**: Never reintroduce "Protein OS" or clinical "Operating System" terminology. Stick to "Nuvie Thesis" or "Study Universe."
+3.  **Readability FIRST**: If a text block is hard to read on the cream background, increase the opacity or font size. Never sacrifice legibility for aesthetics.
+4.  **Cinematic Transitions**: Use the `ChapterHero` and `ProductSurface` components to maintain the high-fidelity bar.
 
 ---
 
-## 8. Development Constraints & Safety
-
-- **No "OS" Language**: Never reintroduce "Protein OS" or clinical "Operating System" terminology.
-- **Founder-Respectful Tone**: Copy must stay observant and humble. Avoid "I will transform your brand" language. Use "I look for..." or "I identify...".
-- **Product Lab Cinematic**: Keep the `ChapterHero` transition high-fidelity. It is the core "wow" moment.
-- **Restraint**: Do not over-design with complex effects. Keep it grounded in the Nuvie Cream/Espresso palette.
-
----
-
-## 9. Resume Guide for Future Agents
-
-1. **Read `app/data/outreach.ts`** first to understand the "useful builder" tone.
-2. **Read `app/layout.tsx`** for the global Navbar/Footer wrapper.
-3. **Sync Data to Logic**: If adding a new insight, add it to the corresponding `app/data/` file first.
-4. **CSS variables**: Use the tokens in `globals.css` rather than hardcoded hex values.
-
----
-
-**Master Context v2.0 — Post-Revamp Stable Final**  
-*The project is now a single, high-fidelity thesis study.*
+**Master Context v2.1 — Deep Mastery Final**  
+*The project is a secure, high-fidelity research hub and strategic thesis.*

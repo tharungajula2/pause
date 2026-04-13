@@ -106,7 +106,7 @@ export const researchWipData: WorkbookChapter[] = [
         id: 'econ-channel-margins',
         type: 'risk',
         title: 'The Dark Store Squeeze',
-        body: 'Risk: Quick Commerce platforms (Swiggy/Blinkit) demand 35-45% margin. Selling a single RTD bottle is a negative-margin exercise. It is an acquisition cost, not a profit center.'
+        body: 'Risk: Quick Commerce platforms (Swiggy/Blinkit) demand 35-45% margin. Selling a single RTD bottle is a negative-margin exercise. Deliver units in "Cases of 6" even on Q-comm to protect the bottom line.'
       },
       {
         id: 'econ-r1',
@@ -237,8 +237,8 @@ export const researchWipData: WorkbookChapter[] = [
       {
         id: 'pack-150px',
         type: 'prompt',
-        title: 'The 150px War',
-        body: 'If the macros and flavor cues are not legible at a 2-second glance on a 3-inch thumbnail, the user skips your product. Redesign the primary digital render.'
+        title: 'The 150px Thumbnail War',
+        body: 'Quick Commerce is a search engine, not a grocery store. If the macros ("20g") and flavor cues aren\'t massive in a 150x150px thumbnail, the user skips you. Redesign the primary digital asset for thumb-stopping clarity.'
       },
       {
         id: 'pack-digestion',
@@ -314,7 +314,7 @@ export const researchWipData: WorkbookChapter[] = [
         id: 'manu-principles',
         type: 'prompt',
         title: 'Scale foundations',
-        body: 'Ingredient behavior, Shear & Pressure, Thermal Stress (135C UHT), and Filling Integrity. Each is a junction where quality is locked in or lost.'
+        body: 'Ingredient behavior, Shear & Pressure, Thermal Stress (135C UHT), and Filling Integrity. Each is a junction where quality is locked in or lost. Does the recipe survive 135C sterilization?'
       },
       {
         id: 'manu-shear',

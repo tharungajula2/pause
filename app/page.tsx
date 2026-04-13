@@ -50,7 +50,7 @@ export default function HomePage() {
               <div key={i} className="p-8 bg-background border border-foreground/5 rounded-2xl hover:border-accent/20 transition-all duration-500 group">
                 <div className="text-[10px] uppercase tracking-widest text-accent font-bold mb-6 italic opacity-50">Point 0{i + 1}</div>
                 <h4 className="text-xl font-serif mb-4 group-hover:text-accent transition-colors">{point.title}</h4>
-                <p className="text-foreground/80 font-light leading-relaxed text-base">
+                <p className="text-foreground/80 font-light leading-relaxed text-[18px]">
                   {point.body}
                 </p>
               </div>
@@ -67,7 +67,7 @@ export default function HomePage() {
                <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-foreground/30 block mb-4">The Profile</span>
                <h3 className="text-4xl font-serif mb-8 text-balance">{siteContent.usefulness.heading}</h3>
                <p className="text-foreground/85 font-light leading-relaxed text-lg italic">
-                 My background is not in broad strategy consulting, but in high-stakes **systems building** — where analytical rigor and workflow discipline are the only durable assets.
+                 My background is not a straight line. Analytics, systems design, operations, product building. I&apos;ve moved across these because messy problems tend to need all of them at once. I don&apos;t come with a ready playbook for Nuvie. I come with the habit of thinking carefully, and building things that work.
                </p>
             </div>
             
@@ -76,7 +76,7 @@ export default function HomePage() {
                 <div key={i} className="relative pl-12">
                    <div className="absolute left-0 top-1.5 w-6 h-[1px] bg-accent/30" />
                    <h4 className="text-lg font-serif mb-2">{strength.title}</h4>
-                   <p className="text-foreground/80 font-light leading-relaxed text-base">{strength.body}</p>
+                   <p className="text-foreground/80 font-light leading-relaxed text-[17px]">{strength.body}</p>
                 </div>
               ))}
             </div>
@@ -96,7 +96,7 @@ export default function HomePage() {
                 <div className="p-10 bg-background border border-foreground/5 rounded-3xl hover:border-accent/40 transition-all duration-500 h-full flex flex-col items-center text-center">
                    <span className="text-[9px] uppercase tracking-[0.4em] text-accent/50 mb-6">Foundational</span>
                    <h4 className="text-2xl font-serif mb-4">Product Lab</h4>
-                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">A deep dive into the operational logic and sensory tradeoffs of the Nuvie portfolio.</p>
+                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">A breakdown of each SKU — what strategic role it plays, where it wins, and where the risks live.</p>
                    <span className="text-[10px] uppercase tracking-widest font-bold group-hover:text-accent transition-colors">Enter Lab →</span>
                 </div>
               </Link>
@@ -105,7 +105,7 @@ export default function HomePage() {
                 <div className="p-10 bg-background border border-foreground/5 rounded-3xl hover:border-accent/40 transition-all duration-500 h-full flex flex-col items-center text-center">
                    <span className="text-[9px] uppercase tracking-[0.4em] text-accent/50 mb-6">Behavioral</span>
                    <h4 className="text-2xl font-serif mb-4">Occasion Engine</h4>
-                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">Mapping the 4 PM slump and the coffee ritual to distinct product wedges.</p>
+                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">Mapping the moments where Nuvie can own a habit — and what needs to be true for that to happen.</p>
                    <span className="text-[10px] uppercase tracking-widest font-bold group-hover:text-accent transition-colors">Inspect Moments →</span>
                 </div>
               </Link>
@@ -114,8 +114,8 @@ export default function HomePage() {
                 <div className="p-10 bg-background border border-foreground/5 rounded-3xl hover:border-accent/40 transition-all duration-500 h-full flex flex-col items-center text-center">
                    <span className="text-[9px] uppercase tracking-[0.4em] text-accent/50 mb-6">Strategic</span>
                    <h4 className="text-2xl font-serif mb-4">How I Can Help</h4>
-                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">Specific audit initiatives and growth frameworks translated into Nuvie goals.</p>
-                   <span className="text-[10px] uppercase tracking-widest font-bold group-hover:text-accent transition-colors">See Archetypes →</span>
+                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">Four focus areas. One 30-day starting point. Specific, not vague.</p>
+                   <span className="text-[10px] uppercase tracking-widest font-bold group-hover:text-accent transition-colors">See The Plan →</span>
                 </div>
               </Link>
            </div>
@@ -127,8 +127,8 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-accent/3 blur-[150px] pointer-events-none" />
         <div className="max-w-2xl mx-auto relative z-10">
            <h3 className="text-3xl md:text-5xl font-serif mb-8">{siteContent.connection.heading}</h3>
-           <p className="text-foreground/85 text-xl font-light mb-12 italic leading-relaxed">
-             “{siteContent.connection.body}”
+           <p className="text-foreground/85 text-xl font-light mb-12 leading-relaxed max-w-xl mx-auto">
+             {siteContent.connection.body}
            </p>
            <Link href={siteContent.connection.cta.href}>
               <CtaButton variant="primary" size="xl">

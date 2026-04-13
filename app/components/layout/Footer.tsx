@@ -22,8 +22,26 @@ export const Footer: React.FC = () => {
                         ))}
                     </div>
                 </div>
-                <div className="text-[10px] uppercase tracking-[0.5em] font-bold text-foreground/30">
-                    2026 Tharun Gajula
+                <div className="flex flex-col items-center md:items-end gap-3">
+                    <div className="flex items-center gap-6">
+                        <a 
+                            href="mailto:tharun.gajula.2@gmail.com"
+                            className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 hover:text-accent transition-colors"
+                        >
+                            Email
+                        </a>
+                        <a 
+                            href="https://www.linkedin.com/in/tharungajula/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 hover:text-accent transition-colors"
+                        >
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div className="text-[10px] uppercase tracking-[0.5em] font-bold text-foreground/25">
+                        Tharun Gajula, Bengaluru
+                    </div>
                 </div>
             </div>
         </footer>

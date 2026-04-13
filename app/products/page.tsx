@@ -23,19 +23,19 @@ export default function ProductsPage() {
         {
             title: "Role clarity",
             badge: "Product Logic",
-            description: "Each SKU matters more when it has a distinct job to do—from lowered entry friction to routine-anchoring utility.",
+            description: "From lowering entry friction to anchoring a daily routine, specificity matters more than coverage.",
             footer: "See Portfolio Logic"
         },
         {
             title: "Repeat Dynamics",
             badge: "Retention",
-            description: "Routine SKUs and rotation SKUs play different roles in retention. We optimize for the habit, not just the sale.",
+            description: "Routine SKUs and rotation SKUs play different roles in keeping someone in the portfolio. The goal is the habit, not just the next transaction.",
             footer: "Read Dynamics View"
         },
         {
             title: "Indulgence Entry",
             badge: "Observation",
-            description: "For a brand like Nuvie, pleasure may be the entry point that makes repeat possible. Indulgence is the bridge to habit.",
+            description: "For a brand like Nuvie, pleasure is likely the most honest entry point. If the indulgence promise holds at scale, repeat becomes possible.",
             footer: "Read Product View"
         }
     ];
@@ -50,10 +50,10 @@ export default function ProductsPage() {
                 <div className="px-6 mb-20 max-w-7xl mx-auto">
                     <SectionHeader 
                         alignment="left"
-                        eyebrow="6-SKU Core"
+                        eyebrow="6-SKU CORE"
                         title="Portfolio Architecture"
-                        subtitle="Each SKU in the portfolio does a different job. Some lower trial friction, some build routine, and one may become the highest-frequency wedge."
-                        badge="Portfolio Logic"
+                        subtitle="Each SKU in the portfolio appears to do a different job. Some lower trial friction, some build routine, and one may become the highest-frequency wedge in the lineup."
+                        badge="PORTFOLIO LOGIC"
                     />
                 </div>
                 
@@ -67,14 +67,17 @@ export default function ProductsPage() {
             {/* Section 3: Seasonal Extensions & Concepts */}
             <section className="relative py-48 bg-graphite/10 border-y border-foreground/5 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.02] pointer-events-none" />
-                <div className="px-6 mb-20 max-w-7xl mx-auto">
+                <div className="px-6 mb-20 max-w-7xl mx-auto text-center md:text-left transition-all">
                     <SectionHeader 
                         alignment="center"
-                        eyebrow="Concept Extensions"
+                        eyebrow="CONCEPT EXTENSIONS"
                         title="Future flavor directions"
-                        subtitle="Thoughtful extensions that could widen seasonal relevance, cultural fit, or trial without breaking core clarity."
-                        badge="Product Lab"
+                        subtitle="These are my own concept ideas on where seasonal and cultural extensions might make sense, without fragmenting what is already working."
+                        badge="PRODUCT LAB"
                     />
+                    <p className="mt-8 text-[11px] text-foreground/40 italic text-center max-w-2xl mx-auto animate-pulse">
+                        The packaging visuals in this section are original concept designs I created for this study. They are not Nuvie&apos;s planned products.
+                    </p>
                 </div>
                 
                 <div className="max-w-7xl mx-auto px-6">
@@ -88,9 +91,9 @@ export default function ProductsPage() {
                     <div className="mb-20">
                         <SectionHeader 
                             alignment="left"
-                            eyebrow="Product Notes"
-                            title="A few truths from the portfolio"
-                            subtitle="Selected observations on how the lineup appears to balance entry, routine, and repeat."
+                            eyebrow="PRODUCT NOTES"
+                            title="A few things I kept coming back to"
+                            subtitle="Observations from studying how the lineup appears to handle entry, routine, and repeat."
                         />
                     </div>
 
@@ -113,7 +116,7 @@ export default function ProductsPage() {
             <SystemContinuation 
                 nextRoute="/occasions"
                 nextTitle="Consumer Occasions"
-                description="Understand the moments that drive protein adoption and recurring habit loops."
+                description="The moments where a product either earns a habit or gets forgotten."
             />
         </main>
     );
