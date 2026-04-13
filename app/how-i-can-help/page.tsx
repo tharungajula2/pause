@@ -18,6 +18,28 @@ export default function HowICanHelpPage() {
         <main className="min-h-screen bg-background selection:bg-accent/30">
             {/* Hero */}
             <section className="relative py-32 px-6 overflow-hidden border-b border-foreground/5 pt-48 bg-background">
+                {/* 
+                    CINEMATIC VIDEO BASE 
+                    Consistent with site-wide performance-editorial visual language.
+                */}
+                <div className="absolute inset-0 z-0 overflow-hidden video-container">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="absolute w-full h-full object-cover scale-105 opacity-15 transition-opacity duration-1000"
+                        poster="/images/hero-fallback.jpg"
+                    >
+                        <source src="/videos/outreach-hero.mp4" type="video/mp4" />
+                    </video>
+                    
+                    {/* Atmospheric Overlays */}
+                    <div className="absolute inset-0 video-vignette opacity-80" />
+                    <div className="absolute inset-0 bg-accent/5 mix-blend-overlay pointer-events-none" />
+                    <div className="absolute inset-0 bg-background/40 backdrop-blur-[2px] pointer-events-none" />
+                </div>
+
                 <div className="absolute inset-0 bg-accent/2 blur-[140px] pointer-events-none" />
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <span className="text-accent/50 text-[10px] uppercase tracking-[0.5em] font-bold block mb-8">

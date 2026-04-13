@@ -10,7 +10,7 @@ interface HeroVisualStageProps {
 export const HeroVisualStage: React.FC<HeroVisualStageProps> = ({ activeChapter }) => {
   // Visual states per chapter — tuned for grounded performance-editorial
   const chapterVisuals = [
-    { glowOpacity: 0.04, productOpacity: 0.03, productBlur: 20, productScale: 0.88, spotlightOpacity: 0.04 },
+    { glowOpacity: 0.04, productOpacity: 0, productBlur: 20, productScale: 0.88, spotlightOpacity: 0 },
     { glowOpacity: 0.15, productOpacity: 0.22, productBlur: 0, productScale: 1, spotlightOpacity: 0.85 },
     { glowOpacity: 0.1, productOpacity: 0.06, productBlur: 10, productScale: 0.9, spotlightOpacity: 0.12 },
     { glowOpacity: 0.08, productOpacity: 0.02, productBlur: 20, productScale: 0.85, spotlightOpacity: 0.03 },
@@ -30,6 +30,28 @@ export const HeroVisualStage: React.FC<HeroVisualStageProps> = ({ activeChapter 
 
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {/* 
+        CINEMATIC VIDEO BASE 
+        Synced with Home Page treatment. Edge-to-edge backdrop.
+      */}
+      <div className="absolute inset-0 z-0 overflow-hidden video-container">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute w-full h-full object-cover object-[center_60%] scale-100 opacity-20 transition-opacity duration-1000"
+          poster="/images/hero-fallback.jpg"
+        >
+          <source src="/videos/lab-hero.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Atmospheric Overlays — Heavier vignette to protect the Navbar */}
+        <div className="absolute inset-0 video-vignette opacity-85" />
+        <div className="absolute inset-0 bg-accent/5 mix-blend-overlay pointer-events-none" />
+        <div className="absolute inset-0 bg-background/40 backdrop-blur-[1px] pointer-events-none" />
+      </div>
+
       {/* Cinematic Vignette */}
       <div className="absolute inset-0 vignette-atmosphere opacity-30" />
 

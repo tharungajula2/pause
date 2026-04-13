@@ -87,8 +87,8 @@ export const ChapterHero: React.FC<ChapterHeroProps> = ({
         </div>
       </div>
 
-      {/* Chapter progress indicator (Visible on LG+) */}
-      {isInView && (
+      {/* Chapter progress indicator (Visible on LG+ when multiple chapters exist) */}
+      {isInView && chapters.length > 1 && (
         <div className="hidden lg:block">
           <ChapterIndicator
             chapters={chapters.map((c) => ({ id: c.id, eyebrow: c.eyebrow }))}

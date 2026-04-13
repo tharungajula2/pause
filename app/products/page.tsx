@@ -17,8 +17,8 @@ import { StrategyCard } from '../components/ui/StrategyCard';
 
 export default function ProductsPage() {
     // FIX 3: Separate Occasions from SKU names in the Hero Switcher
-    // We only take the first 2 chapters (Narrative + SKU Portfolio) for the hero rail.
-    const labChapters = siteContent.heroChapters.slice(0, 2);
+    // Keep only the first slide (The Reading).
+    const labChapters = siteContent.heroChapters.slice(0, 1);
 
     const strategicInsights = [
         {
