@@ -1,29 +1,31 @@
 # MASTER CONTEXT: NUVIE THESIS
-**Project Maturity State:** Final Strategic Realignment / High-Fidelity Execution  
-**Version:** 3.0 (Narrative Separation & Lean Identity)  
-**Last Verified Against Codebase:** 2026-04-13
+**Project Maturity State:** High-Fidelity Strategic Analysis  
+**Version:** 25.0 (The Humble Study / Cinematic Release)  
+**Last Verified Against Codebase:** 2026-04-14
 
 ---
 
 ## 1. Project Identity
 
 ### The Perspective
-**Nuvie Thesis** is a **Founder-Facing Strategic Reading**. It has transitioned from a descriptive "Product Guide" to a pointed, analytical "Reading of the Reality." It frames the builder (Tharun) as an institutional specialist bringing structure to Nuvie's ambiguity.
+**Nuvie Thesis** is an **Outside Strategy Study**. It is built on public signals, product observations, and honest interpretation—never claims of inside knowledge. It frames the builder (Tharun) as an analytical specialist using this study to demonstrate product building, systems-minded thinking, and growth reality auditing.
 
 ### The Objective
-To demonstrate "Product-Occasion Fit" mastery. The site acts as a professional memo to Nuvie founders, providing an honest pass on their SKU architecture and behavioral triggers.
+To demonstrate "Product-Occasion Fit" mastery. The site acts as a high-fidelity strategic memorandum, providing an exploratory, humbler pass on Nuvie’s portfolio and growth mechanics.
 
-### The "No-Long-Dash" Policy
-A core typographic standard: The site maintains a clean, modern cadence by **purging all long dashes (—)** and replacing them with commas or periods.
+### The Tone: "Humble Student"
+- **Honesty**: Use "I suspect," "My current read is," and "I may be reading this wrong."
+- **First-Person**: Written as personal notes and observations.
+- **Precision**: Short paragraphs (3-5 sentences), zero fluff, and zero em-dashes.
 
 ---
 
 ## 2. Updated Project Architecture (4 Core Universes)
 
-1.  **Home (`/`)**: **The Atmospheric Entry.** Establishes intent and profile usefulness. Features an edge-to-edge cinematic background video loop (`hero-teaser.mp4`).
-2.  **Product Lab (`/products`)**: **The Portfolio.** A cinematic dive into the 6 core SKUs and future summer concepts. Includes the **Occasion Lens** section to anchor behavioral logic directly to product strategy.
-3.  **How I Can Help (`/how-i-can-help`)**: **The Execution.** A practical usefulness memo identifying focus areas (Product Fit, Repeat, Channels, Artifacts) and a concrete 30-day first-pass plan.
-4.  **Research WIP (`/research-wip`)**: **The Mastery Layer.** A password-gated (`nuvie26`) workbook containing deep strategic questions, hypotheses, and validation prompts.
+1.  **Home (`/`)**: **The Atmospheric Entry.** Establishes the profile of a systems-minded builder. Uses cinematic video backgrounds to set a premium, editorial stage.
+2.  **Product Lab (`/products`)**: **The Portfolio Study.** An external reading of the 6-SKU core and conceptual flavor extensions. Visuals are original concept designs; analysis is strictly speculative.
+3.  **How I Can Help (`/how-i-can-help`)**: **The Usefulness Memo.** A practical identification of key growth levers (Occasion Fit, Reorder Loops, Channel Clarity) and a 30-day first-pass plan.
+4.  **Research WIP (`/research-wip`)**: **The Mastery Workbook.** Password-gated (`nuvie26`) live study converted from the deep-research report into 8 structured modules (00–07). Features image placeholders and a private, persistence-active remarks workspace.
 
 ---
 
@@ -31,40 +33,36 @@ A core typographic standard: The site maintains a clean, modern cadence by **pur
 
 | Layer | Technology | Details |
 | :--- | :--- | :--- |
-| **Framework** | Next.js (App Router) | v16+ (Turbopack) |
-| **Language** | TypeScript | Total-type safety across all data layers |
-| **Styling** | Tailwind CSS 4 | Design-token-driven system |
-| **Identity** | Navigation Shift | Removed header secondary button; added subtle footer discovery links. |
-
-**Asset Path Information:**
-- **Videos**: `/public/videos/hero-teaser.mp4` (Main atmospheric background)
-- **Data Layer**: `/app/data/` (Centralized source for all strategic content)
+| **Framework** | Next.js (App Router) | Latest stabilizing versions with Turbopack support |
+| **Styling** | Vanilla CSS + Tailwind | Design-token driven "Performance-Editorial" aesthetic |
+| **Data Layer** | Centralized Registry | All content lives in `/app/data/` (products, research, site-content) |
+| **Video** | Hero Cinematic System | Standardized edge-to-edge background videos (`/public/videos/hero-teaser.mp4`) |
 
 ---
 
 ## 4. Design & Typography Standards
 
-1.  **Balanced Readability**: Body text opacity set to `0.8`–`0.9` for maximum focus on the Nuvie Cream background.
-2.  **The Dash Purge**: Mandatory replacement of all em-dashes and long dashes with commas or periods to ensure a polished, publisher-grade cadence.
-3.  **Narrative Separation**: Every page must clearly separate "Product" logic from "Behavioral" logic (Occasions) to prevent naming mix-ups.
-4.  **Lean Navigation**: The site header remains clean (No CTA buttons). Discoverability for deep research is shifted to discovery-only footer links.
+1.  **The Dash Purge**: Mandatory replacement of all em-dashes (—) with commas or periods to maintain a polished, book-like cadence.
+2.  **Cinematic Backdrop**: Hero sections utilize high-impact video loops to establish intent immediately.
+3.  **Visual Placeholders**: The Research WIP uses dashed-border placeholders for future evidence/assets, keeping the layout high-fidelity even when data is missing.
+4.  **Workspace Persistence**: The `WorkbookChapter` component utilizes local storage for private, client-side note persistence.
 
 ---
 
 ## 5. Security & Gate Logic
 
 - **Access Key**: `nuvie26` (Persistent password for the Research WIP).
-- **Index Visibility**: The workbook structure must remain visible even when content is retracted, presenting as a professional, work-in-progress checklist.
+- **Study Status**: All chapters display a muted "Live study. Incomplete by design" timestamp to maintain the WIP identity.
 
 ---
 
-## 6. Rules for Future Iterations (The Nuvie Standard)
+## 6. Rules for All Future Edits
 
-1.  **Humility over Hype**: Avoid marketing slogans. Use "I think," "My reading," and " Honest pass."
-2.  **Clarity as a Service**: If content is dense, break it into a "Structured Artifact" style (Strategy Cards, Consoles).
-3.  **One Action per Page**: Ensure each page ends with a singular, clearly defined continuation path.
+1.  **Hedging Language**: Never present an observation as a fact. Always frame it as a reading of the public signal.
+2.  **Product-Note Separation**: In SKUs, clearly label external observations to distinguish them from official Nuvie views.
+3.  **Sequential Continuation**: Every page must end with a clear, singular path to the next logical stage of the thesis.
 
 ---
 
-**Master Context v3.0 — The Final Refignment**  
-*The project is a professional strategic memorandum, not a product catalog.*
+**Master Context v25.0 — The Cinematic Synthesis**  
+*The project is an honest, high-fidelity demonstration of strategic thinking and product mastery.*
