@@ -110,9 +110,21 @@ h1, h2, h3, h4 {
 }
 
 .product-glow {
-  filter: blur(80px);
   opacity: 0.1;
   mix-blend-mode: multiply;
+}
+
+.video-container {
+  mask-image: linear-gradient(to bottom, 
+    black 0%, 
+    black 70%, 
+    transparent 100%
+  );
+}
+
+.video-vignette {
+  background: radial-gradient(circle at center, transparent 30%, var(--background) 100%);
+  z-index: 5;
 }
 
 @keyframes float {
