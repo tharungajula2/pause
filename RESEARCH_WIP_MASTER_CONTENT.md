@@ -159,10 +159,6 @@ Packaging for an RTD dairy product is not just branding — it is food safety, l
 > **[IMAGE SLOT]**: Nuvie bottle front — Kesar Pista
 
 - **The Cap**: Cap color is flavor-coded: Kesar Pista = green, Coffee = black. Material: Polypropylene (PP), food grade, heat resistant. Internal liner creates hermetic seal. The cap system works in conjunction with the tamper-evident ring.
-- **The V-Cut Tamper Ring**: The V-cut notch visible on the Kesar Pista cap is a tamper-evident feature. When the bottle is opened for the first time, the tamper ring separates from the cap body along the V-cut perforation. If the ring is intact at point of purchase, the product is sealed and untouched. This is a FSSAI requirement for beverage packaging.
-
-> [!NOTE] 
-> **[IMAGE SLOT]**: Close-up of Kesar Pista cap showing V-cut tamper ring detail
 
 - **Secondary Packaging**: Corrugated cardboard outer boxes for 6, 12, and 24-bottle packs. This is the area where damage most commonly occurs in D2C shipping. Internal dividers or protective inserts are critical for liquid bottle shipments across Indian courier networks — an area Nuvie should actively improve.
 

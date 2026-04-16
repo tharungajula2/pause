@@ -384,15 +384,6 @@ export const module01Content: EditorialSection[] = [
       },
       {
         type: 'sub-section',
-        title: 'The V-Cut Tamper Ring',
-        body: 'The V-cut notch visible on the Kesar Pista cap is a tamper-evident feature. When the bottle is opened for the first time, the tamper ring separates from the cap body along the V-cut perforation. If the ring is intact at point of purchase, the product is sealed and untouched. This is a FSSAI requirement for beverage packaging.'
-      },
-      {
-        type: 'image-slot',
-        description: 'Close-up of Kesar Pista cap showing V-cut tamper ring detail'
-      },
-      {
-        type: 'sub-section',
         title: 'Secondary Packaging',
         body: 'Corrugated cardboard outer boxes for 6, 12, and 24-bottle packs. This is the area where damage most commonly occurs in D2C shipping. Internal dividers or protective inserts are critical for liquid bottle shipments across Indian courier networks — an area Nuvie should actively improve.'
       }
