@@ -146,7 +146,7 @@ This analysis updates when data changes.
       </div>
 
       {/* The Dashboard */}
-      <div className="max-w-7xl mx-auto bg-[#0F0F0F] rounded-[2rem] border border-[#2A2A2A] shadow-2xl overflow-hidden text-[#E8E4DE] font-sans">
+      <div className="max-w-7xl mx-auto bg-[#0F0F0F] rounded-[2rem] border border-[#2A2A2A] shadow-2xl overflow-hidden text-[#E8E4DE] font-sans qc-dashboard-container">
         
         {/* Dashboard Header Bar */}
         <div className="border-b border-[#2A2A2A] bg-[#141414] px-6 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -227,7 +227,7 @@ This analysis updates when data changes.
                 {/* Left: SKU Matrix */}
                 <div className="lg:col-span-2">
                   <div className="flex items-center justify-between mb-8">
-                    <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE] opacity-90">SKU STATUS MATRIX</h3>
+                    <h3 className="text-sm !font-mono tracking-[0.3em] uppercase !font-bold !text-[#E8E4DE]">SKU STATUS MATRIX</h3>
                     <div className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
                       <span className="text-[9px] font-mono tracking-widest text-red-400 font-bold uppercase">3 Critical Failures</span>
@@ -288,7 +288,7 @@ This analysis updates when data changes.
 
                 {/* Right: Heatmap */}
                 <div className="space-y-8">
-                  <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE] opacity-90">DARK STORE HEAT MAP</h3>
+                  <h3 className="text-sm !font-mono tracking-[0.3em] uppercase !font-bold !text-[#E8E4DE]">DARK STORE HEAT MAP</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
                     {zones.map((zone) => (
                       <div 
@@ -300,7 +300,7 @@ This analysis updates when data changes.
                       >
                         <div className="flex justify-between items-start mb-4">
                           <div>
-                            <h4 className="text-xs font-bold uppercase tracking-widest text-[#E8E4DE]">{zone.name}</h4>
+                            <h4 className="text-xs !font-bold uppercase tracking-widest !text-[#E8E4DE]">{zone.name}</h4>
                             <p className="text-[9px] text-[#E8E4DE]/80 mt-1 uppercase font-mono leading-tight">{zone.description}</p>
                           </div>
                           <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded shrink-0
@@ -359,7 +359,7 @@ This analysis updates when data changes.
             <div className="animate-in fade-in duration-700">
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-serif mb-2 text-[#E8E4DE]">Keywords Nuvie Should Be Winning — and Isn&apos;t</h3>
+                  <h3 className="text-xl md:text-2xl !font-serif mb-2 !text-[#E8E4DE]">Keywords Nuvie Should Be Winning — and Isn&apos;t</h3>
                   <p className="text-xs text-[#E8E4DE]/70 font-mono tracking-widest uppercase">REPLICA: GOBBLECUBE KEYWORD EXPLORER</p>
                 </div>
                 <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
@@ -441,7 +441,7 @@ This analysis updates when data changes.
             <div className="animate-in fade-in duration-700">
                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
                   <div>
-                    <h3 className="text-xl md:text-2xl font-serif mb-2 text-[#E8E4DE]">SKU × City Campaign Intelligence</h3>
+                    <h3 className="text-xl md:text-2xl !font-serif mb-2 !text-[#E8E4DE]">SKU × City Campaign Intelligence</h3>
                     <p className="text-xs text-[#E8E4DE]/70 leading-relaxed max-w-xl font-light">
                       What a smart campaign structure looks like for Nuvie right now — and what it should look like after restock.
                     </p>
@@ -553,7 +553,7 @@ This analysis updates when data changes.
 
                {/* Day Parting */}
                <div>
-                  <h4 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE] opacity-90 mb-8">DAY-PARTING INTELLIGENCE</h4>
+                  <h4 className="text-sm !font-mono tracking-[0.3em] uppercase !font-bold !text-[#E8E4DE] opacity-90 mb-8">DAY-PARTING INTELLIGENCE</h4>
                   <div className="relative h-20 bg-[#141414] rounded-2xl border border-[#2A2A2A] overflow-hidden">
                      {/* Timeline Bar */}
                      <div className="absolute inset-0 flex">
@@ -590,7 +590,7 @@ This analysis updates when data changes.
           {activeTab === 'FLYWHEEL' && (
             <div className="animate-in fade-in duration-700">
                <div className="mb-20 text-center">
-                  <h3 className="text-2xl md:text-4xl font-serif mb-6 text-balance text-[#E8E4DE]">Organic vs Paid: The Flywheel Cycle</h3>
+                  <h3 className="text-2xl md:text-4xl !font-serif mb-6 text-balance !text-[#E8E4DE]">Organic vs Paid: The Flywheel Cycle</h3>
                   <p className="text-lg text-[#E8E4DE]/80 max-w-2xl mx-auto leading-relaxed font-light">
                     Nuvie currently sits in the Paid Dependency phase. The goal is to move the needle toward Algorithm Recognition.
                   </p>
@@ -599,7 +599,7 @@ This analysis updates when data changes.
                {/* Lifecycle Diagram */}
                <div className="relative max-w-5xl mx-auto mb-24 pt-12">
                   <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#2A2A2A] to-transparent" />
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div className="grid grid-cols-1 md:grid-2 lg:grid-cols-4 gap-8">
                      {[
                        { stage: 'STAGE 1', title: 'PAID DEPENDENCY', active: true, desc: 'Sales driven entirely by manual ad spend. ROAS is the only metric.' },
                        { stage: 'STAGE 2', title: 'BUILDING VELOCITY', active: false, desc: 'Consistent offtake starts to signal rank improvement to the app.' },
@@ -617,7 +617,7 @@ This analysis updates when data changes.
                            ${item.active ? 'bg-orange-500/5 border-orange-500/40' : 'bg-[#141414] border-[#2A2A2A] opacity-70 group-hover:opacity-90'}
                          `}>
                            <span className="text-[9px] font-mono text-orange-500/90 uppercase tracking-[0.3em] font-bold block mb-4">{item.stage}</span>
-                           <h4 className="text-sm font-bold tracking-widest mb-6 leading-tight text-[#E8E4DE]">{item.title}</h4>
+                           <h4 className="text-sm !font-bold tracking-widest mb-6 leading-tight !text-[#E8E4DE]">{item.title}</h4>
                            <p className="text-[11px] text-[#E8E4DE]/80 leading-relaxed italic font-light">{item.desc}</p>
                          </div>
                          {i < 3 && (
@@ -632,7 +632,7 @@ This analysis updates when data changes.
 
                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                   <div>
-                    <h4 className="text-xl font-serif mb-8 border-l-2 border-orange-500 pl-6 uppercase tracking-wider text-[#E8E4DE]">The Flywheel Metric to Watch</h4>
+                    <h4 className="text-xl !font-serif mb-8 border-l-2 border-orange-500 pl-6 uppercase tracking-wider !text-[#E8E4DE]">The Flywheel Metric to Watch</h4>
                     <p className="text-base text-[#E8E4DE]/90 leading-relaxed font-light mb-10">
                       &quot;Rising organic non-brand keyword sales. When &apos;protein drink&apos; or &apos;healthy snack&apos; searches start converting to Nuvie orders <span className="text-orange-400 font-medium">WITHOUT paid ads</span> — that&apos;s the flywheel spinning.&quot;
                     </p>
@@ -660,7 +660,7 @@ This analysis updates when data changes.
                   </div>
 
                   <div className="p-10 bg-[#141414] rounded-[3rem] border border-[#2A2A2A]">
-                    <h4 className="text-xs font-mono uppercase tracking-[0.3em] font-bold text-[#E8E4DE]/90 mb-10">What breaks the flywheel before it starts</h4>
+                    <h4 className="text-xs !font-mono uppercase tracking-[0.3em] !font-bold !text-[#E8E4DE]/90 mb-10">What breaks the flywheel before it starts</h4>
                     <ul className="space-y-8">
                        <li className="flex gap-6">
                           <span className="text-orange-500 font-serif text-2xl italic">01.</span>
@@ -770,6 +770,12 @@ This analysis updates when data changes.
         .no-scrollbar {
           -ms-overflow-style: none;
           scrollbar-width: none;
+        }
+        .qc-dashboard-container h1, 
+        .qc-dashboard-container h2, 
+        .qc-dashboard-container h3, 
+        .qc-dashboard-container h4 {
+           color: #E8E4DE !important;
         }
       `}</style>
     </div>
