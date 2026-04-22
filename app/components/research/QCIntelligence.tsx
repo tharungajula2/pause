@@ -227,7 +227,7 @@ This analysis updates when data changes.
                 {/* Left: SKU Matrix */}
                 <div className="lg:col-span-2">
                   <div className="flex items-center justify-between mb-8">
-                    <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE]/60">SKU STATUS MATRIX</h3>
+                    <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE]">SKU STATUS MATRIX</h3>
                     <div className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
                       <span className="text-[9px] font-mono tracking-widest text-red-400 font-bold uppercase">3 Critical Failures</span>
@@ -288,7 +288,7 @@ This analysis updates when data changes.
 
                 {/* Right: Heatmap */}
                 <div className="space-y-8">
-                  <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE]/60">DARK STORE HEAT MAP</h3>
+                  <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE]">DARK STORE HEAT MAP</h3>
                   <div className="grid grid-cols-1 gap-4">
                     {zones.map((zone) => (
                       <div 
@@ -359,8 +359,8 @@ This analysis updates when data changes.
             <div className="animate-in fade-in duration-700">
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-serif mb-2">Keywords Nuvie Should Be Winning — and Isn&apos;t</h3>
-                  <p className="text-xs text-[#E8E4DE]/40 font-mono tracking-widest uppercase">REPLICA: GOBBLECUBE KEYWORD EXPLORER</p>
+                  <h3 className="text-xl md:text-2xl font-serif mb-2 text-[#E8E4DE]">Keywords Nuvie Should Be Winning — and Isn&apos;t</h3>
+                  <p className="text-xs text-[#E8E4DE]/50 font-mono tracking-widest uppercase">REPLICA: GOBBLECUBE KEYWORD EXPLORER</p>
                 </div>
                 <div className="flex gap-2">
                    {['ALL', 'UNDERUSED', 'OVERUSED'].map(filter => (
@@ -441,8 +441,8 @@ This analysis updates when data changes.
             <div className="animate-in fade-in duration-700">
                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
                   <div>
-                    <h3 className="text-xl md:text-2xl font-serif mb-2">SKU × City Campaign Intelligence</h3>
-                    <p className="text-xs text-[#E8E4DE]/40 leading-relaxed max-w-xl">
+                    <h3 className="text-xl md:text-2xl font-serif mb-2 text-[#E8E4DE]">SKU × City Campaign Intelligence</h3>
+                    <p className="text-xs text-[#E8E4DE]/60 leading-relaxed max-w-xl">
                       What a smart campaign structure looks like for Nuvie right now — and what it should look like after restock.
                     </p>
                   </div>
@@ -553,7 +553,7 @@ This analysis updates when data changes.
 
                {/* Day Parting */}
                <div>
-                  <h4 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE]/60 mb-8">DAY-PARTING INTELLIGENCE</h4>
+                  <h4 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE] mb-8">DAY-PARTING INTELLIGENCE</h4>
                   <div className="relative h-20 bg-[#141414] rounded-2xl border border-[#2A2A2A] overflow-hidden">
                      {/* Timeline Bar */}
                      <div className="absolute inset-0 flex">
@@ -590,8 +590,8 @@ This analysis updates when data changes.
           {activeTab === 'FLYWHEEL' && (
             <div className="animate-in fade-in duration-700">
                <div className="mb-20 text-center">
-                  <h3 className="text-2xl md:text-4xl font-serif mb-6 text-balance">Organic vs Paid: The Flywheel Cycle</h3>
-                  <p className="text-lg text-[#E8E4DE]/60 max-w-2xl mx-auto leading-relaxed font-light">
+                  <h3 className="text-2xl md:text-4xl font-serif mb-6 text-balance text-[#E8E4DE]">Organic vs Paid: The Flywheel Cycle</h3>
+                  <p className="text-lg text-[#E8E4DE]/70 max-w-2xl mx-auto leading-relaxed font-light">
                     Nuvie currently sits in the Paid Dependency phase. The goal is to move the needle toward Algorithm Recognition.
                   </p>
                </div>
