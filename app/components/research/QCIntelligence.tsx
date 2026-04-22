@@ -156,36 +156,36 @@ This analysis updates when data changes.
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              <span className="text-[10px] md:text-[11px] font-mono tracking-[0.2em] uppercase font-bold text-[#E8E4DE]/70">
+              <span className="text-[10px] md:text-[11px] font-mono tracking-[0.2em] uppercase font-bold text-[#E8E4DE]/90">
                 NUVIE QC INTELLIGENCE — BANGALORE — BLINKIT
               </span>
             </div>
             <div className="hidden md:block h-4 w-px bg-[#2A2A2A]" />
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-[9px] font-mono uppercase tracking-widest text-[#E8E4DE]/40">System Status:</span>
+              <span className="text-[9px] font-mono uppercase tracking-widest text-[#E8E4DE]/70">System Status:</span>
               <span className="text-[9px] font-mono uppercase tracking-widest text-green-400 font-bold">SIMULATED LIVE</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
+          <div className="flex items-center gap-4 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto no-scrollbar">
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#1A1A1A] border border-[#2A2A2A] shrink-0">
-              <span className="text-[9px] font-mono text-[#E8E4DE]/40 uppercase tracking-tighter">Availability</span>
+              <span className="text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-tighter">Availability</span>
               <span className="text-[11px] font-mono font-bold text-red-400">40%</span>
             </div>
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#1A1A1A] border border-[#2A2A2A] shrink-0">
-              <span className="text-[9px] font-mono text-[#E8E4DE]/40 uppercase tracking-tighter">Share</span>
+              <span className="text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-tighter">Share</span>
               <div className="flex items-center gap-1">
                 <span className="text-[11px] font-mono font-bold text-amber-400">19%</span>
-                <span className="text-[9px] font-mono text-amber-400/60">↓3pts</span>
+                <span className="text-[9px] font-mono text-amber-400/80">↓3pts</span>
               </div>
             </div>
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#1A1A1A] border border-[#2A2A2A] shrink-0">
-              <span className="text-[9px] font-mono text-[#E8E4DE]/40 uppercase tracking-tighter">SKUs</span>
+              <span className="text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-tighter">SKUs</span>
               <span className="text-[11px] font-mono font-bold text-red-400">3/6</span>
             </div>
             
             {/* Watermark */}
-            <div className="ml-4 opacity-10 hover:opacity-100 transition-opacity">
+            <div className="ml-4 opacity-10 hover:opacity-100 transition-opacity shrink-0">
               <span className="text-[8px] font-mono uppercase tracking-[0.3em] font-bold rotate-90 md:rotate-0 inline-block">SIMULATED DATA</span>
             </div>
           </div>
@@ -208,7 +208,7 @@ This analysis updates when data changes.
                   if (tab.id !== 'AGENT') setAgentState('idle');
                 }}
                 className={`px-6 py-4 text-[10px] font-mono tracking-[0.2em] uppercase font-bold transition-all border-b-2 whitespace-nowrap
-                  ${activeTab === tab.id ? 'border-orange-500 text-orange-500 bg-orange-500/[0.03]' : 'border-transparent text-[#E8E4DE]/40 hover:text-[#E8E4DE]/70'}
+                  ${activeTab === tab.id ? 'border-orange-500 text-orange-500 bg-orange-500/[0.03]' : 'border-transparent text-[#E8E4DE]/70 hover:text-[#E8E4DE]'}
                 `}
               >
                 {tab.label}
@@ -227,22 +227,22 @@ This analysis updates when data changes.
                 {/* Left: SKU Matrix */}
                 <div className="lg:col-span-2">
                   <div className="flex items-center justify-between mb-8">
-                    <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE]">SKU STATUS MATRIX</h3>
+                    <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE] opacity-90">SKU STATUS MATRIX</h3>
                     <div className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
                       <span className="text-[9px] font-mono tracking-widest text-red-400 font-bold uppercase">3 Critical Failures</span>
                     </div>
                   </div>
                   
-                  <div className="overflow-x-auto">
+                  <div className="overflow-x-auto no-scrollbar">
                     <table className="w-full text-left border-collapse">
                       <thead>
                         <tr className="border-b border-[#2A2A2A]">
-                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest">SKU Name</th>
-                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest">Blinkit Status</th>
-                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest text-center">Coverage</th>
-                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest text-center">Trend</th>
-                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest text-right">Action</th>
+                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest">SKU Name</th>
+                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest">Blinkit Status</th>
+                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest text-center">Coverage</th>
+                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest text-center">Trend</th>
+                          <th className="pb-4 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest text-right">Action</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -251,7 +251,7 @@ This analysis updates when data changes.
                             <td className="py-5">
                               <div className="flex flex-col">
                                 <span className="text-xs font-bold text-[#E8E4DE]/90">{sku.name}</span>
-                                <span className="text-[9px] font-mono text-[#E8E4DE]/30 uppercase">{sku.format}</span>
+                                <span className="text-[9px] font-mono text-[#E8E4DE]/60 uppercase">{sku.format}</span>
                               </div>
                             </td>
                             <td className="py-5">
@@ -288,8 +288,8 @@ This analysis updates when data changes.
 
                 {/* Right: Heatmap */}
                 <div className="space-y-8">
-                  <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE]">DARK STORE HEAT MAP</h3>
-                  <div className="grid grid-cols-1 gap-4">
+                  <h3 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE] opacity-90">DARK STORE HEAT MAP</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
                     {zones.map((zone) => (
                       <div 
                         key={zone.id} 
@@ -300,10 +300,10 @@ This analysis updates when data changes.
                       >
                         <div className="flex justify-between items-start mb-4">
                           <div>
-                            <h4 className="text-xs font-bold uppercase tracking-widest">{zone.name}</h4>
-                            <p className="text-[9px] text-[#E8E4DE]/30 mt-1 uppercase font-mono">{zone.description}</p>
+                            <h4 className="text-xs font-bold uppercase tracking-widest text-[#E8E4DE]">{zone.name}</h4>
+                            <p className="text-[9px] text-[#E8E4DE]/80 mt-1 uppercase font-mono leading-tight">{zone.description}</p>
                           </div>
-                          <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded
+                          <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded shrink-0
                             ${zone.status === 'CRITICAL' ? 'text-red-400 bg-red-400/10' : zone.status === 'WEAK' ? 'text-amber-400 bg-amber-400/10' : zone.status === 'PARTIAL' ? 'text-blue-400 bg-blue-400/10' : 'text-green-400 bg-green-400/10'}
                           `}>
                             {zone.status}
@@ -318,16 +318,16 @@ This analysis updates when data changes.
 
                         {selectedZone === zone.id && (
                           <div className="mt-6 pt-6 border-t border-[#2A2A2A] animate-in slide-in-from-top-2 duration-300">
-                             <span className="text-[8px] font-mono uppercase tracking-widest text-[#E8E4DE]/30 block mb-3">Available SKUs:</span>
+                             <span className="text-[8px] font-mono uppercase tracking-widest text-[#E8E4DE]/70 block mb-3">Available SKUs:</span>
                              <div className="flex flex-wrap gap-2">
                                {zone.skus.map(sku => (
-                                 <span key={sku} className="text-[9px] px-2 py-1 bg-[#0F0F0F] rounded border border-[#2A2A2A] text-[#E8E4DE]/70">{sku}</span>
+                                 <span key={sku} className="text-[9px] px-2 py-1 bg-[#0F0F0F] rounded border border-[#2A2A2A] text-[#E8E4DE]/90">{sku}</span>
                                ))}
                                {zone.skus.length === 0 && <span className="text-[9px] text-red-400 italic">No SKUs available</span>}
                              </div>
                              <div className="mt-4 p-3 rounded-lg bg-orange-500/5 border border-orange-500/10">
-                                <span className="text-[9px] font-mono text-orange-500/60 uppercase block mb-1">Recommendation:</span>
-                                <p className="text-[10px] text-orange-500/80 leading-relaxed italic">Priority stock allocation for Café Latte required.</p>
+                                <span className="text-[9px] font-mono text-orange-500/80 uppercase block mb-1">Recommendation:</span>
+                                <p className="text-[10px] text-orange-400/90 leading-relaxed italic">Priority stock allocation for Café Latte required.</p>
                              </div>
                           </div>
                         )}
@@ -345,7 +345,7 @@ This analysis updates when data changes.
                   </div>
                   <div>
                     <span className="text-[10px] font-mono tracking-[0.3em] text-amber-500 uppercase font-bold block mb-2">Benchmark Alert</span>
-                    <p className="text-sm md:text-base text-[#E8E4DE]/70 leading-relaxed italic">
+                    <p className="text-sm md:text-base text-[#E8E4DE]/90 leading-relaxed italic font-light">
                       &quot;GobbleCube&apos;s benchmark: brands spending on QC ads with &lt;90% availability are burning money on empty shelves. Current Nuvie average: 40%. <span className="text-amber-400 font-bold">Recommendation: PAUSE all ad spend</span> until Café Latte and bars are restocked.&quot;
                     </p>
                   </div>
@@ -360,15 +360,15 @@ This analysis updates when data changes.
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
                 <div>
                   <h3 className="text-xl md:text-2xl font-serif mb-2 text-[#E8E4DE]">Keywords Nuvie Should Be Winning — and Isn&apos;t</h3>
-                  <p className="text-xs text-[#E8E4DE]/50 font-mono tracking-widest uppercase">REPLICA: GOBBLECUBE KEYWORD EXPLORER</p>
+                  <p className="text-xs text-[#E8E4DE]/70 font-mono tracking-widest uppercase">REPLICA: GOBBLECUBE KEYWORD EXPLORER</p>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
                    {['ALL', 'UNDERUSED', 'OVERUSED'].map(filter => (
                      <button
                        key={filter}
                        onClick={() => setKeywordFilter(filter as any)}
-                       className={`px-4 py-2 rounded-lg text-[10px] font-mono tracking-widest uppercase font-bold transition-all border
-                         ${keywordFilter === filter ? 'bg-orange-500 border-orange-500 text-[#0F0F0F]' : 'bg-transparent border-[#2A2A2A] text-[#E8E4DE]/40 hover:text-[#E8E4DE]/70'}
+                       className={`px-4 py-2 rounded-lg text-[10px] font-mono tracking-widest uppercase font-bold transition-all border shrink-0
+                         ${keywordFilter === filter ? 'bg-orange-500 border-orange-500 text-[#0F0F0F]' : 'bg-transparent border-[#2A2A2A] text-[#E8E4DE]/70 hover:text-[#E8E4DE]'}
                        `}
                      >
                        {filter}
@@ -377,16 +377,16 @@ This analysis updates when data changes.
                 </div>
               </div>
 
-              <div className="overflow-x-auto">
-                 <table className="w-full text-left border-collapse">
+              <div className="overflow-x-auto no-scrollbar">
+                 <table className="w-full text-left border-collapse min-w-[800px]">
                    <thead>
                      <tr className="border-b border-[#2A2A2A]">
-                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest">Keyword</th>
-                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest">Volume</th>
-                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest">Rank</th>
-                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest">Winner</th>
-                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest">Status</th>
-                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/30 uppercase tracking-widest text-right">Recommended Action</th>
+                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest">Keyword</th>
+                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest">Volume</th>
+                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest">Rank</th>
+                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest">Winner</th>
+                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest">Status</th>
+                        <th className="pb-6 text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest text-right">Recommended Action</th>
                      </tr>
                    </thead>
                    <tbody className="divide-y divide-[#1A1A1A]">
@@ -397,14 +397,14 @@ This analysis updates when data changes.
                          </td>
                          <td className="py-6 pr-6">
                            <span className={`text-[10px] font-mono uppercase tracking-widest font-bold 
-                             ${kw.volume === 'Very High' ? 'text-orange-500' : kw.volume === 'High' ? 'text-orange-400' : 'text-[#E8E4DE]/40'}
+                             ${kw.volume === 'Very High' ? 'text-orange-500' : kw.volume === 'High' ? 'text-orange-400' : 'text-[#E8E4DE]/60'}
                            `}>{kw.volume}</span>
                          </td>
                          <td className="py-6 pr-6">
-                           <span className={`text-[10px] font-mono font-bold ${kw.rank.includes('#1') ? 'text-green-400' : 'text-[#E8E4DE]/40'}`}>{kw.rank}</span>
+                           <span className={`text-[10px] font-mono font-bold ${kw.rank.includes('#1') ? 'text-green-400' : 'text-[#E8E4DE]/60'}`}>{kw.rank}</span>
                          </td>
                          <td className="py-6 pr-6">
-                           <span className="text-[10px] text-[#E8E4DE]/60 italic">{kw.winner}</span>
+                           <span className="text-[10px] text-[#E8E4DE]/90 italic">{kw.winner}</span>
                          </td>
                          <td className="py-6 pr-6">
                             <span className={`px-2 py-0.5 rounded text-[8px] font-bold uppercase tracking-widest border
@@ -420,7 +420,7 @@ This analysis updates when data changes.
                             </span>
                          </td>
                          <td className="py-6 text-right">
-                           <p className="text-[10px] text-[#E8E4DE]/50 font-light max-w-[200px] ml-auto leading-relaxed italic">{kw.action}</p>
+                           <p className="text-[10px] text-[#E8E4DE]/80 font-light max-w-[200px] ml-auto leading-relaxed italic">{kw.action}</p>
                          </td>
                        </tr>
                      ))}
@@ -429,8 +429,8 @@ This analysis updates when data changes.
               </div>
 
               <div className="mt-16 p-8 bg-[#141414] rounded-[2rem] border border-[#2A2A2A]">
-                 <p className="text-sm text-[#E8E4DE]/60 leading-relaxed italic">
-                   &quot;Key principle from GobbleCube: <span className="text-orange-500/80">Don&apos;t spend where your ad rank is worse than your organic rank.</span> And never spend on a keyword when you&apos;re OOS in the city running the ad — you&apos;re paying to show an empty shelf.&quot;
+                 <p className="text-sm text-[#E8E4DE]/90 leading-relaxed italic font-light">
+                   &quot;Key principle from GobbleCube: <span className="text-orange-500/90 font-bold">Don&apos;t spend where your ad rank is worse than your organic rank.</span> And never spend on a keyword when you&apos;re OOS in the city running the ad — you&apos;re paying to show an empty shelf.&quot;
                  </p>
               </div>
             </div>
@@ -442,15 +442,15 @@ This analysis updates when data changes.
                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
                   <div>
                     <h3 className="text-xl md:text-2xl font-serif mb-2 text-[#E8E4DE]">SKU × City Campaign Intelligence</h3>
-                    <p className="text-xs text-[#E8E4DE]/60 leading-relaxed max-w-xl">
+                    <p className="text-xs text-[#E8E4DE]/70 leading-relaxed max-w-xl font-light">
                       What a smart campaign structure looks like for Nuvie right now — and what it should look like after restock.
                     </p>
                   </div>
-                  <div className="flex p-1 bg-[#141414] rounded-xl border border-[#2A2A2A]">
+                  <div className="flex p-1 bg-[#141414] rounded-xl border border-[#2A2A2A] self-start md:self-end">
                      <button 
                        onClick={() => setIsRestockTarget(false)}
                        className={`px-4 py-2 rounded-lg text-[9px] font-mono tracking-widest uppercase font-bold transition-all
-                         ${!isRestockTarget ? 'bg-orange-500 text-[#0F0F0F]' : 'text-[#E8E4DE]/40'}
+                         ${!isRestockTarget ? 'bg-orange-500 text-[#0F0F0F]' : 'text-[#E8E4DE]/70'}
                        `}
                      >
                        CURRENT STATE
@@ -458,7 +458,7 @@ This analysis updates when data changes.
                      <button 
                        onClick={() => setIsRestockTarget(true)}
                        className={`px-4 py-2 rounded-lg text-[9px] font-mono tracking-widest uppercase font-bold transition-all
-                         ${isRestockTarget ? 'bg-green-500 text-[#0F0F0F]' : 'text-[#E8E4DE]/40'}
+                         ${isRestockTarget ? 'bg-green-500 text-[#0F0F0F]' : 'text-[#E8E4DE]/70'}
                        `}
                      >
                        POST-RESTOCK
@@ -468,14 +468,14 @@ This analysis updates when data changes.
 
                {/* Matrix Grid */}
                <div className="mb-16">
-                  <div className="overflow-x-auto">
+                  <div className="overflow-x-auto no-scrollbar">
                     <div className="min-w-[800px]">
                       {/* Grid Headers */}
                       <div className="grid grid-cols-7 gap-4 mb-4">
                         <div />
                         {zones.map(z => (
                           <div key={z.id} className="text-center">
-                            <span className="text-[9px] font-mono tracking-widest text-[#E8E4DE]/30 uppercase block">{z.name}</span>
+                            <span className="text-[9px] font-mono tracking-widest text-[#E8E4DE]/70 uppercase block">{z.name}</span>
                           </div>
                         ))}
                       </div>
@@ -485,7 +485,7 @@ This analysis updates when data changes.
                         {skus.map((sku, sIdx) => (
                           <div key={sIdx} className="grid grid-cols-7 gap-4 items-center">
                             <div className="text-right pr-4 border-r border-[#1A1A1A]">
-                              <span className="text-[10px] font-bold text-[#E8E4DE]/70 truncate block">{sku.name}</span>
+                              <span className="text-[10px] font-bold text-[#E8E4DE]/90 truncate block">{sku.name}</span>
                             </div>
                             {zones.map((zone, zIdx) => {
                               // Simulate status logic
@@ -520,7 +520,7 @@ This analysis updates when data changes.
                                        )}
                                      </p>
                                      <div className="flex items-center justify-between mt-3 pt-3 border-t border-[#2A2A2A]">
-                                        <span className="text-[8px] font-mono text-[#E8E4DE]/30 uppercase">Priority</span>
+                                        <span className="text-[8px] font-mono text-[#E8E4DE]/70 uppercase">Priority</span>
                                         <span className={`text-[8px] font-bold uppercase ${status === 'green' ? 'text-green-400' : 'text-[#E8E4DE]/20'}`}>HIGH</span>
                                      </div>
                                   </div>
@@ -536,11 +536,11 @@ This analysis updates when data changes.
 
                <div className="flex flex-wrap gap-8 items-center mb-16 px-6 py-4 rounded-2xl bg-[#141414] border border-[#2A2A2A]">
                   <div className="flex items-center gap-3">
-                    <span className="text-[10px] font-mono text-[#E8E4DE]/40 uppercase tracking-widest">Active cells:</span>
+                    <span className="text-[10px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest">Active cells:</span>
                     <span className={`text-xl font-mono font-bold ${isRestockTarget ? 'text-green-400' : 'text-amber-400'}`}>{isRestockTarget ? '36/36' : '8/36'}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="text-[10px] font-mono text-[#E8E4DE]/40 uppercase tracking-widest">Blocked:</span>
+                    <span className="text-[10px] font-mono text-[#E8E4DE]/70 uppercase tracking-widest">Blocked:</span>
                     <span className={`text-xl font-mono font-bold ${isRestockTarget ? 'text-[#E8E4DE]/20' : 'text-red-400'}`}>{isRestockTarget ? '0/36' : '18/36'}</span>
                   </div>
                   {!isRestockTarget && (
@@ -553,13 +553,13 @@ This analysis updates when data changes.
 
                {/* Day Parting */}
                <div>
-                  <h4 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE] mb-8">DAY-PARTING INTELLIGENCE</h4>
+                  <h4 className="text-sm font-mono tracking-[0.3em] uppercase font-bold text-[#E8E4DE] opacity-90 mb-8">DAY-PARTING INTELLIGENCE</h4>
                   <div className="relative h-20 bg-[#141414] rounded-2xl border border-[#2A2A2A] overflow-hidden">
                      {/* Timeline Bar */}
                      <div className="absolute inset-0 flex">
                         {[...Array(18)].map((_, i) => (
                           <div key={i} className="flex-1 border-r border-[#2A2A2A]/20 flex items-end justify-center pb-2">
-                             <span className="text-[7px] font-mono text-[#E8E4DE]/20">{i + 6}h</span>
+                             <span className="text-[7px] font-mono text-[#E8E4DE]/60">{i + 6}h</span>
                           </div>
                         ))}
                      </div>
@@ -575,11 +575,11 @@ This analysis updates when data changes.
                            <span className="text-[8px] font-mono font-bold text-orange-500 rotate-90 whitespace-nowrap">GENERAL PEAK</span>
                         </div>
                         <div className="absolute left-[50%] w-[50%] h-4 bg-green-500/5 bottom-0 flex items-center justify-center">
-                           <span className="text-[7px] font-mono font-bold text-green-500 uppercase tracking-widest opacity-40">Low Competition Window</span>
+                           <span className="text-[7px] font-mono font-bold text-green-500 uppercase tracking-widest opacity-60">Low Competition Window</span>
                         </div>
                      </div>
                   </div>
-                  <p className="mt-6 text-xs text-[#E8E4DE]/40 italic leading-relaxed">
+                  <p className="mt-6 text-xs text-[#E8E4DE]/70 italic leading-relaxed font-light">
                     Note: &quot;GobbleCube experiment showed full-day visibility outperforms day-parted campaigns. Don&apos;t front-load.&quot;
                   </p>
                </div>
@@ -591,7 +591,7 @@ This analysis updates when data changes.
             <div className="animate-in fade-in duration-700">
                <div className="mb-20 text-center">
                   <h3 className="text-2xl md:text-4xl font-serif mb-6 text-balance text-[#E8E4DE]">Organic vs Paid: The Flywheel Cycle</h3>
-                  <p className="text-lg text-[#E8E4DE]/70 max-w-2xl mx-auto leading-relaxed font-light">
+                  <p className="text-lg text-[#E8E4DE]/80 max-w-2xl mx-auto leading-relaxed font-light">
                     Nuvie currently sits in the Paid Dependency phase. The goal is to move the needle toward Algorithm Recognition.
                   </p>
                </div>
@@ -599,7 +599,7 @@ This analysis updates when data changes.
                {/* Lifecycle Diagram */}
                <div className="relative max-w-5xl mx-auto mb-24 pt-12">
                   <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#2A2A2A] to-transparent" />
-                  <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                      {[
                        { stage: 'STAGE 1', title: 'PAID DEPENDENCY', active: true, desc: 'Sales driven entirely by manual ad spend. ROAS is the only metric.' },
                        { stage: 'STAGE 2', title: 'BUILDING VELOCITY', active: false, desc: 'Consistent offtake starts to signal rank improvement to the app.' },
@@ -614,14 +614,14 @@ This analysis updates when data changes.
                            </div>
                          )}
                          <div className={`p-8 rounded-[2rem] border transition-all duration-700 h-full
-                           ${item.active ? 'bg-orange-500/5 border-orange-500/40' : 'bg-[#141414] border-[#2A2A2A] opacity-40 group-hover:opacity-60'}
+                           ${item.active ? 'bg-orange-500/5 border-orange-500/40' : 'bg-[#141414] border-[#2A2A2A] opacity-70 group-hover:opacity-90'}
                          `}>
-                           <span className="text-[9px] font-mono text-orange-500/60 uppercase tracking-[0.3em] font-bold block mb-4">{item.stage}</span>
-                           <h4 className="text-sm font-bold tracking-widest mb-6 leading-tight">{item.title}</h4>
-                           <p className="text-[11px] text-[#E8E4DE]/50 leading-relaxed italic">{item.desc}</p>
+                           <span className="text-[9px] font-mono text-orange-500/90 uppercase tracking-[0.3em] font-bold block mb-4">{item.stage}</span>
+                           <h4 className="text-sm font-bold tracking-widest mb-6 leading-tight text-[#E8E4DE]">{item.title}</h4>
+                           <p className="text-[11px] text-[#E8E4DE]/80 leading-relaxed italic font-light">{item.desc}</p>
                          </div>
                          {i < 3 && (
-                           <div className="hidden md:block absolute top-1/2 -right-4 -translate-y-1/2 text-[#2A2A2A]">
+                           <div className="hidden lg:block absolute top-1/2 -right-4 -translate-y-1/2 text-[#2A2A2A]">
                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                            </div>
                          )}
@@ -632,15 +632,15 @@ This analysis updates when data changes.
 
                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                   <div>
-                    <h4 className="text-xl font-serif mb-8 border-l-2 border-orange-500 pl-6 uppercase tracking-wider">The Flywheel Metric to Watch</h4>
-                    <p className="text-base text-[#E8E4DE]/70 leading-relaxed font-light mb-10">
+                    <h4 className="text-xl font-serif mb-8 border-l-2 border-orange-500 pl-6 uppercase tracking-wider text-[#E8E4DE]">The Flywheel Metric to Watch</h4>
+                    <p className="text-base text-[#E8E4DE]/90 leading-relaxed font-light mb-10">
                       &quot;Rising organic non-brand keyword sales. When &apos;protein drink&apos; or &apos;healthy snack&apos; searches start converting to Nuvie orders <span className="text-orange-400 font-medium">WITHOUT paid ads</span> — that&apos;s the flywheel spinning.&quot;
                     </p>
                     
                     <div className="space-y-8">
                        <div>
                           <div className="flex justify-between items-end mb-3">
-                             <span className="text-[10px] font-mono uppercase tracking-widest text-[#E8E4DE]/40">Paid-driven orders</span>
+                             <span className="text-[10px] font-mono uppercase tracking-widest text-[#E8E4DE]/70">Paid-driven orders</span>
                              <span className="text-lg font-mono font-bold text-orange-400">100%</span>
                           </div>
                           <div className="h-2 bg-[#1A1A1A] rounded-full overflow-hidden">
@@ -649,8 +649,8 @@ This analysis updates when data changes.
                        </div>
                        <div>
                           <div className="flex justify-between items-end mb-3">
-                             <span className="text-[10px] font-mono uppercase tracking-widest text-[#E8E4DE]/40">Organic-driven orders</span>
-                             <span className="text-lg font-mono font-bold text-[#E8E4DE]/20">~0%</span>
+                             <span className="text-[10px] font-mono uppercase tracking-widest text-[#E8E4DE]/70">Organic-driven orders</span>
+                             <span className="text-lg font-mono font-bold text-[#E8E4DE]/40">~0%</span>
                           </div>
                           <div className="h-2 bg-[#1A1A1A] rounded-full overflow-hidden">
                              <div className="h-full bg-orange-500/20 w-[2%]" />
@@ -660,19 +660,19 @@ This analysis updates when data changes.
                   </div>
 
                   <div className="p-10 bg-[#141414] rounded-[3rem] border border-[#2A2A2A]">
-                    <h4 className="text-xs font-mono uppercase tracking-[0.3em] font-bold text-[#E8E4DE]/60 mb-10">What breaks the flywheel before it starts</h4>
+                    <h4 className="text-xs font-mono uppercase tracking-[0.3em] font-bold text-[#E8E4DE]/90 mb-10">What breaks the flywheel before it starts</h4>
                     <ul className="space-y-8">
                        <li className="flex gap-6">
                           <span className="text-orange-500 font-serif text-2xl italic">01.</span>
-                          <p className="text-sm text-[#E8E4DE]/60 leading-relaxed"><span className="text-[#E8E4DE] font-bold">Stockouts during ad campaigns</span> — Currently happening. OOS kills rank history, forcing you to restart the flywheel from zero.</p>
+                          <p className="text-sm text-[#E8E4DE]/80 leading-relaxed font-light"><span className="text-[#E8E4DE] font-bold">Stockouts during ad campaigns</span> — Currently happening. OOS kills rank history, forcing you to restart the flywheel from zero.</p>
                        </li>
                        <li className="flex gap-6">
                           <span className="text-orange-500 font-serif text-2xl italic">02.</span>
-                          <p className="text-sm text-[#E8E4DE]/60 leading-relaxed"><span className="text-[#E8E4DE] font-bold">Discount-driven offtake</span> — Algorithm rewards velocity but ignores quality. High repeat rate (organic) is the only true health signal.</p>
+                          <p className="text-sm text-[#E8E4DE]/80 leading-relaxed font-light"><span className="text-[#E8E4DE] font-bold">Discount-driven offtake</span> — Algorithm rewards velocity but ignores quality. High repeat rate (organic) is the only true health signal.</p>
                        </li>
                        <li className="flex gap-6">
                           <span className="text-orange-500 font-serif text-2xl italic">03.</span>
-                          <p className="text-sm text-[#E8E4DE]/60 leading-relaxed"><span className="text-[#E8E4DE] font-bold">Pan-India campaigns before city-level wins</span> — 57% lower ROAS vs city-specific. Win Bangalore before you scale ads elsewhere.</p>
+                          <p className="text-sm text-[#E8E4DE]/80 leading-relaxed font-light"><span className="text-[#E8E4DE] font-bold">Pan-India campaigns before city-level wins</span> — 57% lower ROAS vs city-specific. Win Bangalore before you scale ads elsewhere.</p>
                        </li>
                     </ul>
                   </div>
@@ -686,7 +686,7 @@ This analysis updates when data changes.
                <div className="mb-10 flex items-center justify-between border-b border-[#2A2A2A]/40 pb-6">
                   <div>
                     <h3 className="text-sm md:text-base tracking-[0.4em] uppercase font-bold text-orange-500">NUVIE GROWTH AGENT — DAILY BRIEFING</h3>
-                    <p className="text-[9px] md:text-[10px] text-[#E8E4DE]/40 uppercase tracking-widest mt-1">Simulated AI analysis based on current availability signals</p>
+                    <p className="text-[9px] md:text-[10px] text-[#E8E4DE]/70 uppercase tracking-widest mt-1">Simulated AI analysis based on current availability signals</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
@@ -719,8 +719,8 @@ This analysis updates when data changes.
                </div>
 
                <div className="mt-12 p-8 border-t border-[#1A1A1A]">
-                  <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-orange-500/40 mb-6 italic">HOW THIS AGENT WORKS</h4>
-                  <p className="text-[11px] text-[#E8E4DE]/30 leading-relaxed max-w-3xl font-sans italic">
+                  <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-orange-500/60 mb-6 italic">HOW THIS AGENT WORKS</h4>
+                  <p className="text-[11px] text-[#E8E4DE]/70 leading-relaxed max-w-3xl font-sans italic">
                     This analysis is generated by a simulated logic layer that weights current availability (40%), keyword SOV gaps, and category share shifts. It replicates the core methodology of the GobbleCube framework — moving from descriptive data (what happened) to prescriptive action (what to do now).
                   </p>
                </div>
