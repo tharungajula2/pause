@@ -7,6 +7,7 @@ import { WorkbookChapter as StudyChapter } from '../components/research/Workbook
 import { EditorialChapter } from '../components/research/EditorialChapter';
 import { StickyNotesChapter } from '../components/research/StickyNotesChapter';
 import { QCIntelligence } from '../components/research/QCIntelligence';
+import { FlavorLab } from '../components/research/FlavorLab';
 
 export default function ResearchWipClient() {
   const chapters = researchWipData;
@@ -73,6 +74,8 @@ export default function ResearchWipClient() {
             ) : activeChapter && (
               activeChapter.type === 'qc-intelligence' ? (
                 <QCIntelligence chapter={activeChapter} />
+              ) : activeChapter.type === 'flavor-lab' ? (
+                <FlavorLab chapter={activeChapter} />
               ) : activeChapter.type === 'sticky-notes' ? (
                 <StickyNotesChapter chapter={activeChapter} />
               ) : activeChapter.type === 'editorial' ? (

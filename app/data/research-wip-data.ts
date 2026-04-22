@@ -101,4 +101,11 @@ export const researchWipData: WorkbookChapter[] = [
     title: 'Quick Commerce Intelligence',
     summary: 'QC is not a sales channel. It\'s a data system. Here\'s what it would look like to actually operate it.',
   },
+  {
+    id: '03-flavor-lab',
+    type: 'flavor-lab',
+    eyebrow: 'MODULE 03',
+    title: 'Flavor & Product Lab',
+    summary: 'What customers are actually asking for. What the US figured out. What India hasn\'t tried yet.',
+  },
 ];

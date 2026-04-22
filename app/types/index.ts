@@ -137,7 +137,7 @@ export interface WorkbookChapter {
   title: string;
   eyebrow: string;
   summary: string;
-  type?: 'study' | 'editorial' | 'sticky-notes' | 'qc-intelligence';
+  type?: 'study' | 'editorial' | 'sticky-notes' | 'qc-intelligence' | 'flavor-lab';
   blocks?: WorkbookBlock[]; // For standard study card style
   sections?: EditorialSection[]; // For editorial style
   stickyNotes?: StickyNote[]; // For raw observations context
