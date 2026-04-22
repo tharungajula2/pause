@@ -94,4 +94,11 @@ export const researchWipData: WorkbookChapter[] = [
       }
     ]
   },
+  {
+    id: '02-qc-intelligence',
+    type: 'qc-intelligence',
+    eyebrow: 'MODULE 02',
+    title: 'Quick Commerce Intelligence',
+    summary: 'QC is not a sales channel. It\'s a data system. Here\'s what it would look like to actually operate it.',
+  },
 ];
