@@ -30,7 +30,7 @@ export const StickyNotesChapter: React.FC<StickyNotesChapterProps> = ({ chapter 
         
         <div className="bg-[#DDD5C8]/10 border-l border-accent/20 p-6 max-w-3xl">
            <p className="text-sm text-foreground/50 italic leading-relaxed">
-             These are rough working notes. Not conclusions. Signals worth keeping somewhere.
+             These are live working notes from building a D2C brand concept from scratch. Raw thinking, not polished conclusions. The kind of signals that matter before they become obvious.
            </p>
         </div>
       </header>

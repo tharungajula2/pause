@@ -43,7 +43,7 @@ export const HeroVisualStage: React.FC<HeroVisualStageProps> = ({ activeChapter 
           className="absolute w-full h-full object-cover object-[center_60%] scale-100 opacity-20 transition-opacity duration-1000"
           poster="/images/hero-fallback.jpg"
         >
-          <source src="/videos/lab-hero.mp4" type="video/mp4" />
+          <source src="/videos/product_page.mp4" type="video/mp4" />
         </video>
         
         {/* Atmospheric Overlays — Heavier vignette to protect the Navbar */}

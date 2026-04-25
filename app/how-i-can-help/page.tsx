@@ -1,8 +1,10 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "How I Can Help — Nuvie Thesis",
-  description: "A practical outline of where I may be useful across product, repeat logic, and execution clarity.",
+  title: {
+    absolute: "PAUSE"
+  },
+  description: "Operational advisory and strategic execution for founders who need to bridge the gap between vision and reality.",
 };
 
 import React from 'react';
@@ -27,7 +29,7 @@ export default function HowICanHelpPage() {
                         className="absolute w-full h-full object-cover scale-105 opacity-15 transition-opacity duration-1000"
                         poster="/images/hero-fallback.jpg"
                     >
-                        <source src="/videos/outreach-hero.mp4" type="video/mp4" />
+                        <source src="/videos/howcanihelp_page.mp4" type="video/mp4" />
                     </video>
                     
                     {/* Atmospheric Overlays */}
@@ -45,7 +47,7 @@ export default function HowICanHelpPage() {
                         Useful work, not <br/><span className="italic text-foreground/80 text-4xl md:text-6xl lg:text-8xl block md:inline mt-2 md:mt-0">abstract advice.</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-foreground/80 font-light max-w-2xl mx-auto leading-relaxed">
-                        A few areas where I think I can genuinely contribute, around product-occasion fit, repeat mechanics, and how Nuvie communicates in the channels that matter.
+                        I built PAUSE from scratch — the brand, the products, the strategy, the packaging. Here is where I think that kind of thinking can be genuinely useful inside a founder's team.
                     </p>
                 </div>
             </section>
@@ -54,10 +56,10 @@ export default function HowICanHelpPage() {
             <section className="py-32 px-6 max-w-4xl mx-auto">
                 <div className="space-y-8 text-xl md:text-2xl text-foreground/80 font-light leading-relaxed">
                     <p>
-                        I came from places where the information was dense and the job was to make it clearer. Credit risk, lending workflows, analytics. The common thread was always the same — take something messy, find the structure inside it, and build something usable from it. Not a framework. A working output.
+                        I come from analytics, systems work, and building structured products from messy problems. Credit risk, lending workflows, operations, product building — the common thread was always the same. Take something complex, find the structure inside it, and build something that actually works. Not a deck. Not a framework. A working output.
                     </p>
                     <p>
-                        That is how I approached this study. And that is how I would approach anything useful I could do here.
+                        That is how I built PAUSE. And that is exactly how I would approach any problem worth solving inside a growing consumer brand.
                     </p>
                 </div>
             </section>
@@ -69,7 +71,7 @@ export default function HowICanHelpPage() {
 
                     <h2 className="text-3xl md:text-5xl font-serif mb-6">Where I may be useful</h2>
                     <p className="text-foreground/75 font-light max-w-xl mx-auto text-lg leading-relaxed">
-                        Focused contribution areas built around Nuvie’s real problems: occasions, repeat, trust, and channel clarity.
+                        Four areas where my background maps directly onto real growth problems.
                     </p>
                 </div>
 
@@ -83,10 +85,10 @@ export default function HowICanHelpPage() {
                             </div>
                             <h3 className="text-2xl font-serif mb-4">Product × Occasion Fit</h3>
                             <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
-                                How specific SKUs attach to specific moments, and where messaging or positioning may become sharper based on real behavioral signals.
+                                Understanding which SKUs attach naturally to which consumer moments — and where the positioning or messaging needs to be sharper to win that moment consistently.
                             </p>
                             <p className="text-base text-foreground/75 font-light leading-relaxed">
-                                Specifically around which SKUs attach naturally to which moments, and where the current messaging may be working against that.
+                                I think about products through the lens of occasions, not categories. The brand that owns the moment owns the repeat. I can help map and sharpen that fit.
                             </p>
                         </div>
 
@@ -98,10 +100,10 @@ export default function HowICanHelpPage() {
                             </div>
                             <h3 className="text-2xl font-serif mb-4">Repeat & Retention Logic</h3>
                             <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
-                                Identifying where trial happens vs where repeat stalls. Building stronger structure across ritual, routine, and rotation products.
+                                Finding where trial happens, where repeat stalls, and what the behavioural data would tell you if you looked at it cohort by cohort.
                             </p>
                             <p className="text-base text-foreground/75 font-light leading-relaxed">
-                                Specifically around where first trial is happening, where repeat stalls, and what the data would tell you if you looked at it cohort by cohort.
+                                Retention is a data problem before it is a marketing problem. I can build the analytical structure to see where the drop-off actually lives.
                             </p>
                         </div>
 
@@ -113,31 +115,46 @@ export default function HowICanHelpPage() {
                             </div>
                             <h3 className="text-2xl font-serif mb-4">Channel & Conversion Clarity</h3>
                             <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
-                                Optimizing how products communicate in quick-commerce and D2C surfaces when the user is solving an immediate moment.
+                                Optimising how products communicate on quick-commerce and D2C surfaces when the consumer is solving an immediate moment.
                             </p>
                             <p className="text-base text-foreground/75 font-light leading-relaxed">
-                                Specifically around quick commerce listing language and how product pages communicate when a consumer is solving an immediate moment.
+                                Search visibility, listing language, and product page communication are all measurable and improvable. I know how to find the gaps and close them.
+                            </p>
+                        </div>
+
+                        {/* Area 4 */}
+                        <div className="p-10 bg-background border border-foreground/10 rounded-[2.5rem] shadow-sm group hover:border-accent transition-all duration-500">
+                             <div className="flex items-center gap-3 mb-6">
+                                <span className="w-6 h-[1px] bg-accent/30" />
+                                <span className="text-accent/60 text-[9px] font-bold uppercase tracking-widest">Focus 04</span>
+                            </div>
+                            <h3 className="text-2xl font-serif mb-4">Building Things That Work</h3>
+                            <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
+                                Strategy means nothing without execution. I build the actual output — the prototype, the dashboard, the system — not just the recommendation.
+                            </p>
+                            <p className="text-base text-foreground/75 font-light leading-relaxed">
+                                This entire brand concept — strategy, products, packaging, and website — was built by me from scratch. That is what I bring to any team I join.
                             </p>
                         </div>
 
                     </div>
                 </div>
             </section>
-            {/* Where I am coming from */}
+            {/* What I am looking for */}
             <section className="py-32 px-6 max-w-4xl mx-auto text-center border-t border-foreground/5">
-                <h2 className="text-3xl md:text-5xl font-serif mb-12">Where I am coming from</h2>
+                <h2 className="text-3xl md:text-5xl font-serif mb-12">What I am looking for</h2>
                 <div className="space-y-8 text-lg md:text-xl text-foreground/80 font-light leading-relaxed max-w-3xl mx-auto mb-16">
                     <p>
-                        I don&apos;t know what Nuvie needs right now from the inside. This research is my honest attempt to understand it from the outside — the product, the channel, the repeat problem, the brand.
+                        I want to be inside a founding team that is building something real in the Indian consumer market. I am not looking for a job description to fit into. I am looking for a problem worth solving and a team that moves fast on it.
                     </p>
                     <p>
-                        If there is a problem worth working on together, I will go as deep as needed to be useful on it. I am not coming with a fixed set of answers. I am coming with the willingness to find them.
+                        I will go as deep as needed to be genuinely useful. I am not coming with fixed answers. I am coming with the discipline to find them and the ability to build them.
                     </p>
                     <p>
-                        If you want to see the broader body of work — portfolio, analytics projects, and prototypes — it&apos;s all <Link href="https://github.com/tharungajula2/Portfolio/tree/main" className="text-accent hover:underline decoration-accent/30 underline-offset-4 transition-all">here</Link>.
+                        If you want to see the broader body of work — analytics projects, product prototypes, and portfolio — it&apos;s all <Link href="https://github.com/tharungajula2/Portfolio/tree/main" className="text-accent hover:underline decoration-accent/30 underline-offset-4 transition-all">here</Link>.
                     </p>
                     <p>
-                        If any of this resonates, I would genuinely like to talk.
+                        If this thinking fits what you are building, I would like to have that conversation.
                     </p>
                 </div>
                 <div className="flex justify-center">

@@ -1,10 +1,10 @@
-# Nuvie Thesis
+# PAUSE
 
-A strategic study of modern protein growth.
+A strategic study of modern product growth.
 
 ## Overview
 
-Nuvie Thesis is a cinematic exploration of strategy, economics, and behavior in the modern protein brand ecosystem. It explores the intersection of product storytelling, flavor strategy, unit economics, and consumer trust.
+PAUSE is a cinematic exploration of strategy, economics, and behavior in the modern product ecosystem. It explores the intersection of product storytelling, flavor strategy, unit economics, and consumer trust.
 
 ## Core Pillars
 

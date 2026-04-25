@@ -4,7 +4,7 @@ import { ImageResponse } from 'next/og';
 export const runtime = 'edge';
 
 // Image metadata
-export const alt = 'Nuvie Thesis — A founder-facing product and growth study';
+export const alt = 'PAUSE — A founder-facing product and growth study';
 export const size = {
   width: 1200,
   height: 630,
@@ -49,7 +49,7 @@ export default async function Image() {
               display: 'flex',
             }}
           >
-            NUVIE <span style={{ color: '#7CB18A', fontStyle: 'italic', marginLeft: '12px', fontWeight: 300 }}>THESIS</span>
+            PAUSE
           </div>
           <div
             style={{

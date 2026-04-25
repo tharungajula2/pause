@@ -1,12 +1,12 @@
 import { SiteContent } from '../types';
 
 export const siteContent: SiteContent = {
-  name: 'Nuvie Thesis',
-  tagline: 'A strategic study of modern protein growth',
-  description: 'From product storytelling and flavor strategy to quick commerce, trust, repeat, and unit economics. Nuvie Thesis explores how better-for-you products actually win.',
+  name: 'PAUSE',
+  tagline: 'A strategic concept exploration of modern product growth',
+  description: 'From product storytelling and strategy to quick commerce, trust, repeat, and unit economics. PAUSE explores how modern consumer products actually win.',
   hero: {
-    title: "I'm studying Nuvie.\nThis is the work so far.",
-    body: 'Analytics. Operations. Product building. Now studying how a protein brand earns its second purchase.',
+    title: "A better-for-you brand concept.\nBuilt from scratch.",
+    body: 'Strategy. Product thinking. Original packaging design. This is how I think about building a consumer brand that earns its second purchase.',
     primaryCta: 'Explore Product Lab',
     secondaryCta: 'See Where I Can Help',
   },
@@ -14,8 +14,8 @@ export const siteContent: SiteContent = {
     {
       id: 'intent',
       eyebrow: 'MY READING OF THIS PAGE',
-      title: "How I'm thinking about Nuvie's product system.",
-      body: "The product visuals and packaging designs on this page are concept work I created for this study. I took creative liberty with the packaging — including moving away from Nuvie's signature yellow. Nuvie's yellow is intentional: it signals fun-first, approachability, and nutrition for life. I understand that. This was me exploring what the product system could look like across different visual directions — not a suggestion that anything should change.\n\nThe analysis alongside each product is my own early interpretation from the outside. Neither the visuals nor the analysis represent Nuvie's official view.",
+      title: "How I'm thinking about the product system.",
+      body: "The product visuals and packaging designs on this page are original concept work. The analysis alongside each product reflects strategic thinking about the better-for-you category in India — built from category research and consumer behaviour observations. This is independent work.",
       cta: { label: 'Explore the Portfolio', type: 'scroll-cue' },
     },
     {
@@ -33,50 +33,50 @@ export const siteContent: SiteContent = {
     },
   ],
   manifesto: {
-    heading: 'Protein is not just nutrition. It is product, behavior, and repeat.',
-    body: 'Nuvie wins when indulgence feels easy, occasions feel natural, and trust becomes the default.',
+    heading: 'Growth is not just acquisition. It is product, behavior, and repeat.',
+    body: 'A brand wins when adoption feels easy, occasions feel natural, and trust becomes the default.',
   },
   whyIBuiltThis: {
     heading: 'WHY I BUILT THIS',
-    body: `I'm not from FMCG. I come from analytics, systems work, and building structured products from messy problems. When I came across Nuvie, I didn't just browse the website. I wanted to understand how it actually works, the product mechanics, the channel realities, the repeat problem, what makes a consumer come back without a discount. So I studied it the way I know how. Then I built this.`,
+    body: `I come from analytics, systems work, and building structured products from messy problems. I wanted to understand how a modern consumer brand actually works from the inside — the product mechanics, the channel realities, the repeat problem. So I did what I always do. I built the whole thing myself. The brand. The products. The strategy. The packaging. All of it.`,
   },
   understanding: {
     heading: 'Three things that stuck with me',
     points: [
       {
         title: 'Occasion, not category',
-        body: "Nuvie isn't really competing against other protein brands. It's competing with your morning coffee and your 4 PM biscuit. That changes the entire playbook.",
+        body: "The real competition is not other protein shakes. It is the existing habit or ritual that already owns that moment. Build for the moment first. The category follows.",
       },
       {
-        title: 'Taste first, then repeat',
-        body: "If the product does not taste like a treat, there is no repeat conversation. The indulgence promise has to survive what the bottle actually went through to get shelf-stable. That is the real bar before any habit loop even begins.",
+        title: 'Taste first, then everything else',
+        body: "If the product does not exceed expectations on first trial, there is no repeat conversation. Health is the bonus. Taste is the entry ticket. That is the design constraint I built PAUSE around.",
       },
       {
-        title: 'Quick commerce is a data problem',
-        body: "On Blinkit, availability, search visibility, and dark store distribution are all measurable and improvable — if you know where to look. That is the kind of problem I want to work on.",
+        title: 'Distribution is a data problem',
+        body: "Availability, search visibility, and channel fit are all measurable and improvable. That is the kind of problem I know how to work on. I find the signal others miss.",
       },
     ],
   },
   usefulness: {
-    heading: 'Where I might actually fit',
+    heading: 'What I bring to the table',
     strengths: [
       {
         title: 'Finding structure in messy problems',
-        body: 'I spent years in credit-risk and lending workflows, places where information is dense and the job is to make it clearer. That discipline translates.',
+        body: 'I spent years in high-stakes environments where information is dense and the job is to make it actionable. That discipline translates directly into brand and product work.',
       },
       {
-        title: 'Working with data, not just intuition',
-        body: 'I apply analytical and ML thinking to behavioral signals. Not to produce charts, but to find what actually drives an outcome.',
+        title: 'Working with data, not just instinct',
+        body: 'I apply analytical thinking to behavioural signals. Not to produce reports, but to find what actually moves the needle on repeat and retention.',
       },
       {
         title: 'Building, not just recommending',
-        body: "I build the thing rather than describing it. This site is the most recent example.",
+        body: "I build the thing rather than describing it. This entire brand — strategy, products, packaging, website — is the most recent example of that.",
       },
     ],
   },
   connection: {
-    heading: 'If any of this resonates',
-    body: `This is honest work, built specifically for this conversation. If the thinking here is useful to you, or if you're curious about any part of it, I'd genuinely like to hear from you. No pitch. Just a conversation.`,
+    heading: 'If this thinking is useful to you',
+    body: `This is honest, original work built to show how I think and what I can build. If you want to talk about any of it, I am ready for that conversation.`,
     cta: { label: 'REACH OUT', href: 'mailto:tharun.gajula.2@gmail.com' },
   },
 };

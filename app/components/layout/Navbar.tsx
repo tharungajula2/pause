@@ -56,8 +56,8 @@ export const Navbar: React.FC = () => {
             <nav className="fixed top-0 w-full z-[100] border-b border-foreground/8" style={{ backgroundColor: 'rgba(245, 236, 215, 0.85)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)' }}>
                 <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between relative">
                     {/* LOGO */}
-                    <Link href="/" className="flex-shrink-0 text-lg md:text-xl font-serif tracking-tighter font-semibold hover:text-accent transition-all duration-500 mr-8 lg:mr-12">
-                        NUVIE<span className="text-accent ml-1 italic font-light">THESIS</span>
+                    <Link href="/" className="flex-shrink-0 text-xl font-serif tracking-tighter font-semibold hover:text-accent transition-all duration-500 mr-8 lg:mr-12">
+                        PAUSE
                     </Link>
                     
                     {/* Desktop Nav */}

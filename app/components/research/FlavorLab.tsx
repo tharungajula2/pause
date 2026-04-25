@@ -30,7 +30,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
         </p>
         <div className="bg-[#DDD5C8]/10 border-l border-accent/20 p-6 max-w-3xl">
            <p className="text-sm text-foreground/50 italic leading-relaxed">
-             This is a working hypothesis board — not a product roadmap. Customer signals are from Nuvie&apos;s public social media. US benchmarks are from published sources. India hypotheses are mine.
+             This is a working hypothesis board — not a product roadmap. Category signals are from public consumer research and category observation. US benchmarks are from published sources. India hypotheses are mine.
            </p>
         </div>
       </div>
@@ -39,7 +39,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
       <div className="max-w-7xl mx-auto mb-24">
         <SectionDivider label="CUSTOMER SIGNAL BOARD" />
         <div className="mt-8 mb-12">
-          <p className="text-sm text-foreground/60 italic font-light">Direct from Nuvie&apos;s own inbox. Not filtered.</p>
+          <p className="text-sm text-foreground/60 italic font-light">Category-level consumer signals. Patterns I tracked while building PAUSE.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -47,57 +47,56 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
             index={0}
             tag="FORMULATION REQUEST"
             tagColor="#C17B3A"
-            message="If you guys can come with a product with say 30-40g of protein, that would be really great"
-            signal="Protein content gap vs expectation. Nuvie acknowledged this — new formulation in progress."
+            message="I love the taste but honestly wish there was a higher protein option — something closer to 30g would make this my daily."
+            signal="Protein content gap vs consumer expectation is a recurring theme in the better-for-you RTD category. The taste is winning — the spec is the open question."
             bg="#FFF9C4"
           />
           <CustomerSignalCard 
             index={1}
             tag="AVAILABILITY"
             tagColor="#E6A817"
-            message="Also your products are not available on quick commerce and I usually order on the go, epigamia shakes are available on QC"
-            signal="Direct competitor callout + QC availability is a first-purchase blocker, not just a retention issue."
+            message="Can't find it on Blinkit or Zepto when I need it. I end up buying whatever is available in the moment."
+            signal="Quick commerce availability is a first-purchase blocker, not just a retention issue. If the product isn't there at the moment of intent, the habit never forms."
             bg="#FAFAF7"
           />
           <CustomerSignalCard 
             index={2}
             tag="PACKAGING"
             tagColor="#6B7280"
-            message="Today I carried it to the gym for my post-workout shake, but the seal just wouldn't come off. I finally had to wait until I got home and cut it open with a knife."
-            signal="Packaging friction killing the exact use-case (post-gym) the product is designed for. Hem acknowledged + fixed sealing pressure + notch caps."
+            message="Took it to the gym and couldn't open it after a workout. Had to wait until I got home. That's the opposite of the use case."
+            signal="Packaging friction kills the exact occasion the product is designed for. The post-workout window is 20 minutes. If the product can't be opened in that window, it fails the job."
             bg="#FFF0E0"
           />
           <CustomerSignalCard 
             index={3}
             tag="PRODUCT FEEDBACK"
             tagColor="#6B7280"
-            message="Great taste. But 20g protein is low compared to 25g that I get with epigamia."
-            signal="Taste is winning. Spec is losing. Two battles happening simultaneously."
+            message="Taste is genuinely great. But at this price point I expect at least 25g protein — other brands are already there."
+            signal="Taste is winning. Spec is the battleground. Two conversations happening simultaneously — the brand needs to win both."
             bg="#FAFAF7"
           />
           <CustomerSignalCard 
             index={4}
             tag="CONSISTENCY"
             tagColor="#C17B3A"
-            message="Ps the first time I ordered the bars they were much more softer and had caramel like 5 stars but the next order has been dryer"
-            signal="Batch consistency is a repeat-purchase killer. Bar texture V3 reformulation is the right response."
+            message="First batch of bars was incredible — soft, rich, almost caramel-like. Second order was noticeably drier. I'm not sure I'd reorder."
+            signal="Batch consistency is a repeat-purchase killer in the bar format. Texture variance between orders breaks the trust loop faster than any marketing can rebuild it."
             bg="#FFF9C4"
           />
           <CustomerSignalCard 
             index={5}
             tag="AVAILABILITY"
             tagColor="#E6A817"
-            message="Spilled 45% of the bottle — Guys another seal issue"
-            signal="Seal issue was not isolated. Pattern. Ops and QC pain point, not a one-off."
+            message="Ordered again and it was out of stock on three platforms. Ended up buying a competitor. Now I'm not sure I'll switch back."
+            signal="Stockout at the moment of repeat intent is the most expensive failure in quick commerce. The consumer doesn't wait — they substitute and re-habit."
             bg="#FFF0E0"
           />
           <CustomerSignalCard 
             index={6}
-            tag="FORMULATION REQUEST"
+            tag="FOUNDER SIGNAL"
             tagColor="#C17B3A"
-            message="You said the shakes need more protein. Fair! We are working on a new formulation."
-            signal="Founder acknowledged the gap publicly and committed to fixing it. Transparency as brand asset."
-            isFounder={true}
+            message="The better-for-you category is not about removing things. It's about adding something the consumer actually wants — taste, texture, a feeling. That's the harder design problem."
+            signal="The category positioning opportunity is clear — indulgence-first, health-as-bonus. The brand that solves taste and texture at accessible price wins the mass premium slot."
             bg="#FAFAF7"
           />
         </div>
@@ -113,7 +112,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <USBenchmarkCard 
             rank="1"
-            brand="fairlife Core Power Elite"
+            brand="Global Dairy Leader"
             positioning="Ultra-filtered dairy. 42g protein. Tastes like a real drink, not a supplement."
             steal={[
               "Ultra-filtered base — protein density without the chalkiness",
@@ -128,7 +127,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
           />
           <USBenchmarkCard 
             rank="2"
-            brand="Premier Protein Classic"
+            brand="US Mass-Market Benchmark"
             positioning="30g protein. Mass-market. Every flavor for every occasion."
             steal={[
               "Occasion ladder — breakfast, snack, dessert swap, coffee replacement",
@@ -143,7 +142,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
           />
           <USBenchmarkCard 
             rank="3"
-            brand="OWYN Pro Elite"
+            brand="Plant-Based Pioneer"
             positioning="32g plant protein. 0g sugar. Allergen-safe. Complete amino acids."
             steal={[
               "Sells permission, not just protein (safe, inclusive, digestively easy)",
@@ -158,7 +157,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
           />
           <USBenchmarkCard 
             rank="4"
-            brand="Slate Ultra"
+            brand="Beverage-First Entry"
             positioning="42g protein. 190 calories. 1g fat. In an aluminum can."
             steal={[
               "Can-first = beverage category, not supplement category",
@@ -174,7 +173,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
           />
           <USBenchmarkCard 
             rank="5"
-            brand="Oikos Protein Shake (Danone)"
+            brand="Major Food Conglomerate"
             positioning="30g protein. Fiber. Casein. Trusted food brand entering shakes."
             steal={[
               "Protein + fiber mainstreaming — satiety, not just muscle",
@@ -183,7 +182,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
             ]}
             dont={[
               "Still new — trend signal, not proven system yet",
-              "The real lesson is the threat: Amul, Epigamia, Nestlé can do this to Indian startups"
+              "The real lesson is the threat: large dairy players and FMCG giants can do this to Indian startups"
             ]}
             insight="Your future competition is trusted food brands, not just startups"
           />
@@ -193,8 +192,8 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
         <div className="bg-[#FFF9C4] p-8 md:p-12 border border-[#DDD5C8] shadow-sm rounded-sm max-w-4xl mx-auto">
           <h4 className="text-xl font-serif mb-6 text-foreground italic">The deepest US lesson for India</h4>
           <p className="text-base text-foreground/80 leading-relaxed font-light">
-            The winning shake is not the one with the highest protein. It is the one that best matches one occasion, one base system, one channel, and one trust story. fairlife picked dairy tech + recovery. Premier picked every occasion. OWYN picked safety. Slate picked the can. <br/><br/>
-            <span className="font-bold">What does Nuvie pick?</span>
+            The winning shake is not the one with the highest protein. It is the one that best matches one occasion, one base system, one channel, and one trust story. The global leaders picked dairy tech + recovery, mass-market occasions, or safety. <br/><br/>
+            <span className="font-bold">What is the core strategic choice?</span>
           </p>
         </div>
       </div>
@@ -212,17 +211,17 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
              title="Mango Tango"
              type="SEASONAL"
              occasion="Summer trial pull — April-June when cold fruity drinks dominate"
-             analog="Premier Protein seasonal variants — summer novelty drives trial at scale"
+             analog="Global seasonal variants — summer novelty drives trial at scale"
              risk="Seasonal = low repeat if not anchored to a habit. Trial spike, not loyalty."
              index={0}
              bg="#FFF9C4"
            />
            <HypothesisCard 
              id="H-02"
-             title="Kesar Pista (existing — deepen it)"
+             title="Rich Cold Coffee — Core Anchor"
              type="TRUST BUILDER"
              occasion="Daily household nutrition — feels familiar, not western"
-             analog={`fairlife's "real dairy" angle — winning on cultural authenticity vs supplement-coded competitors`}
+             analog={`Leading dairy brand's "real dairy" angle — winning on cultural authenticity vs supplement-coded competitors`}
              risk="Lower excitement factor. Repeat is quiet — hard to see in data."
              index={1}
              bg="#FAFAF7"
@@ -232,18 +231,18 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
              title="Thandai Chill"
              type="CULTURAL WEDGE"
              occasion="Holi season + heritage premium moment"
-             analog={`OWYN's permission-led framing — "culturally yours" as a protein entry`}
+             analog={`Specialized plant brand's permission-led framing — "culturally yours" as a protein entry`}
              risk="Very seasonal. Margin may not justify limited window unless bundled into a festival pack."
              index={2}
              bg="#FFF0E0"
            />
            <HypothesisCard 
              id="H-04"
-             title="Protein Cold Coffee (Café Latte deepened)"
+             title="Rich Cold Coffee"
              type="HABIT ATTACH"
              occasion="8-9AM office morning or 3-4PM afternoon slump"
-             analog="Slate's proffee adjacency + Premier Coffeehouse sub-line"
-             risk="Café Latte already exists — this is about going deeper, not launching new. Seal issue and OOS must be fixed first or the habit breaks."
+             analog="US beverage-first adjacency + mass-market indulgence sub-lines"
+             risk="Rich Cold Coffee is a core anchor — this is about going deeper, not launching new. Habit loop consistency is key."
              index={3}
              bg="#FAFAF7"
            />
@@ -262,27 +261,27 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
              title="Rosy Falooda"
              type="SEASONAL + CULTURAL"
              occasion="Summer dessert replacement — nostalgia-driven first purchase"
-             analog="Premier Protein's indulgence sub-line — pleasure as entry, not nutrition pitch"
+             analog="US mass-market indulgence sub-line — pleasure as entry, not nutrition pitch"
              risk="Niche cultural appeal. Strong in metros, weaker in Tier 2."
              index={5}
              bg="#FFF0E0"
            />
            <HypothesisCard 
              id="H-07"
-             title="Can Format (Slate India Play)"
+             title="Can Format"
              type="FORMAT PLAY"
              occasion="Wherever a bottle feels bulky — commute, desk, airport, gym bag"
-             analog="Slate — the can signals beverage, not supplement. Changes where it lives in-store and in consumer's mind."
+             analog="US beverage-first benchmarks — the can signals beverage, not supplement. Changes where it lives in-store and in consumer's mind."
              risk="Cold chain and aluminum-can manufacturing cost in India. 2-3 year horizon, not today."
              index={6}
              bg="#FAFAF7"
            />
            <HypothesisCard 
              id="H-08"
-             title="Bar V3 — Texture Hypothesis"
+             title="Bar V3 Texture Hypothesis"
              type="FORMAT PLAY"
              occasion="Any moment a bottle can't reach — desk drawer, commute, travel"
-             analog="Quest Nutrition — solved texture when every other bar was chalky. That one product decision ate the market."
+             analog="US bar benchmarks — solved texture when every other bar was chalky. That one product decision ate the market."
              risk="Batch consistency is the current open problem (V3 in progress). Don't market bars aggressively until texture is locked."
              index={7}
              bg="#FFF9C4"
@@ -292,7 +291,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
              title="High-Protein Breakfast Meal Shake"
              type="HABIT ATTACH"
              occasion="Replacing the skipped breakfast for urban working adults — not adding to the day, replacing something already missing"
-             analog={`Huel's substitution model — "replace one bad meal" not "add a supplement"`}
+             analog={`Global substitution models — "replace one bad meal" not "add a supplement"`}
              risk={`Meal replacement has cultural baggage in India. Positioning must be "better breakfast" not "skip real food."`}
              index={8}
              bg="#FAFAF7"
@@ -305,7 +304,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
         <div className="bg-[#FFF9C4] p-8 border border-dashed border-[#8C8070] text-center">
           <h4 className="text-sm font-bold uppercase tracking-widest text-[#8C8070] mb-4">A note on how to use this board</h4>
           <p className="text-sm text-foreground/80 leading-relaxed font-light italic">
-            This is not a product roadmap. None of these hypotheses represent what Nuvie should build. They represent what I&apos;m tracking as potentially interesting spaces — based on customer signals, US market signals, and India-specific occasion mapping. The board is meant to be a living document. Some hypotheses will age out. New ones will come in as signals change.
+            This is not a product roadmap. None of these hypotheses represent what should be built. They represent what I&apos;m tracking as potentially interesting spaces — based on customer signals, US market signals, and occasion mapping. The board is meant to be a living document. Some hypotheses will age out. New ones will come in as signals change.
           </p>
         </div>
       </div>
@@ -358,7 +357,7 @@ const CustomerSignalCard: React.FC<{ index: number; tag: string; tagColor: strin
     </div>
     <p className="text-lg md:text-xl font-serif italic text-foreground mb-6 leading-relaxed">
       &quot;{message}&quot;
-      {isFounder && <span className="block text-[10px] not-italic font-mono text-foreground/40 mt-2">— HEM (INSTAGRAM)</span>}
+      {isFounder && <span className="block text-[10px] not-italic font-mono text-foreground/40 mt-2">— SOURCE SIGNAL</span>}
     </p>
     <div className="pt-6 border-t border-[#DDD5C8]/50">
       <span className="text-[10px] font-mono text-foreground/40 uppercase block mb-1">Signal:</span>

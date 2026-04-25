@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
                 <div className="flex flex-col md:flex-row items-center md:space-x-12 gap-6 md:gap-0">
                     <Link href="/" className="text-base font-serif tracking-tighter text-foreground/80 hover:text-accent transition-colors">
-                        NUVIE<span className="text-accent ml-1 italic font-light">THESIS</span>
+                        PAUSE
                     </Link>
                     <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
                         {footerNavigation.map(item => (

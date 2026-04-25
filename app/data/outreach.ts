@@ -22,27 +22,27 @@ export const outreachContent = {
     ],
     initiatives: [
         {
-            title: "Occasion-to-SKU Clarity Sprint",
-            description: "Mapping the current portfolio against life moments (Breakfast, Coffee, Craving) to ensure messaging and product framing match the specific urgency of each moment.",
+            title: "Strategic Clarity Sprint",
+            description: "Mapping the current portfolio against life moments and behavioral triggers to ensure messaging and product framing match the specific urgency of each moment.",
             impact: "Trial Persistence",
             badge: "Product Fit"
         },
         {
             title: "Repeat-Path Audit",
-            description: "Analyzing where first trial is happening vs where repeat is stalling. Identifying the 'routine anchors' that currently drive the most durable subscription behavior.",
-            impact: "LTV / Retention",
+            description: "Analyzing where first trial is happening vs where repeat is stalling. Identifying the 'routine anchors' that currently drive the most durable behavior.",
+            impact: "Retention",
             badge: "Retention Logic"
         },
         {
-            title: "Channel Communication Cleanup",
-            description: "Auditing product presentation in Quick Commerce and D2C surfaces. Simplifying language to ensure 'moment fit' and 'trust signals' win the 150px thumbnail war.",
-            impact: "Conversion Rate",
+            title: "Execution Optimization",
+            description: "Auditing product presentation across digital and physical surfaces. Simplifying language to ensure 'moment fit' and 'trust signals' are clear to the consumer.",
+            impact: "Conversion",
             badge: "Execution"
         }
     ],
-    nuvieInsights: [
-        "Nuvie's core wedge is occasion ownership (Coffee/Indulgence), not just nutrition.",
-        "Repeat behavior is the only durable engine in the Indian protein category.",
-        "Channel fit (Quick Commerce) is the primary strategic arbiter of success."
+    pauseInsights: [
+        "Core growth is driven by occasion ownership, not just basic utility.",
+        "Repeat behavior is the only durable engine in modern consumer categories.",
+        "Channel fit is the primary strategic arbiter of operational success."
     ]
 };

@@ -29,7 +29,7 @@ export const PasswordGate: React.FC<PasswordGateProps> = ({ onUnlock }) => {
           <span className="text-accent/50 text-[10px] uppercase tracking-[0.6em] font-bold block mb-4">Master Study</span>
           <h2 className="text-4xl font-serif mb-4">Research Archive</h2>
           <p className="text-foreground/80 font-light leading-relaxed text-lg italic">
-            This workspace contains working workbook layers and open questions. Access is restricted to Nuvie founder study.
+            This workspace contains working workbook layers and open questions. Access is restricted to founder study.
           </p>
         </div>
 
@@ -63,7 +63,7 @@ export const PasswordGate: React.FC<PasswordGateProps> = ({ onUnlock }) => {
         <div className="mt-16 pt-8 border-t border-foreground/5 text-center">
           <p className="text-[9px] uppercase tracking-[0.4em] text-foreground/45 font-bold leading-relaxed">
             Unfinished research. Intentional mastery. <br/>
-            Nuvie Thesis — Private Working Layer
+            PAUSE — Private Working Layer
           </p>
         </div>
       </div>

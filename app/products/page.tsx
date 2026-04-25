@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Product Lab — Nuvie Thesis",
-  description: "A product-first reading of Nuvie’s portfolio, core SKUs, and future flavor directions.",
+  title: "Product Lab",
+  description: "A product-first reading of portfolio strategy, core SKUs, and growth directions.",
 };
 
 import React from 'react';
@@ -12,7 +12,7 @@ import { ProductSurface } from '../components/ui/ProductSurface';
 import { SystemContinuation } from '../components/ui/SystemContinuation';
 import { ChapterHero } from '../components/hero/ChapterHero';
 import { SectionHeader } from '../components/ui/SectionHeader';
-import { SummerConceptGrid } from '../components/labs/flavor/SummerConceptGrid';
+
 import { StrategyCard } from '../components/ui/StrategyCard';
 
 export default function ProductsPage() {
@@ -22,19 +22,19 @@ export default function ProductsPage() {
 
     const strategicInsights = [
         {
-            title: "Role clarity",
-            badge: "Product Logic",
-            description: "Each SKU works harder when it has a clear, distinct job. From lowering entry friction to anchoring a daily routine, specificity matters more than coverage. This is how I am currently thinking about it."
-        },
-        {
-            title: "Repeat Dynamics",
-            badge: "Retention",
-            description: "Routine SKUs and rotation SKUs play different roles in keeping someone in the portfolio. The goal is the habit, not just the next transaction. I may be oversimplifying this."
-        },
-        {
-            title: "Indulgence Entry",
+            title: "Indulgence Is the Entry Point",
             badge: "Observation",
-            description: "For a brand like Nuvie, pleasure seems like a natural entry point. If the indulgence promise holds at scale, repeat becomes possible. This is an outside read, not a confirmed signal."
+            description: "In a crowded better-for-you market, taste is the only door that opens. Health is what keeps people coming back. Not the other way around."
+        },
+        {
+            title: "Occasion Beats Category",
+            badge: "Strategic Fit",
+            description: "People do not think in categories. They think in moments. The brand that owns a specific moment owns the repeat."
+        },
+        {
+            title: "Texture and Taste Are Non-Negotiable",
+            badge: "Product Quality",
+            description: "The biggest failure in functional food is asking the consumer to compromise on experience. The product has to earn its place on taste alone."
         }
     ];
 
@@ -48,9 +48,9 @@ export default function ProductsPage() {
                 <div className="px-6 mb-20 max-w-7xl mx-auto">
                     <SectionHeader 
                         alignment="left"
-                        eyebrow="6-SKU CORE"
-                        title="Portfolio as I Read It from the Outside"
-                        subtitle="This is how I tried to map the portfolio from the outside. Each SKU seems to serve a different purpose, though I am working from public signals only. I may have some of this wrong."
+                        eyebrow="5-SKU CORE"
+                        title="Portfolio Strategy"
+                        subtitle="A reading of product roles and strategic fit in the modern FMCG landscape. These are original concepts built to demonstrate how I think."
                         badge="How I Read the Portfolio"
                     />
                 </div>
@@ -73,7 +73,7 @@ export default function ProductsPage() {
                         My working hypothesis: occasion matters more than category.
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 mt-16 opacity-60 max-w-4xl mx-auto">
-                        {['Coffee Ritual', '4 PM Slump', 'Breakfast Rescue', 'Sweet Craving Swap', 'Commute Fuel'].map((tag) => (
+                        {['Daily Ritual', 'Afternoon Reset', 'Evening Indulgence', 'Festive Moment', 'On The Go'].map((tag) => (
                             <span key={tag} className="text-[9px] tracking-widest uppercase font-extrabold border-b border-accent/20 pb-2">
                                 {tag}
                             </span>
@@ -82,24 +82,19 @@ export default function ProductsPage() {
                 </div>
             </section>
 
-            {/* Section 3: Seasonal Extensions & Concepts */}
+            {/* Section 3: More Flavours Teaser */}
             <section className="relative py-48 bg-graphite/10 border-y border-foreground/5 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.02] pointer-events-none" />
-                <div className="px-6 mb-20 max-w-7xl mx-auto text-center md:text-left transition-all">
-                    <SectionHeader 
-                        alignment="center"
-                        eyebrow="CONCEPT EXTENSIONS"
-                        title="Flavor directions I explored in this study"
-                        subtitle="These are packaging concepts and flavor ideas I designed as part of this study. They are not Nuvie's actual plans and I am not proposing they should be. Nuvie's philosophy of doing one thing well before expanding is something I noticed and respect. This section is simply my way of thinking through cultural and seasonal fit logic, and demonstrating how I approach product exploration. Nothing here should be read as a product roadmap."
-                        badge="PRODUCT LAB"
-                    />
-                    <p className="mt-8 text-xs text-foreground/60 italic text-center max-w-2xl mx-auto animate-pulse">
-                        The packaging visuals in this section are concept designs I created for this study. They are not Nuvie's planned products.
+                <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+                    <span className="text-accent text-[10px] uppercase tracking-[0.6em] font-bold mb-8 block">
+                        THE NEXT PHASE
+                    </span>
+                    <h2 className="text-4xl md:text-6xl font-serif mb-6 leading-tight text-balance">
+                        More Flavours. Coming Soon.
+                    </h2>
+                    <p className="text-lg md:text-xl text-foreground/60 font-light leading-relaxed max-w-2xl mx-auto">
+                        We are building the next wave carefully. One great product at a time.
                     </p>
-                </div>
-                
-                <div className="max-w-7xl mx-auto px-6">
-                    <SummerConceptGrid />
                 </div>
             </section>
 
@@ -133,7 +128,7 @@ export default function ProductsPage() {
             <SystemContinuation 
                 nextRoute="/how-i-can-help"
                 nextTitle="How I Can Help"
-                description="Specific initiatives and audit directions built around Nuvie’s current growth reality."
+                description="Specific initiatives and audit directions built around current growth reality."
             />
         </main>
     );

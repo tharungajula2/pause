@@ -1,7 +1,7 @@
 {
-  "name": "nuvie-thesis",
+  "name": "pause",
   "version": "0.1.0",
-  "description": "Nuvie Thesis | A strategic study of modern protein growth",
+  "description": "PAUSE | A strategic study of modern product growth",
   "private": true,
   "scripts": {
     "dev": "next dev",

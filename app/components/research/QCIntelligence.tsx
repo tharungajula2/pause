@@ -19,38 +19,37 @@ export const QCIntelligence: React.FC<QCIntelligenceProps> = ({ chapter }) => {
   const [keywordFilter, setKeywordFilter] = useState<'ALL' | 'UNDERUSED' | 'OVERUSED'>('ALL');
   
   // AI Agent Briefing Text
-  const briefingText = `─────────────────────────────────────────
-NUVIE × BLINKIT — BANGALORE
+  const briefingText = `BRAND × CHANNEL — ZONE
 DAILY GROWTH BRIEF
 Generated: ${new Date().toLocaleString()}
 ─────────────────────────────────────────
 
 SITUATION SUMMARY
 Portfolio availability: 40% (target: 90%+)
-Category share: 19% (↓3pts, The Whole Truth gaining)
+Category share: 19% (↓3pts, Competitor gaining)
 Keywords owned: 2/12 tracked | Keywords losing: 7/12
 
 CRITICAL ALERTS [3]
 ━━━━━━━━━━━━━━━━━━
 ⚠ ALERT 01 — AD SPEND LEAK
-Café Latte, Choco Almond Bar, Choco Brownie Bar are sold out across all tracked Bangalore dark stores. If any paid campaigns are currently running on these SKUs, every impression is driving traffic to an empty shelf. Estimated daily waste: ₹8-15K.
+Rich Cold Coffee and Coco Chill are sold out across all tracked Bangalore dark stores. If any paid campaigns are currently running on these SKUs, every impression is driving traffic to an empty shelf. Estimated daily waste: ₹8-15K.
 ACTION: Pause all campaigns for OOS SKUs immediately.
 
 ⚠ ALERT 02 — HABIT LOOP RUPTURE
-Café Latte has been OOS for 3+ days. This SKU has the highest repeat structure in the portfolio — it attaches to an existing daily coffee habit. Every day of stockout breaks the habit loop for users who had started to repeat-purchase. This is not a sales loss. This is a retention loss.
-ACTION: Prioritize Café Latte restock in Koramangala and Indiranagar dark stores first. These are your highest-value zones.
+Rich Cold Coffee has been OOS for 3+ days. This SKU has the highest repeat structure in the portfolio — it attaches to an existing daily coffee habit. Every day of stockout breaks the habit loop for users who had started to repeat-purchase. This is not a sales loss. This is a retention loss.
+ACTION: Prioritize Rich Cold Coffee restock in Koramangala and Indiranagar dark stores first. These are your highest-value zones.
 
 ⚠ ALERT 03 — CATEGORY SHARE SLIDE
-Nuvie has lost 3 share points this month while The Whole Truth gained 4 points. In a growing category, losing share means losing flywheel momentum. The ranking algorithm rewards offtake velocity — if your offtake drops because of OOS, your organic rank drops, which drops offtake further. Compounding downward.
+The brand has lost 3 share points this month while competitors gained. In a growing category, losing share means losing flywheel momentum. The ranking algorithm rewards offtake velocity — if your offtake drops because of OOS, your organic rank drops, which drops offtake further. Compounding downward.
 ACTION: Restock → resume campaigns → offtake recovers → rank stabilizes. This is the only path.
 
 TODAY'S PRIORITY ACTIONS [5]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-01 [CRITICAL] Confirm restock ETA for Café Latte, Choco Brownie Bar, Choco Almond Bar across Bangalore dark stores.
-02 [HIGH] Pause any live campaigns for the 3 OOS SKUs. Do not run a single rupee until availability crosses 85%.
-03 [HIGH] For Choco Loco and Kesar Pista (partial availability): Focus ad spend on Jayanagar only — it's your highest-coverage zone. Don't spread across zones where you're <50% covered.
-04 [MEDIUM] Keyword "protein coffee" has no dominant winner. Once Café Latte is restocked, this is your first ad priority. Build a city-level campaign for Koramangala + Indiranagar first.
-05 [WATCH] Track category share weekly. The Whole Truth gaining share in your absence. Acceptable short-term while fixing ops. Becomes a problem if OOS extends beyond 7 days.
+01 [CRITICAL] Confirm restock ETA for Rich Cold Coffee and Coco Chill across Bangalore dark stores.
+02 [HIGH] Pause any live campaigns for the OOS SKUs. Do not run a single rupee until availability crosses 85%.
+03 [HIGH] For Rosy Falooda and Thandai Chill (partial availability): Focus ad spend on Jayanagar only — it's your highest-coverage zone. Don't spread across zones where you're <50% covered.
+04 [MEDIUM] Keyword "protein coffee" has no dominant winner. Once Rich Cold Coffee is restocked, this is your first ad priority. Build a city-level campaign for Koramangala + Indiranagar first.
+05 [WATCH] Track category share weekly. Competitors gaining share in your absence. Acceptable short-term while fixing ops. Becomes a problem if OOS extends beyond 7 days.
 
 ─────────────────────────────────────────
 NEXT REVIEW: When restock is confirmed.
@@ -90,36 +89,34 @@ This analysis updates when data changes.
   }, [agentState, typedText, briefingText]);
 
   const zones = [
-    { id: 'koramangala', name: 'Koramangala', coverage: 45, status: 'WEAK', description: 'High-fitness zone, post-gym window', skus: ['Wah Vanilla', 'Kesar Pista'] },
-    { id: 'hsr', name: 'HSR Layout', coverage: 52, status: 'WEAK', description: 'IT corridor, 4-7PM peak demand', skus: ['Choco Loco', 'Kesar Pista'] },
-    { id: 'indiranagar', name: 'Indiranagar', coverage: 61, status: 'PARTIAL', description: "Café Latte's natural home. Currently OOS.", skus: ['Wah Vanilla', 'Choco Loco', 'Kesar Pista'] },
-    { id: 'whitefield', name: 'Whitefield', coverage: 38, status: 'CRITICAL', description: 'Highest income density. Lowest coverage.', skus: ['Wah Vanilla'] },
-    { id: 'jayanagar', name: 'Jayanagar', coverage: 74, status: 'OK', description: 'Best performing zone', skus: ['Wah Vanilla', 'Choco Loco', 'Kesar Pista'] },
-    { id: 'bellandur', name: 'Bellandur', coverage: 43, status: 'WEAK', description: 'Large IT workforce, underserved', skus: ['Wah Vanilla', 'Kesar Pista'] },
+    { id: 'koramangala', name: 'Koramangala', coverage: 45, status: 'WEAK', description: 'High-fitness zone, cold coffee natural home', skus: ['Coco Chill', 'Thandai Chill'] },
+    { id: 'hsr', name: 'HSR Layout', coverage: 52, status: 'WEAK', description: 'IT corridor, afternoon slump window', skus: ['Rosy Falooda', 'Thandai Chill'] },
+    { id: 'indiranagar', name: 'Indiranagar', coverage: 61, status: 'PARTIAL', description: "Rich Cold Coffee's natural home. Currently OOS.", skus: ['Mango Tango', 'Rosy Falooda', 'Thandai Chill'] },
+    { id: 'whitefield', name: 'Whitefield', coverage: 38, status: 'CRITICAL', description: 'Highest income density. Lowest coverage.', skus: ['Mango Tango'] },
+    { id: 'jayanagar', name: 'Jayanagar', coverage: 74, status: 'OK', description: 'Best performing zone', skus: ['Mango Tango', 'Rosy Falooda', 'Thandai Chill'] },
+    { id: 'bellandur', name: 'Bellandur', coverage: 43, status: 'WEAK', description: 'Large IT workforce, underserved', skus: ['Mango Tango', 'Thandai Chill'] },
   ];
 
   const skus = [
-    { name: 'Café Latte Protein Coffee', format: 'RTD', status: 'SOLD OUT', coverage: 0, offtake: '—', trend: '↓↓', action: 'URGENT RESTOCK', color: 'red' },
-    { name: 'Choco Almond Bar', format: 'Bar', status: 'SOLD OUT', coverage: 0, offtake: '—', trend: '↓↓', action: 'URGENT RESTOCK', color: 'red' },
-    { name: 'Choco Brownie Bar', format: 'Bar', status: 'SOLD OUT', coverage: 0, offtake: '—', trend: '↓↓', action: 'URGENT RESTOCK', color: 'red' },
-    { name: 'Choco Loco', format: 'RTD', status: 'PARTIAL', coverage: 62, offtake: 71, trend: '→', action: 'EXPAND COVERAGE', color: 'amber' },
-    { name: 'Kesar Pista', format: 'RTD', status: 'PARTIAL', coverage: 58, offtake: 64, trend: '→', action: 'EXPAND COVERAGE', color: 'amber' },
-    { name: 'Wah Vanilla', format: 'RTD', status: 'LIVE', coverage: 71, offtake: 79, trend: '↑', action: 'MAINTAIN', color: 'green' },
+    { name: 'Rich Cold Coffee', format: 'RTD', status: 'SOLD OUT', coverage: 0, offtake: '—', trend: '↓↓', action: 'URGENT RESTOCK', color: 'red' },
+    { name: 'Rosy Falooda', format: 'RTD', status: 'SOLD OUT', coverage: 0, offtake: '—', trend: '↓↓', action: 'URGENT RESTOCK', color: 'red' },
+    { name: 'Mango Tango', format: 'RTD', status: 'SOLD OUT', coverage: 0, offtake: '—', trend: '↓↓', action: 'URGENT RESTOCK', color: 'red' },
+    { name: 'Thandai Chill', format: 'RTD', status: 'PARTIAL', coverage: 62, offtake: 71, trend: '→', action: 'EXPAND COVERAGE', color: 'amber' },
+    { name: 'Coco Chill', format: 'RTD', status: 'PARTIAL', coverage: 58, offtake: 64, trend: '→', action: 'EXPAND COVERAGE', color: 'amber' },
   ];
 
   const keywords = [
-    { word: 'protein shake', volume: 'Very High', rank: 'Not ranking', winner: 'The Whole Truth #1', status: 'UNDERUSED', action: 'Bid on this. Entry keyword for category.', type: 'UNDERUSED' },
-    { word: 'protein coffee', volume: 'High', rank: '#4 (paid)', winner: 'No strong leader', status: 'OPPORTUNITY', action: 'Café Latte should own this. Currently OOS — pause spend.', type: 'UNDERUSED' },
-    { word: 'healthy snacks bangalore', volume: 'High', rank: 'Not ranking', winner: 'Yoga Bar #2', status: 'UNDERUSED', action: 'Bars should compete here. Both bars OOS.', type: 'UNDERUSED' },
-    { word: 'post workout drink', volume: 'Medium', rank: 'Not ranking', winner: 'Epigamia #1', status: 'GAP', action: 'High-intent window (4-7PM). Choco Loco partially available.', type: 'UNDERUSED' },
-    { word: 'protein bar', volume: 'Very High', rank: 'Not ranking', winner: 'The Whole Truth #1', status: 'CRITICAL GAP', action: 'Both bar SKUs sold out. Losing this keyword daily.', type: 'UNDERUSED' },
-    { word: 'kesar pista milk', volume: 'Low', rank: '#2 (organic)', winner: 'No direct competitor', status: 'WINNING', action: 'Unique keyword. Kesar Pista has natural advantage.', type: 'OVERUSED' },
-    { word: 'chocolate protein drink', volume: 'Medium', rank: '#3 (paid)', winner: 'Choco Loco competitors', status: 'COMPETING', action: 'OK. Maintain.', type: 'OVERUSED' },
-    { word: 'high protein breakfast', volume: 'Medium', rank: 'Not ranking', winner: 'Multiple', status: 'UNDERUSED', action: 'Wah Vanilla and Kesar Pista should compete here.', type: 'UNDERUSED' },
-    { word: 'office snack healthy', volume: 'Medium', rank: 'Not ranking', winner: 'Yoga Bar #1', status: 'GAP', action: 'Bar format natural fit. Blocked by OOS.', type: 'UNDERUSED' },
-    { word: 'sugar free protein', volume: 'Medium', rank: 'Not ranking', winner: 'The Whole Truth #1', status: 'WATCH', action: 'Emerging search. Monitor.', type: 'UNDERUSED' },
-    { word: 'protein drink blinkit', volume: 'High', rank: '#5', winner: 'Epigamia #1', status: 'UNDERPERFORMING', action: 'Brand + channel keyword. Should rank higher.', type: 'UNDERUSED' },
-    { word: 'cafe latte protein', volume: 'Low', rank: '#1 (organic)', winner: 'No competitor', status: 'OWNED', action: "This keyword is Nuvie's. Keep it.", type: 'OVERUSED' },
+    { word: 'protein shake', volume: 'Very High', rank: 'Not ranking', winner: 'Competitor #1', status: 'UNDERUSED', action: 'Bid on this. Entry keyword for category.', type: 'UNDERUSED' },
+    { word: 'protein coffee', volume: 'High', rank: '#4 (paid)', winner: 'No strong leader', status: 'OPPORTUNITY', action: 'Rich Cold Coffee should own this. Currently OOS — pause spend.', type: 'UNDERUSED' },
+    { word: 'healthy snacks bangalore', volume: 'High', rank: 'Not ranking', winner: 'Competitor #2', status: 'UNDERUSED', action: 'Product fits here. Need availability.', type: 'UNDERUSED' },
+    { word: 'post workout drink', volume: 'Medium', rank: 'Not ranking', winner: 'Competitor #3', status: 'GAP', action: 'High-intent window (4-7PM). Rosy Falooda partially available.', type: 'UNDERUSED' },
+    { word: 'thandai chill milk', volume: 'Low', rank: '#2 (organic)', winner: 'No direct competitor', status: 'WINNING', action: 'Unique keyword. Thandai Chill has natural advantage.', type: 'OVERUSED' },
+    { word: 'chocolate protein drink', volume: 'Medium', rank: '#3 (paid)', winner: 'Competitors', status: 'COMPETING', action: 'OK. Maintain.', type: 'OVERUSED' },
+    { word: 'high protein breakfast', volume: 'Medium', rank: 'Not ranking', winner: 'Multiple', status: 'UNDERUSED', action: 'Mango Tango and Thandai Chill should compete here.', type: 'UNDERUSED' },
+    { word: 'office snack healthy', volume: 'Medium', rank: 'Not ranking', winner: 'Competitor #4', status: 'GAP', action: 'Natural fit. Blocked by OOS.', type: 'UNDERUSED' },
+    { word: 'sugar free protein', volume: 'Medium', rank: 'Not ranking', winner: 'Leading Clean Brand', status: 'WATCH', action: 'Emerging search. Monitor.', type: 'UNDERUSED' },
+    { word: 'protein drink q-commerce', volume: 'High', rank: '#5', winner: 'Competitor #5', status: 'UNDERPERFORMING', action: 'Brand + channel keyword. Should rank higher.', type: 'UNDERUSED' },
+    { word: 'rich cold coffee protein', volume: 'Low', rank: '#1 (organic)', winner: 'No competitor', status: 'OWNED', action: "This keyword is owned. Keep it.", type: 'OVERUSED' },
   ];
 
   const filteredKeywords = keywordFilter === 'ALL' ? keywords : keywords.filter(k => k.type === keywordFilter);
@@ -140,7 +137,7 @@ This analysis updates when data changes.
         </p>
         <div className="bg-accent/[0.03] border-l border-accent/20 p-6 max-w-3xl">
            <p className="text-sm text-foreground/50 italic leading-relaxed">
-             All data in this module is simulated using public signals, GobbleCube&apos;s published framework, and industry benchmarks. This demonstrates the framework — not Nuvie&apos;s actual internal metrics.
+             All data in this module is simulated to demonstrate the analytical framework. This is how I would instrument a D2C brand's channel performance if I had access to the data layer. Not actual metrics.
            </p>
         </div>
       </div>
@@ -157,7 +154,7 @@ This analysis updates when data changes.
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
               <span className="text-[10px] md:text-[11px] font-mono tracking-[0.2em] uppercase font-bold text-[#E8E4DE]/90">
-                NUVIE QC INTELLIGENCE — BANGALORE — BLINKIT
+                BRAND QC INTELLIGENCE — ZONE — CHANNEL
               </span>
             </div>
             <div className="hidden md:block h-4 w-px bg-[#2A2A2A]" />
@@ -181,7 +178,7 @@ This analysis updates when data changes.
             </div>
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#1A1A1A] border border-[#2A2A2A] shrink-0">
               <span className="text-[9px] font-mono text-[#E8E4DE]/70 uppercase tracking-tighter">SKUs</span>
-              <span className="text-[11px] font-mono font-bold text-red-400">3/6</span>
+              <span className="text-[11px] font-mono font-bold text-red-400">2/5</span>
             </div>
             
             {/* Watermark */}
@@ -327,7 +324,7 @@ This analysis updates when data changes.
                              </div>
                              <div className="mt-4 p-3 rounded-lg bg-orange-500/5 border border-orange-500/10">
                                 <span className="text-[9px] font-mono text-orange-500/80 uppercase block mb-1">Recommendation:</span>
-                                <p className="text-[10px] text-orange-400/90 leading-relaxed italic">Priority stock allocation for Café Latte required.</p>
+                                <p className="text-[10px] text-orange-400/90 leading-relaxed italic font-light">Priority stock allocation for core SKUs required.</p>
                              </div>
                           </div>
                         )}
@@ -346,7 +343,7 @@ This analysis updates when data changes.
                   <div>
                     <span className="text-[10px] font-mono tracking-[0.3em] text-amber-500 uppercase font-bold block mb-2">Benchmark Alert</span>
                     <p className="text-sm md:text-base text-[#E8E4DE]/90 leading-relaxed italic font-light">
-                      &quot;GobbleCube&apos;s benchmark: brands spending on QC ads with &lt;90% availability are burning money on empty shelves. Current Nuvie average: 40%. <span className="text-amber-400 font-bold">Recommendation: PAUSE all ad spend</span> until Café Latte and bars are restocked.&quot;
+                      &quot;Signal: brands spending on performance marketing with sub-90% availability are burning budget on empty shelves. Current simulated average: 40%. The first lever is always availability — not ads.&quot;
                     </p>
                   </div>
                 </div>
@@ -359,8 +356,8 @@ This analysis updates when data changes.
             <div className="animate-in fade-in duration-700">
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
                 <div>
-                  <h3 className="text-xl md:text-2xl !font-serif mb-2 !text-[#E8E4DE]">Keywords Nuvie Should Be Winning — and Isn&apos;t</h3>
-                  <p className="text-xs text-[#E8E4DE]/70 font-mono tracking-widest uppercase">REPLICA: GOBBLECUBE KEYWORD EXPLORER</p>
+                  <h3 className="text-xl md:text-2xl !font-serif mb-2 !text-[#E8E4DE]">Keywords We Should Be Winning — and Aren&apos;t</h3>
+                  <p className="text-xs text-[#E8E4DE]/70 font-mono tracking-widest uppercase">REPLICA: KEYWORD EXPLORER INTERFACE</p>
                 </div>
                 <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
                    {['ALL', 'UNDERUSED', 'OVERUSED'].map(filter => (
@@ -430,7 +427,7 @@ This analysis updates when data changes.
 
               <div className="mt-16 p-8 bg-[#141414] rounded-[2rem] border border-[#2A2A2A]">
                  <p className="text-sm text-[#E8E4DE]/90 leading-relaxed italic font-light">
-                   &quot;Key principle from GobbleCube: <span className="text-orange-500/90 font-bold">Don&apos;t spend where your ad rank is worse than your organic rank.</span> And never spend on a keyword when you&apos;re OOS in the city running the ad — you&apos;re paying to show an empty shelf.&quot;
+                   &quot;Key principle: <span className="text-orange-500/90 font-bold">Don&apos;t spend where your ad rank is worse than your organic rank.</span> And never spend on a keyword when you&apos;re OOS in the city running the ad — you&apos;re paying to show an empty shelf.&quot;
                  </p>
               </div>
             </div>
@@ -443,7 +440,7 @@ This analysis updates when data changes.
                   <div>
                     <h3 className="text-xl md:text-2xl !font-serif mb-2 !text-[#E8E4DE]">SKU × City Campaign Intelligence</h3>
                     <p className="text-xs text-[#E8E4DE]/70 leading-relaxed max-w-xl font-light">
-                      What a smart campaign structure looks like for Nuvie right now — and what it should look like after restock.
+                      What a smart campaign structure looks like right now — and what it should look like after restock.
                     </p>
                   </div>
                   <div className="flex p-1 bg-[#141414] rounded-xl border border-[#2A2A2A] self-start md:self-end">
@@ -580,7 +577,7 @@ This analysis updates when data changes.
                      </div>
                   </div>
                   <p className="mt-6 text-xs text-[#E8E4DE]/70 italic leading-relaxed font-light">
-                    Note: &quot;GobbleCube experiment showed full-day visibility outperforms day-parted campaigns. Don&apos;t front-load.&quot;
+                    Note: &quot;Full-day visibility often outperforms day-parted campaigns. Don&apos;t front-load.&quot;
                   </p>
                </div>
             </div>
@@ -592,7 +589,7 @@ This analysis updates when data changes.
                <div className="mb-20 text-center">
                   <h3 className="text-2xl md:text-4xl !font-serif mb-6 text-balance !text-[#E8E4DE]">Organic vs Paid: The Flywheel Cycle</h3>
                   <p className="text-lg text-[#E8E4DE]/80 max-w-2xl mx-auto leading-relaxed font-light">
-                    Nuvie currently sits in the Paid Dependency phase. The goal is to move the needle toward Algorithm Recognition.
+                    The brand currently sits in the Paid Dependency phase. The goal is to move the needle toward Algorithm Recognition.
                   </p>
                </div>
 
@@ -603,7 +600,7 @@ This analysis updates when data changes.
                      {[
                        { stage: 'STAGE 1', title: 'PAID DEPENDENCY', active: true, desc: 'Sales driven entirely by manual ad spend. ROAS is the only metric.' },
                        { stage: 'STAGE 2', title: 'BUILDING VELOCITY', active: false, desc: 'Consistent offtake starts to signal rank improvement to the app.' },
-                       { stage: 'STAGE 3', title: 'ALGORITHM RECOGNITION', active: false, desc: 'App starts showing Nuvie in "You might like" without ads.' },
+                       { stage: 'STAGE 3', title: 'ALGORITHM RECOGNITION', active: false, desc: 'App starts showing products in "You might like" without ads.' },
                        { stage: 'STAGE 4', title: 'ORGANIC FLYWHEEL', active: false, desc: '50%+ of orders come from organic search. ROAS compounds.' },
                      ].map((item, i) => (
                        <div key={i} className="relative group">
@@ -634,7 +631,7 @@ This analysis updates when data changes.
                   <div>
                     <h4 className="text-xl !font-serif mb-8 border-l-2 border-orange-500 pl-6 uppercase tracking-wider !text-[#E8E4DE]">The Flywheel Metric to Watch</h4>
                     <p className="text-base text-[#E8E4DE]/90 leading-relaxed font-light mb-10">
-                      &quot;Rising organic non-brand keyword sales. When &apos;protein drink&apos; or &apos;healthy snack&apos; searches start converting to Nuvie orders <span className="text-orange-400 font-medium">WITHOUT paid ads</span> — that&apos;s the flywheel spinning.&quot;
+                      &quot;Rising organic non-brand keyword sales. When general category searches start converting to orders <span className="text-orange-400 font-medium">WITHOUT paid ads</span> — that&apos;s the flywheel spinning.&quot;
                     </p>
                     
                     <div className="space-y-8">
@@ -685,7 +682,7 @@ This analysis updates when data changes.
             <div className="animate-in fade-in duration-700 font-mono">
                <div className="mb-10 flex items-center justify-between border-b border-[#2A2A2A]/40 pb-6">
                   <div>
-                    <h3 className="text-sm md:text-base tracking-[0.4em] uppercase font-bold text-orange-500">NUVIE GROWTH AGENT — DAILY BRIEFING</h3>
+                    <h3 className="text-sm md:text-base tracking-[0.4em] uppercase font-bold text-orange-500">GROWTH AGENT — DAILY BRIEFING</h3>
                     <p className="text-[9px] md:text-[10px] text-[#E8E4DE]/70 uppercase tracking-widest mt-1">Simulated AI analysis based on current availability signals</p>
                   </div>
                   <div className="flex items-center gap-2">
@@ -721,7 +718,7 @@ This analysis updates when data changes.
                <div className="mt-12 p-8 border-t border-[#1A1A1A]">
                   <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-orange-500/60 mb-6 italic">HOW THIS AGENT WORKS</h4>
                   <p className="text-[11px] text-[#E8E4DE]/70 leading-relaxed max-w-3xl font-sans italic">
-                    This analysis is generated by a simulated logic layer that weights current availability (40%), keyword SOV gaps, and category share shifts. It replicates the core methodology of the GobbleCube framework — moving from descriptive data (what happened) to prescriptive action (what to do now).
+                    This analysis is generated by a simulated logic layer that weights current availability (40%), keyword SOV gaps, and category share shifts. It replicates the core methodology of channel intelligence — moving from descriptive data (what happened) to prescriptive action (what to do now).
                   </p>
                </div>
             </div>
@@ -736,29 +733,26 @@ This analysis updates when data changes.
           <div>
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent block mb-6">01. THE FRAMEWORK</span>
             <p className="text-base text-foreground/60 leading-relaxed font-light">
-              GobbleCube&apos;s approach to QC intelligence follows a clear hierarchy: <span className="text-foreground font-medium underline decoration-accent/20">Availability → Share of Voice → Pricing</span>. You cannot win on price or ads if the product is not on the dark store shelf.
+              The hierarchy is always the same: Availability → Share of Voice → Pricing. You cannot win on price or ads if the product is not on the dark store shelf. This is the foundation of any channel intelligence system.
             </p>
           </div>
           <div>
-            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent block mb-6">02. APPLIED TO NUVIE</span>
+            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent block mb-6">02. APPLIED TO BRAND</span>
             <p className="text-base text-foreground/60 leading-relaxed font-light">
-              Using public signals to simulate what this looks like for a real brand. The OOS signals for Café Latte and Bars are real observations — this simulation simply builds the intelligence layer around them.
+              Using category signals and public data to simulate what a channel intelligence layer looks like for a D2C protein shake brand. The OOS and availability patterns modelled here reflect real category dynamics in Bengaluru's quick commerce ecosystem.
             </p>
           </div>
           <div>
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent block mb-6">03. WHAT I&apos;D ACTUALLY DO</span>
             <p className="text-base text-foreground/60 leading-relaxed font-light">
-              This is not theoretical. If I had access to Nuvie&apos;s Blinkit console and a data intelligence layer, these are the exact levers I would pull to protect brand margin and drive habit-loop retention.
+              This is not theoretical. If I had access to the channel console and the data layer, these are the exact levers I would pull — availability first, then share of voice, then conversion. In that order. Every time.
             </p>
           </div>
         </div>
         
         <div className="mt-20 pt-12 border-t border-accent/5 flex flex-col md:flex-row items-center justify-between gap-6 opacity-40">
            <p className="text-[10px] font-mono uppercase tracking-[0.2em] font-bold italic">
-             Framework sourced from GobbleCube&apos;s QComm Growth Playbook (2025).
-           </p>
-           <p className="text-[10px] font-mono uppercase tracking-[0.2em] font-bold italic">
-             Simulation built for Nuvie Thesis.
+             Simulation built for PAUSE. Framework based on category research and channel intelligence principles.
            </p>
         </div>
       </div>
