@@ -38,22 +38,22 @@ export const siteContent: SiteContent = {
   },
   whyIBuiltThis: {
     heading: 'WHY I BUILT THIS',
-    body: `I come from analytics, systems work, and building structured products from messy problems. I wanted to understand how a modern consumer brand actually works from the inside — the product mechanics, the channel realities, the repeat problem. So I did what I always do. I built the whole thing myself. The brand. The products. The strategy. The packaging. All of it.`,
+    body: `I build by standing on the road, eyes and ears open to what the community actually needs. There are massive whitespaces in legacy FMCG categories—cooler, newer, repositioned products are waiting to be built. I wanted to understand how to solve the "Optimization Problem" of better-for-you products: removing guilt-heavy ingredients and replacing them with high-tech alternatives without losing the "Love and Like" taste bracket. This brand is the intersection of that math and the art of consumption.`,
   },
   understanding: {
-    heading: 'Three things that stuck with me',
+    heading: 'Core Visionary Pillars',
     points: [
       {
-        title: 'Occasion, not category',
-        body: "The real competition is not other protein shakes. It is the existing habit or ritual that already owns that moment. Build for the moment first. The category follows.",
+        title: 'Protein + Indulgence',
+        body: "Protein isn't just for the gym; it's for everyone. We attach it to existing rituals—like the daily Caffe Latte habit. If you're drinking it anyway, might as well upgrade it.",
       },
       {
-        title: 'Taste first, then everything else',
-        body: "If the product does not exceed expectations on first trial, there is no repeat conversation. Health is the bonus. Taste is the entry ticket. That is the design constraint I built PAUSE around.",
+        title: 'Functional Control',
+        body: "Health means different things to different people. We don't moralize; we optimize. We provide functional control (like 100-calorie limits) in guilt-heavy zones where taste is paramount.",
       },
       {
-        title: 'Distribution is a data problem',
-        body: "Availability, search visibility, and channel fit are all measurable and improvable. That is the kind of problem I know how to work on. I find the signal others miss.",
+        title: 'Science + Art of Texture',
+        body: "Texture is the silent driver of repeat. From the thickness of a chip to the creaminess of a shake, we treat food technology as an optimization problem where Science meets Art.",
       },
     ],
   },
