@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    absolute: "PAUSE"
+    absolute: "FMCG Whitespace OS"
   },
   description: "A better-for-you brand concept built from strategy, behavior, and original design.",
 };

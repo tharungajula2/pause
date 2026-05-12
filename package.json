@@ -1,7 +1,7 @@
 {
-  "name": "pause",
+  "name": "fmcg-whitespace-os",
   "version": "0.1.0",
-  "description": "PAUSE | A strategic study of modern product growth",
+  "description": "FMCG Whitespace OS | A strategic study of modern product growth",
   "private": true,
   "scripts": {
     "dev": "next dev",

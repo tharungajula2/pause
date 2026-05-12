@@ -1,9 +1,9 @@
 import { SiteContent } from '../types';
 
 export const siteContent: SiteContent = {
-  name: 'PAUSE',
+  name: 'FMCG Whitespace OS',
   tagline: 'A strategic concept exploration of modern product growth',
-  description: 'From product storytelling and strategy to quick commerce, trust, repeat, and unit economics. PAUSE explores how modern consumer products actually win.',
+  description: 'From product storytelling and strategy to quick commerce, trust, repeat, and unit economics. FMCG Whitespace OS explores how modern consumer products actually win.',
   hero: {
     title: "A better-for-you brand concept.\nBuilt from scratch.",
     body: 'Strategy. Product thinking. Original packaging design. This is how I think about building a consumer brand that earns its second purchase.',
@@ -16,7 +16,6 @@ export const siteContent: SiteContent = {
       eyebrow: 'MY READING OF THIS PAGE',
       title: "How I'm thinking about the product system.",
       body: "The product visuals and packaging designs on this page are original concept work. The analysis alongside each product reflects strategic thinking about the better-for-you category in India — built from category research and consumer behaviour observations. This is independent work.",
-      cta: { label: 'Explore the Portfolio', type: 'scroll-cue' },
     },
     {
       id: 'products',

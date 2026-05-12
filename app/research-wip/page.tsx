@@ -3,7 +3,7 @@ import ResearchWipClient from './ResearchWipClient';
 
 export const metadata: Metadata = {
   title: {
-    absolute: "PAUSE"
+    absolute: "FMCG Whitespace OS"
   },
   description: "A working workbook for deep industry research and open questions.",
   robots: {

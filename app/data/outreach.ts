@@ -40,7 +40,7 @@ export const outreachContent = {
             badge: "Execution"
         }
     ],
-    pauseInsights: [
+    osInsights: [
         "Core growth is driven by occasion ownership, not just basic utility.",
         "Repeat behavior is the only durable engine in modern consumer categories.",
         "Channel fit is the primary strategic arbiter of operational success."

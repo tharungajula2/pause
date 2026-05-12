@@ -752,7 +752,7 @@ This analysis updates when data changes.
         
         <div className="mt-20 pt-12 border-t border-accent/5 flex flex-col md:flex-row items-center justify-between gap-6 opacity-40">
            <p className="text-[10px] font-mono uppercase tracking-[0.2em] font-bold italic">
-             Simulation built for PAUSE. Framework based on category research and channel intelligence principles.
+             Simulation built for FMCG Whitespace OS. Framework based on category research and channel intelligence principles.
            </p>
         </div>
       </div>

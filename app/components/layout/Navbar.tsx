@@ -57,7 +57,7 @@ export const Navbar: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between relative">
                     {/* LOGO */}
                     <Link href="/" className="flex-shrink-0 text-xl font-serif tracking-tighter font-semibold hover:text-accent transition-all duration-500 mr-8 lg:mr-12">
-                        PAUSE
+                        FMCG Whitespace OS
                     </Link>
                     
                     {/* Desktop Nav */}

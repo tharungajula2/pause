@@ -6,7 +6,7 @@ export const products: Product[] = [
     slug: 'rich-cold-coffee',
     name: 'Rich Cold Coffee',
     format: 'Coffee',
-    heroDescriptor: "Your daily pause in a bottle.",
+    heroDescriptor: "Your daily nutrition in a bottle.",
     operatorDescription: "A strategic reading of the product's market position, behavioral attachment, and repeat potential. This is an outside observation built for the study.",
     primaryOccasion: 'Anytime craving',
     accentColor: '#8B4513',

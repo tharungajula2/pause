@@ -39,7 +39,7 @@ export const FlavorLab: React.FC<FlavorLabProps> = ({ chapter }) => {
       <div className="max-w-7xl mx-auto mb-24">
         <SectionDivider label="CUSTOMER SIGNAL BOARD" />
         <div className="mt-8 mb-12">
-          <p className="text-sm text-foreground/60 italic font-light">Category-level consumer signals. Patterns I tracked while building PAUSE.</p>
+          <p className="text-sm text-foreground/60 italic font-light">Category-level consumer signals. Patterns I tracked while building this framework.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

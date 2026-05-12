@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    absolute: "PAUSE"
+    absolute: "FMCG Whitespace OS"
   },
   description: "Operational advisory and strategic execution for founders who need to bridge the gap between vision and reality.",
 };
@@ -47,7 +47,7 @@ export default function HowICanHelpPage() {
                         Useful work, not <br/><span className="italic text-foreground/80 text-4xl md:text-6xl lg:text-8xl block md:inline mt-2 md:mt-0">abstract advice.</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-foreground/80 font-light max-w-2xl mx-auto leading-relaxed">
-                        I built PAUSE from scratch — the brand, the products, the strategy, the packaging. Here is where I think that kind of thinking can be genuinely useful inside a founder's team.
+                        I built this framework from scratch — the brand, the products, the strategy, the packaging. Here is where I think that kind of thinking can be genuinely useful inside a founder's team.
                     </p>
                 </div>
             </section>
@@ -59,7 +59,7 @@ export default function HowICanHelpPage() {
                         I come from analytics, systems work, and building structured products from messy problems. Credit risk, lending workflows, operations, product building — the common thread was always the same. Take something complex, find the structure inside it, and build something that actually works. Not a deck. Not a framework. A working output.
                     </p>
                     <p>
-                        That is how I built PAUSE. And that is exactly how I would approach any problem worth solving inside a growing consumer brand.
+                        That is how I built this system. And that is exactly how I would approach any problem worth solving inside a growing consumer brand.
                     </p>
                 </div>
             </section>

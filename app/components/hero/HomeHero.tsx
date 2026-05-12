@@ -46,7 +46,7 @@ export const HomeHero: React.FC = () => {
         </p>
 
         <p className="text-[12px] text-foreground/80 italic font-light max-w-xl mx-auto leading-relaxed mb-12 animate-fade-in">
-          The brand concept, packaging visuals, product designs, and all creative work on this site are original work created by me. PAUSE is an independent concept I built to demonstrate how I think.
+          The brand concept, packaging visuals, product designs, and all creative work on this site are original work created by me. This project is an independent strategic concept I built to demonstrate how I think.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

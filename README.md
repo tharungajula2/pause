@@ -1,31 +1,32 @@
-# PAUSE
+# FMCG Whitespace OS
+**A Strategic PM Portfolio Asset & Strategy Concept Prototype**
 
-A strategic study of modern product growth.
+FMCG Whitespace OS is a strategic exploration of modern consumer product growth, mapped through the lens of systems-minded product management. This project moves beyond simple brand studies to dissect the unit economics, competitive landscape, and behavioral triggers that allow new FMCG brands to win in a crowded market.
 
-## Overview
+## 🚀 The Core Thesis
+Modern FMCG is not just about making a product; it's about solving an optimization problem. This repository maps the "Better-for-you" framework, focusing on:
+- **Functional Indulgence**: Balancing the "Math of Taste" with "Damage Control" nutrition.
+- **Whitespace Identification**: Finding the gaps in legacy FMCG categories (e.g., Protein + Indulgence).
+- **Unit Economics**: Understanding the punishing reality of quick commerce margins (Blinkit, Zepto, Instamart).
+- **Consumer Trust**: Solving the mislabeling and authenticity crisis in Indian health food.
 
-PAUSE is a cinematic exploration of strategy, economics, and behavior in the modern product ecosystem. It explores the intersection of product storytelling, flavor strategy, unit economics, and consumer trust.
+## 🛠️ Project Universes
+- **Product Lab**: Five original SKU concepts with full strategic positioning and "Math of Taste" logic.
+- **Growth Framework**: Identification of key growth levers including Occasion Fit and Reorder Loops.
+- **Strategy Deep-Dives**: Research modules covering everything from Ultra-Filtration to Lactose-Intolerance demographics.
 
-## Core Pillars
+## 💻 Tech Stack
+- **Framework**: Next.js (App Router)
+- **Styling**: Vanilla CSS + Tailwind (Design-token driven)
+- **Content**: Centralized data-registry architecture for rapid iteration.
+- **Aesthetic**: Performance-Editorial (Glassmorphism, Google Fonts: Inter/Cormorant).
 
-- **Thesis Journey**: A multi-step exploration of portfolio architecture and SKU logic.
-- **Economic Exploration**: Margin structure, fragility, and failure modes.
-- **Growth Thesis**: Behavioral adoption and repeat logic.
-- **Study Hubs**: Specialized deep-dives into Flavor, Packaging, Manufacturing, and R&D.
-
-## Tech Stack
-
-- **Framework**: Next.js 16 (App Router)
-- **Styling**: Vanilla CSS / Tailwind (Primitive components)
-- **Animations**: GSAP
-- **Typeface**: Geist & Cormorant Garamond
-
-## Getting Started
-
-First, run the development server:
-
+## 🏃 Getting Started
 ```bash
+npm install
 npm run dev
 ```
+Open [http://localhost:3000](http://localhost:3000) to explore the OS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+**Note**: This is a strategic prototype for portfolio demonstration. All product visuals and packaging designs are original concept work.

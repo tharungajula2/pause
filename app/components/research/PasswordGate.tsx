@@ -63,7 +63,7 @@ export const PasswordGate: React.FC<PasswordGateProps> = ({ onUnlock }) => {
         <div className="mt-16 pt-8 border-t border-foreground/5 text-center">
           <p className="text-[9px] uppercase tracking-[0.4em] text-foreground/45 font-bold leading-relaxed">
             Unfinished research. Intentional mastery. <br/>
-            PAUSE — Private Working Layer
+            FMCG Whitespace OS — Private Working Layer
           </p>
         </div>
       </div>
